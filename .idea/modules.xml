@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/suo_learn/SourceExploration(源码探索)/500lines-python/.idea/500lines-python.iml" filepath="$USER_HOME$/suo_learn/SourceExploration(源码探索)/500lines-python/.idea/500lines-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tweetf0rm/.idea/tweetf0rm.iml" filepath="$PROJECT_DIR$/../tweetf0rm/.idea/tweetf0rm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/twitfaceCrawler.iml" filepath="$PROJECT_DIR$/.idea/twitfaceCrawler.iml" />
+    </modules>
+  </component>
+</project>

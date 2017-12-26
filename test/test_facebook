@@ -1,0 +1,12 @@
+import facebook
+
+graph = facebook.GraphAPI(access_token="EAACEdEose0cBAIjEOyvFoA45vxgYqj9wceZCdQZCjssUUAYkWV8O03XZCBYKKQ4OgwVdln4nP1rVpofQ7qqqbHHW7LyklXbuGIXlMIam8BhcadKtBW3ZAn29nV6stVk7ZBMQrla8Q33MsZALTihrSXPMjh3ZAMVTSkhjdrF5UUOQJtOgRPwhVV56hZCZCEfseHQPjkZBAc9ck1Ipw9NRJFENZBSzk5SUc5VPMUZD", version='2.10')
+
+# print(graph.get_connections(id='me', connection_name='friends'))
+
+events = graph.request('1733274016997548/posts?pretty=0&fields=link%2Cadmin_creator%2Ccreated_time%2Cdescription%2Cfrom%2Cmessage%2Csource%2Clikes%7Bid%7D%2Cupdated_time&limit=25&after=Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5UXhOek16TWpjME1ERTJPVGszTlRRNE9qY3hOakE0TkRZANU1ETTVOakV5TmpJM056TVBER0ZA3YVY5emRHOXllVjlwWkE4aE1UY3pNekkzTkRBeE5qazVOelUwT0Y4eE9UTXdOREUzTkRRd05qRTJOVE0zRHdSMGFXMWxCbG5QZAUJFQgZDZD')
+
+postOne = graph.get_object(events['data'][0]['id'])
+print(events['data'][0]['id'])
+print(postOne)
+# print(events)

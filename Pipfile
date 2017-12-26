@@ -1,0 +1,27 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+tweepy = "*"
+pymongo = "*"
+pandas = "*"
+openpyxl = "*"
+pyquery = "*"
+selenium = "*"
+facebook-sdk = {git = "https://github.com/mobolic/facebook-sdk.git", editable = true}
+xlrd = "*"
+grequests = "*"
+requests-futures = "*"
+"bs4" = "*"
+tornado = "*"
+aiohttp = "*"
+twython = "*"
+
+
+[dev-packages]
+

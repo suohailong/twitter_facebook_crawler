@@ -1,0 +1,90 @@
+#!/usr/bin/python
+#coding:utf-8
+
+import argparse
+import time
+import sys, time, argparse, json, os, pprint
+sys.path.append(".")
+from src import shedule
+from src.pkg.twitter.twitter import TWitter
+from src.pkg.facebook.facebook_api import FaceBook
+from src.pkg.base.base import Base
+import pandas as pd
+
+
+
+
+def serve():
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument('-c',"--cmd",
+                        help="crawler",
+                        default="tweets",
+                        action="store")
+    parser.add_argument('-j', '--json',
+                        help="the location of the json file that has a list of user_ids or screen_names",
+                        required=False)
+    parser.add_argument('-s',"--site",
+                        help="runner's host, by default it uses localhost",
+                        default="twitter",
+                        action="store")
+    parser.add_argument("--keywords",
+                        help="runner's port, by default it uses values range_star",
+                        default='STATE GRID',
+                        action="store")
+    parser.add_argument("--type",
+                        help="runner's port, by default it uses values range_star",
+                        default=1,
+                        action="store")
+    parser.add_argument("--sheet",
+                        help="runner's port, by default it uses values range_star",
+                        default='Senators',
+                        #default='中国企业500强',
+                        action="store")
+
+    args = parser.parse_args()
+
+    if args.cmd=='crawler_tweets':
+        if args.site=='twitter':
+            shedule.crawler_tweets(TWitter(args),args.site,args.json)
+        else:
+            shedule.crawler_tweets(FaceBook(args),args.site,args.json)
+    elif args.cmd =='crawler_users':
+        items = pd.read_excel('./keywords.xlsx', args.sheet, index_col=None, na_values=['NA'])
+        df = pd.DataFrame(items)
+        keyWordItems = df.values.tolist()[0:]
+        if args.site=='twitter':
+            shedule.crawler_users(TWitter(args),keyWordItems,args.type)
+        else:
+            shedule.crawler_users(FaceBook(args),keyWordItems,args.type)
+    elif args.cmd=='crawler_list_count':
+        if args.site=='facebook':
+            print('this cmd is only for twitter')
+            quit()
+        shedule.crawler_user_listcounts(TWitter(args))
+    elif args.cmd=='crawler_reactions':
+        if args.site=='twitter':
+            print('this cmd is only for facebook')
+            quit()
+        shedule.crawler_reactions(FaceBook(args))
+    elif args.cmd=='crawler_user_likes':
+        if args.site=='twitter':
+            print('this cmd is only for facebook')
+            quit()
+        shedule.crawler_user_likes_counts(FaceBook(args))
+    else :
+        print('请输入正确的命令')
+
+
+
+    # if args.n == 'twitter':
+    #    startSys()
+    # elif args.n == 'facebook':
+    #    startSys()
+    # else:
+    #     print('没有此项选择')
+    
+
+
+
+if __name__ == "__main__":
+    serve()
