@@ -1192,32 +1192,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding>
-                <element signature="e#3126#4349#0" expanded="false" />
-                <element signature="e#8449#9608#0" expanded="false" />
-                <element signature="e#9638#10214#0" expanded="false" />
-                <element signature="e#10247#11585#0" expanded="false" />
-                <element signature="e#11689#12076#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="47" column="59" lean-forward="true" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="shedule.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shedule.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -1330,7 +1304,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../tweetf0rm/data/timelines/36222317" />
         <option value="$PROJECT_DIR$/../tweetf0rm/tests/suibian.py" />
         <option value="$PROJECT_DIR$/test/test_twitter.py" />
         <option value="$PROJECT_DIR$/../tweetf0rm/tests/makeUserid.py" />
@@ -1381,6 +1354,7 @@
         <option value="$PROJECT_DIR$/twitter_user_ids.json" />
         <option value="$PROJECT_DIR$/twitter_user_ids的副本 4.json" />
         <option value="$PROJECT_DIR$/twitter_user_ids的副本 3.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1440,21 +1414,7 @@
             </path>
             <path>
               <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkg" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="tweetf0rm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1641,13 +1601,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../tweetf0rm/tests/user_ids.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../tweetf0rm/user_ids.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1715,13 +1668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tweetf0rm/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -2011,6 +1957,22 @@
           <folding>
             <element signature="e#5107#6128#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweetf0rm/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
