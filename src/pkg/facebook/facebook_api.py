@@ -44,33 +44,33 @@ class FaceBook(Base):
            return None
         result_list = []
         for item in responseText:
-            # try:
-            bs = bs4.BeautifulSoup(item['content'], 'html.parser')
-            if not bs:
-                continue;
-            html = bs.select(
-                'script')
-            share = re.search(r'sharecount:\d{1,}', str(html)).group() if re.search(r'sharecount:\d{1,}',
-                                                                                    str(html)) else "sharecount:0"
-            likes = re.search(r'likecount:\d{1,}', str(html)).group() if re.search(r'likecount:\d{1,}',
-                                                                                   str(html)) else "likecount:0"
-            str1 = re.search(r'comments:{"\S{1,100}', str(html)).group() if re.search(r'comments:{"\S{1,100}',
-                                                                                      str(html)) else 'count:0'
-            comment = re.search(r'count:\d{1,}', str1).group()
+            try:
+                bs = bs4.BeautifulSoup(item['content'], 'html.parser')
+                if not bs:
+                    continue;
+                html = bs.select(
+                    'script')
+                share = re.search(r'sharecount:\d{1,}', str(html)).group() if re.search(r'sharecount:\d{1,}',
+                                                                                        str(html)) else "sharecount:0"
+                likes = re.search(r'likecount:\d{1,}', str(html)).group() if re.search(r'likecount:\d{1,}',
+                                                                                       str(html)) else "likecount:0"
+                str1 = re.search(r'comments:{"\S{1,100}', str(html)).group() if re.search(r'comments:{"\S{1,100}',
+                                                                                          str(html)) else 'count:0'
+                comment = re.search(r'count:\d{1,}', str1).group()
 
-            share_count = re.search(r'\d{1,}', share).group() if re.search(r'\d{1,}', share) else 0
-            likes_count = re.search(r'\d{1,}', likes).group() if re.search(r'\d{1,}', likes) else 0
-            comment_count = re.search(r'\d{1,}', comment).group() if re.search(r'\d{1,}', comment) else 0
-            result_list.append({
-                "url": item["url"],
-                "reactions": {
-                    "share_count": share_count,
-                    "likes_count": likes_count,
-                    "comment_count": comment_count
-                }
-            })
-            # except Exception as e:
-
+                share_count = re.search(r'\d{1,}', share).group() if re.search(r'\d{1,}', share) else 0
+                likes_count = re.search(r'\d{1,}', likes).group() if re.search(r'\d{1,}', likes) else 0
+                comment_count = re.search(r'\d{1,}', comment).group() if re.search(r'\d{1,}', comment) else 0
+                result_list.append({
+                    "url": item["url"],
+                    "reactions": {
+                        "share_count": share_count,
+                        "likes_count": likes_count,
+                        "comment_count": comment_count
+                    }
+                })
+            except Exception as e:
+                print(e)
         return result_list
 
     def make_next_page_url(self,url,page_id,next_time):
@@ -171,7 +171,7 @@ class FaceBook(Base):
                 # print(item)
                 object_id = self.save(item)
                 print('save %s ==>successfuly' % object_id)
-            if not flag or len(tweet3)==0:
+            if not flag or len(tweet3)<=1:
                 print('此用户的文章爬取完成')
                 break;
 

@@ -50,6 +50,7 @@ def crawler_tweets(crawler,site,filename):
         print(len(user_ids['ids']))
         for id in user_ids['ids']:
             crawler.fetch_user_tweets(user_id=id,deadline='2017-9-21')
+        print('完成全部抓取')
     else:
         db = create_mongo_conn(db='FaceBook',collection='facebook')
         with open(os.path.abspath(filename), 'r') as f:
@@ -57,8 +58,8 @@ def crawler_tweets(crawler,site,filename):
         print(len(user_ids['ids']))
         for id in user_ids['ids']:
             doc = db.find_one({"id":id})
-
             crawler.fetch_user_tweets(id=id,urls=doc['link']+'posts/',deadline='2017-9-21')
+        print('完成全部抓取')
 
 
 
