@@ -23,7 +23,7 @@ import sys, time, argparse, json, os, pprint
 
 sys.path.append(".")
 from src.pkg.base.base import Base
-
+from src.redis_helper import RedisQueue
 
 class FaceBook(Base):
     """
@@ -38,6 +38,7 @@ class FaceBook(Base):
         self.__access_token = "EAACEdEose0cBAAkdhoyXkFejburMPqbr7b773AxZCs7b1BORK7V2gUxVlmKkYydZCZBuyy4UcZA0QxThf7ii0tbDnsiCSzwFJ9DZAeGTcUCsGHQPTk7hPamWAZA2mN6IBjNXDsDQwwzrwet4h1piWTP5fuBnKjZCGm8ZCyXjCEWS7apZCoo1ZAuO5OBfoc9IDCgjSDfvc3pWKWGEPcICelHO456OUnZAxeDpLUZD"
         self.__flag = 'facebook'
         self.args = args
+        self.crawler_reactions_queue = RedisQueue(name='facebook_reactions',redis_config=self.app_config['redis_config'])
 
     def __reactions_handler(self,responseText=[]):
         # print(responseText)
@@ -170,14 +171,15 @@ class FaceBook(Base):
                 urls=self.make_next_page_url(urls,id,tweet3[-1]['last_untime'])
                 # reactions_urls = map(lambda x:'https://www.facebook.com%s' % x['permalink_url'],tweet3)
                 # reactions = self.crawler_reactions_nums(reactions_urls)
-
+                crawler_reactions_list = []
                 for item in tweet3:
                     # print(item)
                     item['site']='facebook'
                     item['latest']='true'
-                    item['share_num'] = None  # reactions[0]['reactions']['share_count'] if reactions else 0
-                    item['likes_num'] = None  # reactions[0]['reactions']['likes_count'] if reactions else 0
-                    item['comment_num'] = None  # reactions[0]['reactions']['comment_count'] if reactions else 0
+                    item['update_status'] = False
+                    # item['share_num'] = None  # reactions[0]['reactions']['share_count'] if reactions else 0
+                    # item['likes_num'] = None  # reactions[0]['reactions']['likes_count'] if reactions else 0
+                    # item['comment_num'] = None  # reactions[0]['reactions']['comment_count'] if reactions else 0
                     item['user_id'] = id
                     if deadline and tweet3.index(item)!= 0:
                         date = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
@@ -186,9 +188,11 @@ class FaceBook(Base):
                         if (date - deadline_panduan).days <= 0:
                             flag=False;
                             break;
-                    print(item['name'])
+                    # print(item['name'])
                     object_id = self.save(item)
+                    crawler_reactions_list.append({'url':'https://facebook.com%s' % item['permalink_url'],'id':str(object_id)})
                     print('save %s ==>successfuly' % object_id)
+                self.crawler_reactions_queue.put(crawler_reactions_list)
                 if not flag or len(tweet3)<=1:
                     print('此用户的文章爬取完成')
                     break;

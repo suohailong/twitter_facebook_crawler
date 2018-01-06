@@ -13,7 +13,7 @@ import redis, json
 class RedisBase(object):
     def __init__(self, name, namespace='default', redis_config=None):
         if (not redis_config):
-            redis_config = {'host': 'localhost', 'port': 6379, 'db': 0}
+            redis_config = {'host': '127.0.0.1', 'port': 6379, 'db': 0}
 
         self.redis_config = redis_config
         self.__redis_connection = redis.StrictRedis(host=redis_config['host'], port=redis_config['port'],
@@ -33,6 +33,7 @@ class RedisBase(object):
 
     def conn(self):
         self.__auth()
+        # print(self.__redis_connection)
         return self.__redis_connection
 
 
@@ -53,6 +54,7 @@ class RedisQueue(RedisBase):
 
     def put(self, item):
         """Put item into the queue."""
+        # print(json.dumps(item))
         self.conn().rpush(self.key, json.dumps(item))
 
     def get(self, block=True, timeout=None):
@@ -84,23 +86,7 @@ class RedisQueue(RedisBase):
         self.conn().delete(self.key)
 
 
-class CrawlerQueue(RedisQueue):
-    def __init__(self, node_id, crawler_id, redis_config=None):
-        super(CrawlerQueue, self).__init__('%s:%s' % (node_id, crawler_id), redis_config=redis_config)
 
-
-class NodeQueue(RedisQueue):
-    def __init__(self, node_id, redis_config=None):
-        super(NodeQueue, self).__init__(node_id, redis_config=redis_config)
-        self.node_id = node_id
-
-    def clear_all_queues(self):
-        '''This will not only clear the node queue (mostly for control cmds); but also the crawlers' cmd queues to give you a fresh start'''
-        # self.conn().delete('queue:%s*'%(self.node_id))
-        for key in self.conn().keys('queue:%s:*' % self.node_id):
-            self.conn().delete(key)
-
-        self.conn().delete('queue:%s' % self.node_id)
 
 
 

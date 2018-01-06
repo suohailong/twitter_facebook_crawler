@@ -24,7 +24,7 @@ class TWitter(Base,twython.Twython):
     """
     The RequestHandler class for our server.
     """
-    def __init__(self,args={},redis_config={"host": "127.0.0.1","port": 6379,"db":0}):
+    def __init__(self,args={}):
         #Base.__init__()
         super(TWitter,self).__init__()
 
@@ -40,8 +40,8 @@ class TWitter(Base,twython.Twython):
         self.__flag='twitter'
         self.api = tweepy.API(auth)
         self.args = args
-        # self.crawler_list_queue = RedisQueue(name='list',redis_config=redis_config)
-        # self.crawler_replay_queue = RedisQueue(name='replay', redis_config=redis_config)
+        # self.crawler_list_queue = RedisQueue(name='twitter_list',redis_config=redis_config)
+        self.crawler_replay_queue = RedisQueue(name='twitter_replay', redis_config=self.app_config['redis_config'])
 
     def fetch_user_tweets(self, user_id=None,deadline=None, bucket="timelines"):
 
@@ -61,7 +61,7 @@ class TWitter(Base,twython.Twython):
                     tweets = self.get_user_timeline(user_id=user_id, count=200)
 
                 prev_max_id = current_max_id  # if no new tweets are found, the prev_max_id will be the same as current_max_id
-
+                crawler_replay_list= []
                 for tweet in tweets:
                     # print(tweet)
                     if deadline:
@@ -73,13 +73,15 @@ class TWitter(Base,twython.Twython):
                         # tweet['list_num']=list
                         tweet['site']='twitter'
                         tweet['latest']='true'
+                        tweet['update_status'] = False
                         # print('存入mongo')
-
+                        crawler_replay_list.append("https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id_str']))
                         object_id = self.save(tweet)
                         print('save %s ==>successfuly' % object_id)
-                    time_line = re.search(r'\w{3}\sOct\s\d{2}\s\d{2}:\d{2}:\d{2}\s\+\d{4}\s2017',tweet['create_at'])
+                    time_line = re.search(r'\w{3}\sOct\s\d{2}\s\d{2}:\d{2}:\d{2}\s\+\d{4}\s2017',tweet['created_at'])
                     if current_max_id == 0 or current_max_id > int(tweet['id']):
                         current_max_id = int(tweet['id'])
+                self.crawler_replay_queue.put(crawler_replay_list)
                 time.sleep(1)
                 # no new tweets found
                 if (prev_max_id == current_max_id):
@@ -87,6 +89,7 @@ class TWitter(Base,twython.Twython):
                     break;
 
             except Exception as e:
+                print('发生错误')
                 print(e)
 
     def crawler_list_count(self,user_sreen_name=None):

@@ -5,19 +5,38 @@ import argparse
 import time
 import sys, time, argparse, json, os, pprint
 sys.path.append(".")
-from src import shedule
+from src.shedule import Shedule
 from src.pkg.twitter.twitter import TWitter
 from src.pkg.facebook.facebook_api import FaceBook
 from src.pkg.base.base import Base
 import pandas as pd
+from src.redis_helper import RedisQueue
 
-
+def crawler_init(name='twitter'):
+    print('<-----初始化程序----->')
+    if name == 'twitter':
+        twitter_crawler_queue = RedisQueue(name='twitter')
+        with open(os.path.abspath('twitter_user_ids.json'), 'r') as f:
+            user_ids = json.load(f)
+            for id in user_ids['ids']:
+                twitter_crawler_queue.put(id)
+    else:
+        facebook_crawler_queue = RedisQueue(name='facebook')
+        with open(os.path.abspath('facebook_user_ids.json'), 'r') as f:
+            user_ids = json.load(f)
+            for id in user_ids['ids']:
+                facebook_crawler_queue.put(id)
+    print('<-----初始化成功------>')
 
 
 def serve():
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument('-c',"--cmd",
                         help="crawler",
+                        default="tweets",
+                        action="store")
+    parser.add_argument('-i', "--init",
+                        help="init tweets",
                         default="tweets",
                         action="store")
     parser.add_argument('-j', '--json',
@@ -42,11 +61,15 @@ def serve():
                         action="store")
 
     args = parser.parse_args()
-
+    shedule = Shedule()
     if args.cmd=='crawler_tweets':
         if args.site=='twitter':
+            if args.init == 'tweets':
+                crawler_init(name='twitter')
             shedule.crawler_tweets(TWitter(args),args.site,args.json)
         else:
+            if args.init == 'tweets':
+                crawler_init(name='facebook')
             shedule.crawler_tweets(FaceBook(args),args.site,args.json)
     elif args.cmd =='crawler_users':
         items = pd.read_excel('./keywords.xlsx', args.sheet, index_col=None, na_values=['NA'])
@@ -88,6 +111,7 @@ def serve():
     # else:
     #     print('没有此项选择')
     
+
 
 
 

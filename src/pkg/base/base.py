@@ -4,12 +4,20 @@ import numpy as np
 import openpyxl
 import asyncio,aiohttp,bs4
 from aiohttp import ClientSession
+import os,sys,json
+
+
+
 
 class Base(object):
     def __init__(self,monStr="mongodb://root:joke123098@101.201.37.28:3717/?authSource=admin"):
-        self.__client = MongoClient()
         self.saveList = []
-
+        with open(os.path.abspath('config.json'), 'r') as f:
+            self.app_config = json.load(f)
+            mnStr = self.app_config['mongo_config']['MongoHost']
+            self.__dbName = self.app_config['mongo_config']['db']
+            self.__collectionName = self.app_config['mongo_config']['collection']
+            self.__client = MongoClient(mnStr)
     def asynchronous_request(self, urls):
         if type(urls) == str:
             urls = [urls]
@@ -59,9 +67,10 @@ class Base(object):
         # loop.close()
         except Exception as e:
             print(e)
-    def save(self,doc,db='UserPost',collection='user_post'):
-        db = self.__client['%s' % db]
-        collection = db['%s' % collection]
+    def save(self,doc):
+        db = self.__client['%s' % self.__dbName]
+        collection = db['%s' % self.__collectionName]
+        # print(collection)
         result = collection.insert_one(doc)
         return result.inserted_id
 
