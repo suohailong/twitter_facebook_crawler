@@ -40,6 +40,7 @@ class FaceBook(Base):
         self.args = args
 
     def __reactions_handler(self,responseText=[]):
+        # print(responseText)
         if not responseText or (len(responseText) <= 0):
            return None
         result_list = []
@@ -57,7 +58,7 @@ class FaceBook(Base):
                 str1 = re.search(r'comments:{"\S{1,100}', str(html)).group() if re.search(r'comments:{"\S{1,100}',
                                                                                           str(html)) else 'count:0'
                 comment = re.search(r'count:\d{1,}', str1).group()
-
+                # print(share,likes,str1)
                 share_count = re.search(r'\d{1,}', share).group() if re.search(r'\d{1,}', share) else 0
                 likes_count = re.search(r'\d{1,}', likes).group() if re.search(r'\d{1,}', likes) else 0
                 comment_count = re.search(r'\d{1,}', comment).group() if re.search(r'\d{1,}', comment) else 0
@@ -70,7 +71,10 @@ class FaceBook(Base):
                     }
                 })
             except Exception as e:
-                print(e)
+                result_list.append({
+                    "url":item['url'],
+                    "reactions":None
+                })
         return result_list
 
     def make_next_page_url(self,url,page_id,next_time):
@@ -103,13 +107,17 @@ class FaceBook(Base):
         return_list = []
         for item in content:
             # print(item['content'])
-            likes_count = pq(item['content'])('#PagesLikesCountDOMID').html()
-            print(likes_count)
-            people_likes_num = re.search(r'\d+,\d+,\d+',likes_count) if re.search(r'\d+,\d+,\d+',likes_count) else 0
-            print(people_likes_num)
+            likes_count = pq(item['content'])('._3xom').html()
+            # print(likes_count)
+            # if likes_count:
+            #     people_likes_num = re.search(r'\d+,\d+,\d+',likes_count) if re.search(r'\d+,\d+,\d+',likes_count) else 0
+            # else:
+            #     people_likes_num=0;
+            # print(people_likes_num)
+            # print(likes_count)
             return_list.append({
                 "url":item['url'],
-                "like_count":people_likes_num
+                "like_count":likes_count if likes_count!=None else 0
             })
         return return_list;
 
@@ -117,64 +125,76 @@ class FaceBook(Base):
     def fetch_user_tweets(self,id=None,deadline='2017-09-21',urls=[]):
         flag=True
         while True:
-            content = self.asynchronous_request(urls)
-            if re.search(r'(/posts)',urls):
-                origin_html = content[0]['content']
-            else:
-                origin = json.loads(content[0]['content'][9:])['domops']
-                origin_html = list(filter(lambda x: type(x) == dict, origin[0]))
+            try:
+                content = self.asynchronous_request(urls)
+                # print(content)
+                if re.search(r'(/posts)',urls):
+                    # print(content)
+                    origin_html = content[0]['content']
+                else:
+                    origin = json.loads(content[0]['content'][9:])['domops']
+                    origin_html = list(filter(lambda x: type(x) == dict, origin[0]))
+                    # print(origin_html)
+                    origin_html = origin_html[0]['__html']
                 # print(origin_html)
-                origin_html = origin_html[0]['__html']
-            # print(origin_html)
-            def scrape(i, e):
-                return {
-                    "name": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5 a').text(),
-                    "create_at": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr('title'),
-                    "last_untime": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr(
-                        'data-utime'),
-                    "permalink_url": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a').attr('href'),
-                    "message": pq(e)('div.userContent').text() + pq(e)('div.mtm').text()
-                }
-            _ = pq(origin_html)
-            tweets = list(_('div._4-u2._4-u8').map(scrape))
-            tweet3 = []
+                def scrape(i, e):
+                    return {
+                        "name": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5 a').text(),
+                        "create_at": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr('title'),
+                        "last_untime": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr(
+                            'data-utime'),
+                        "permalink_url": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a').attr('href'),
+                        "message": pq(e)('div.userContent').text() + pq(e)('div.mtm').text()
+                    }
+                _ = pq(origin_html)
+                tweets = list(_('div._4-u2._4-u8').map(scrape))
+                if(len(tweets)==0):
+                    break;
+                # print(tweets)
+                tweet3 = []
 
-            for x in filter(lambda x:x['create_at'],tweets):
-                # print(re.search(r'[年月日]',x['create_at']).group())
-                x['create_at']=re.sub(r'[年月日\(\)金木水火土]', ' ', x['create_at'])
-                x['create_at'] = datetime.strptime(x['create_at'], '%Y %m  %d    %H:%M').strftime('%Y-%m-%d %H:%M')
-                tweet3.append(x)
+                for x in filter(lambda x:x['create_at'],tweets):
+                    # print(re.search(r'[年月日]',x['create_at']).group())
+                    x['create_at']=re.sub(r'[年月日\(\)金木水火土]', ' ', x['create_at'])
+                    x['create_at'] = datetime.strptime(x['create_at'], '%Y %m  %d    %H:%M').strftime('%Y-%m-%d %H:%M')
+                    tweet3.append(x)
 
-            def dedupe(items, key=None):
-                seen = set()
-                for item in items:
-                    val = item if key is None else key(item)
-                    if val not in seen:
-                        yield item
-                        seen.add(val)
-            tweet3 = list(dedupe(tweet3, key=lambda d: (d['name'], d['create_at'],d['last_untime'],d['permalink_url'],d['message'])))
-            urls=self.make_next_page_url(urls,id,tweet3[-1]['last_untime'])
-            for item in tweet3:
-                reactions = self.crawler_reactions_nums('https://www.facebook.com%s' % item['permalink_url'])
-                item['share_num'] = reactions[0]['reactions']['share_count'] if reactions else 0
-                item['likes_num'] = reactions[0]['reactions']['likes_count'] if reactions else 0
-                item['comment_num']=reactions[0]['reactions']['comment_count'] if reactions else 0
-                item['site']='facebook'
-                item['latest']='true'
-                if deadline:
-                    date = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
-                    deadline_panduan = datetime.strptime('%s' % deadline, '%Y-%m-%d')
-                    print((date - deadline_panduan).days)
-                    if (date - deadline_panduan).days <= 0:
-                        flag=False;
-                        break;
-                # print(item)
-                object_id = self.save(item)
-                print('save %s ==>successfuly' % object_id)
-            if not flag or len(tweet3)<=1:
-                print('此用户的文章爬取完成')
-                break;
+                def dedupe(items, key=None):
+                    seen = set()
+                    for item in items:
+                        val = item if key is None else key(item)
+                        if val not in seen:
+                            yield item
+                            seen.add(val)
+                tweet3 = list(dedupe(tweet3, key=lambda d: (d['name'], d['create_at'],d['last_untime'],d['permalink_url'],d['message'])))
+                urls=self.make_next_page_url(urls,id,tweet3[-1]['last_untime'])
+                # reactions_urls = map(lambda x:'https://www.facebook.com%s' % x['permalink_url'],tweet3)
+                # reactions = self.crawler_reactions_nums(reactions_urls)
 
+                for item in tweet3:
+                    # print(item)
+                    item['site']='facebook'
+                    item['latest']='true'
+                    item['share_num'] = None  # reactions[0]['reactions']['share_count'] if reactions else 0
+                    item['likes_num'] = None  # reactions[0]['reactions']['likes_count'] if reactions else 0
+                    item['comment_num'] = None  # reactions[0]['reactions']['comment_count'] if reactions else 0
+                    item['user_id'] = id
+                    if deadline and tweet3.index(item)!= 0:
+                        date = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
+                        deadline_panduan = datetime.strptime('%s' % deadline, '%Y-%m-%d')
+                        print((date - deadline_panduan).days)
+                        if (date - deadline_panduan).days <= 0:
+                            flag=False;
+                            break;
+                    print(item['name'])
+                    object_id = self.save(item)
+                    print('save %s ==>successfuly' % object_id)
+                if not flag or len(tweet3)<=1:
+                    print('此用户的文章爬取完成')
+                    break;
+            except Exception as e:
+                print(e)
+                continue;
 
     def searchUserInfo(self,keyword=[],typeIndex=1):
         print(keyword[typeIndex])
@@ -253,7 +273,8 @@ class FaceBook(Base):
 
 if __name__ == '__main__':
     facebook = FaceBook()
+    facebook.crawler_reactions_nums('https://facebook.com/permalink.php?story_fbid=10155796394206704&id=101464786703')
     # result = facebook.crawler_user_likes('https://www.facebook.com/DonaldJTrumpJr/')
     # print(result)
-    facebook.fetch_user_tweets(id='295644160460352',urls='https://www.facebook.com/pages_reaction_units/more/?page_id=153080620724&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001509137254%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1')
+    # facebook.fetch_user_tweets(id='295644160460352',urls='https://www.facebook.com/pages_reaction_units/more/?page_id=153080620724&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001509137254%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1')
 

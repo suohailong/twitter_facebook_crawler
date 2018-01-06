@@ -21,6 +21,8 @@ requests-futures = "*"
 tornado = "*"
 aiohttp = "*"
 twython = "*"
+redis = "*"
+celery = "*"
 
 
 [dev-packages]

@@ -71,6 +71,11 @@ def serve():
             print('this cmd is only for facebook')
             quit()
         shedule.crawler_user_likes_counts(FaceBook(args))
+    elif args.cmd=='crawler_tweet_replay':
+        if args.site=='facebook':
+            print('this cmd is only for twitter')
+            quit()
+        shedule.crawler_tweets_replay_count(TWitter(args))
     else :
         print('请输入正确的命令')
 

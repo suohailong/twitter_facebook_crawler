@@ -17,13 +17,14 @@ import requests
 import bs4
 import re
 import datetime
-
+from pyquery import PyQuery as pq
+from src.redis_helper import RedisQueue
 
 class TWitter(Base,twython.Twython):
     """
     The RequestHandler class for our server.
     """
-    def __init__(self,args={}):
+    def __init__(self,args={},redis_config={"host": "127.0.0.1","port": 6379,"db":0}):
         #Base.__init__()
         super(TWitter,self).__init__()
 
@@ -39,6 +40,8 @@ class TWitter(Base,twython.Twython):
         self.__flag='twitter'
         self.api = tweepy.API(auth)
         self.args = args
+        # self.crawler_list_queue = RedisQueue(name='list',redis_config=redis_config)
+        # self.crawler_replay_queue = RedisQueue(name='replay', redis_config=redis_config)
 
     def fetch_user_tweets(self, user_id=None,deadline=None, bucket="timelines"):
 
@@ -60,36 +63,24 @@ class TWitter(Base,twython.Twython):
                 prev_max_id = current_max_id  # if no new tweets are found, the prev_max_id will be the same as current_max_id
 
                 for tweet in tweets:
-                    response = self.asynchronous_request("https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id']))
-                    # s = requests.Session()
-                    # response = requests.get(
-                    #     "https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id']))
-                    # # print(response.text)
-                    bs = bs4.BeautifulSoup(response[0]['content'], 'html.parser')
-                    html = bs.select(
-                        'button.ProfileTweet-actionButton.js-actionButton.js-actionReply span.ProfileTweet-actionCountForPresentation')[
-                        0]
-                    reply_count = html.text
-                    tweet['reply_count'] = reply_count
-                    tweet['site'] = 'twitter'
-                    # print(tweet['created_at'])
+                    # print(tweet)
                     if deadline:
                         date = datetime.datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S %z %Y')
                         deadline_panduan = datetime.datetime.strptime('%s +0000' % deadline,'%Y-%m-%d %z')
                         if (date-deadline_panduan).days<=0:
                             break;
-                        list = self.crawler_list_count(tweet['user']['screen_name'])
-                        tweet['list_num']=list
+                        # list = self.crawler_list_count(tweet['user']['screen_name'])
+                        # tweet['list_num']=list
                         tweet['site']='twitter'
                         tweet['latest']='true'
                         # print('存入mongo')
+
                         object_id = self.save(tweet)
                         print('save %s ==>successfuly' % object_id)
-                    # time_line = re.search(r'\w{3}\sOct\s\d{2}\s\d{2}:\d{2}:\d{2}\s\+\d{4}\s2017',tweet['create_at'])
+                    time_line = re.search(r'\w{3}\sOct\s\d{2}\s\d{2}:\d{2}:\d{2}\s\+\d{4}\s2017',tweet['create_at'])
                     if current_max_id == 0 or current_max_id > int(tweet['id']):
                         current_max_id = int(tweet['id'])
-
-
+                time.sleep(1)
                 # no new tweets found
                 if (prev_max_id == current_max_id):
                     print('此用户文章抓取完成 %s ' % user_id)
@@ -104,16 +95,82 @@ class TWitter(Base,twython.Twython):
                 "https://twitter.com/%s" % user_sreen_name)
             # print(response.text)
             bs = bs4.BeautifulSoup(reponse[0]['content'], 'html.parser')
-            html = bs.select(
-                '#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--lists > a > span.ProfileNav-value')[
-                0]
-            list_count = html.text
+            list_html = bs.select(
+                '#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--lists > a > span.ProfileNav-value')
+            moment_html = bs.select('#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--moments > a > span.ProfileNav-value')
+            print(list_html,moment_html)
+            list_count = list_html[0].text if len(list_html)>0 else 0
+            moment_count = moment_html[0].text if len(moment_html)>0 else 0
             # print(list_count)
-            return list_count
+            return (list_count,moment_count)
         except Exception as e:
             print(e)
-            return 0
+            return None,None
+    def crawler_replay_num(self,urls):
+        try:
+            response = self.asynchronous_request(urls)
+            # s = requests.Session()
+            # response = requests.get(
+            #     "https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id']))
+            # # print(response.text)
+            result_list = []
+            for item in response:
+                # print(item)
+                try:
+                    _ = pq(item['content'])
+                    # bs = bs4.BeautifulSoup(item['content'], 'html.parser')
+                    # html = bs.select(
+                    # print('你是个什么东西')
+                    # print(_('div.inline-reply-tweetbox-container').html())
+                    replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--reply.u-hiddenVisually>span').attr('data-tweet-stat-count')
+                    retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--retweet.u-hiddenVisually>span').attr('data-tweet-stat-count')
+                    like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--favorite.u-hiddenVisually>span').attr('data-tweet-stat-count')
 
+                    # replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--reply').text()
+                    # retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--retweet.js-toggleState.js-toggleRt').text()
+                    # like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--favorite.js-toggleState').text()
+
+                    # replay_re = re.search(r'(\d+,\d+)|\d+',replay)
+                    # retweet_re = re.search(r'(\d+,\d+)|\d+',retweet)
+                    # like_re = re.search(r'(\d+,\d+)|\d+',like)
+
+                    # print(item['url'].split('/')[-1])
+                    # replay2 = _('div.PermalinkOverlay-content > div > div > div.permalink.light-inline-actions.stream-uncapped.has-replies.original-permalink-page > div.permalink-inner.permalink-tweet-container.ThreadedConversation.ThreadedConversation--permalinkTweetWithAncestors > div > div.stream-item-footer > div.ProfileTweet-actionList.js-actions > div.ProfileTweet-action.ProfileTweet-action--reply > button > span > span').text()
+                    print('html内容:')
+                    print(replay)
+                    print(retweet)
+                    print(like)
+                    print('处理后的结果:')
+                    print({
+                        "url":item['url'],
+                        "reply_count":replay if replay else 0,
+                        "retweet_count":retweet if retweet else 0,
+                        "favorite_count":like if like else 0
+                    })
+                    print('\n\n')
+
+
+                    # reply_count = replay if replay.isalnum() and not replay.isspace() else 0#html.text
+                    result_list.append({
+                        "url":item['url'],
+                        "reply_count":replay if replay else 0,
+                        "retweet_count":retweet if retweet else 0,
+                        "favorite_count":like if like else 0
+                    })
+                except Exception as e:
+                    print(e)
+                    result_list.append({
+                        "url": item['url'],
+                        "reply_count": None,
+                        "retweet_count":None,
+                        "favorite_count":None
+                    })
+            return result_list
+        except Exception as e:
+            print(e)
+            return 0;
+        # tweet['reply_count'] = reply_count
+        # print(tweet['created_at'])
     def search_users(self, keyword=[],typeIndex=1):
         try:
             def handle(y):
@@ -147,7 +204,10 @@ class TWitter(Base,twython.Twython):
 
 if __name__ == '__main__':
     twitter = TWitter()
-    #doc = twitter.fetch_user_timeline(user_id='2543008999',deadline='2017-11-10')
-    # twitter.crawler_list_count(user_sreen_name='mike_pence')
+    # twitter
+    # doc = twitter.fetch_user_tweets(user_id='15949499',deadline='2017-12-10')
+    # print(twitter.crawler_list_count(user_sreen_name='RepDianaDeGette'))
+    repaly = twitter.crawler_replay_num('https://twitter.com/realDonaldTrump/status/930089374187950081')
+    print(repaly)
 
 
