@@ -1,5 +1,7 @@
-import sys,os,json
-sys.path.append(".")
+import sys,os,json,time
+sys.path.append('.')
+#print(sys.path)
+
 
 from  src.redis_helper import  RedisQueue
 
@@ -12,7 +14,7 @@ if __name__ == '__main__':
 
         # print(twitter_crawler_queue.get_key())
         for id in user_ids['ids']:
-            # print(id)
+            print(id)
             twitter_crawler_queue.put(id)
-
+            time.sleep(1)
         # print(twitter_crawler_queue.qsize())

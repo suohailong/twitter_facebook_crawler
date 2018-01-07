@@ -16,17 +16,20 @@ def crawler_init(name='twitter'):
     print('<-----初始化程序----->')
     if name == 'twitter':
         twitter_crawler_queue = RedisQueue(name='twitter')
-        with open(os.path.abspath('twitter_user_ids.json'), 'r') as f:
-            user_ids = json.load(f)
-            for id in user_ids['ids']:
-                twitter_crawler_queue.put(id)
+        if twitter_crawler_queue.qsize() == 0:
+            with open(os.path.abspath('twitter_user_ids.json'), 'r') as f:
+                user_ids = json.load(f)
+                for id in user_ids['ids']:
+                    twitter_crawler_queue.put(id)
     else:
         facebook_crawler_queue = RedisQueue(name='facebook')
-        with open(os.path.abspath('facebook_user_ids.json'), 'r') as f:
-            user_ids = json.load(f)
-            for id in user_ids['ids']:
-                facebook_crawler_queue.put(id)
+        if facebook_crawler_queue.qsize()==0:
+            with open(os.path.abspath('facebook_user_ids.json'), 'r') as f:
+                user_ids = json.load(f)
+                for id in user_ids['ids']:
+                    facebook_crawler_queue.put(id)
     print('<-----初始化成功------>')
+
 
 
 def serve():
@@ -116,4 +119,5 @@ def serve():
 
 
 if __name__ == "__main__":
+    print('我朝你妈妈的')
     serve()

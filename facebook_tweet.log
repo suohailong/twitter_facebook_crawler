@@ -1,0 +1,250 @@
+我朝你妈妈的
+<-----初始化程序----->
+<-----初始化成功------>
+<-----启动文章抓取----->
+connected==>mongodb://127.0.0.1:27017
+[===未抓取的的id个数为:11173===]
+request ===>: https://www.facebook.com/RepLeeZeldin/posts/ 
+save 5a50f60b4c7ffb69f26966ed ==>successfuly
+106
+save 5a50f60b4c7ffb69f26966ee ==>successfuly
+105
+save 5a50f60b4c7ffb69f26966ef ==>successfuly
+103
+save 5a50f60b4c7ffb69f26966f0 ==>successfuly
+100
+save 5a50f60b4c7ffb69f26966f1 ==>successfuly
+98
+save 5a50f60b4c7ffb69f26966f2 ==>successfuly
+97
+save 5a50f60b4c7ffb69f26966f3 ==>successfuly
+96
+save 5a50f60b4c7ffb69f26966f4 ==>successfuly
+95
+save 5a50f60b4c7ffb69f26966f5 ==>successfuly
+92
+save 5a50f60b4c7ffb69f26966f6 ==>successfuly
+91
+save 5a50f60b4c7ffb69f26966f7 ==>successfuly
+91
+save 5a50f60b4c7ffb69f26966f8 ==>successfuly
+89
+save 5a50f60b4c7ffb69f26966f9 ==>successfuly
+89
+save 5a50f60b4c7ffb69f26966fa ==>successfuly
+89
+save 5a50f60b4c7ffb69f26966fb ==>successfuly
+89
+save 5a50f60b4c7ffb69f26966fc ==>successfuly
+86
+save 5a50f60b4c7ffb69f26966fd ==>successfuly
+86
+save 5a50f60b4c7ffb69f26966fe ==>successfuly
+84
+save 5a50f60b4c7ffb69f26966ff ==>successfuly
+82
+save 5a50f60b4c7ffb69f2696700 ==>successfuly
+request ===>: https://www.facebook.com/pages_reaction_units/more/?page_id=386192271549563&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001513116000%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1 
+save 5a50f60e4c7ffb69f2696701 ==>successfuly
+81
+save 5a50f60e4c7ffb69f2696702 ==>successfuly
+78
+save 5a50f60e4c7ffb69f2696703 ==>successfuly
+77
+save 5a50f60e4c7ffb69f2696704 ==>successfuly
+76
+save 5a50f60e4c7ffb69f2696705 ==>successfuly
+75
+save 5a50f60e4c7ffb69f2696706 ==>successfuly
+74
+save 5a50f60e4c7ffb69f2696707 ==>successfuly
+74
+save 5a50f60e4c7ffb69f2696708 ==>successfuly
+72
+save 5a50f60e4c7ffb69f2696709 ==>successfuly
+71
+save 5a50f60e4c7ffb69f269670a ==>successfuly
+70
+save 5a50f60e4c7ffb69f269670b ==>successfuly
+69
+save 5a50f60e4c7ffb69f269670c ==>successfuly
+68
+save 5a50f60e4c7ffb69f269670d ==>successfuly
+63
+save 5a50f60e4c7ffb69f269670e ==>successfuly
+61
+save 5a50f60e4c7ffb69f269670f ==>successfuly
+60
+save 5a50f60e4c7ffb69f2696710 ==>successfuly
+58
+save 5a50f60e4c7ffb69f2696711 ==>successfuly
+57
+save 5a50f60e4c7ffb69f2696712 ==>successfuly
+56
+save 5a50f60e4c7ffb69f2696713 ==>successfuly
+56
+save 5a50f60e4c7ffb69f2696714 ==>successfuly
+request ===>: https://www.facebook.com/pages_reaction_units/more/?page_id=386192271549563&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001510865552%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1 
+save 5a50f6104c7ffb69f2696715 ==>successfuly
+56
+save 5a50f6104c7ffb69f2696716 ==>successfuly
+55
+save 5a50f6104c7ffb69f2696717 ==>successfuly
+53
+save 5a50f6104c7ffb69f2696718 ==>successfuly
+53
+save 5a50f6104c7ffb69f2696719 ==>successfuly
+51
+save 5a50f6104c7ffb69f269671a ==>successfuly
+50
+save 5a50f6104c7ffb69f269671b ==>successfuly
+50
+save 5a50f6104c7ffb69f269671c ==>successfuly
+47
+save 5a50f6104c7ffb69f269671d ==>successfuly
+47
+save 5a50f6104c7ffb69f269671e ==>successfuly
+46
+save 5a50f6104c7ffb69f269671f ==>successfuly
+43
+save 5a50f6104c7ffb69f2696720 ==>successfuly
+42
+save 5a50f6104c7ffb69f2696721 ==>successfuly
+41
+save 5a50f6104c7ffb69f2696722 ==>successfuly
+40
+save 5a50f6104c7ffb69f2696723 ==>successfuly
+36
+save 5a50f6104c7ffb69f2696724 ==>successfuly
+36
+save 5a50f6104c7ffb69f2696725 ==>successfuly
+36
+save 5a50f6104c7ffb69f2696726 ==>successfuly
+35
+save 5a50f6104c7ffb69f2696727 ==>successfuly
+35
+save 5a50f6104c7ffb69f2696728 ==>successfuly
+request ===>: https://www.facebook.com/pages_reaction_units/more/?page_id=386192271549563&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001509041538%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1 
+save 5a50f6124c7ffb69f2696729 ==>successfuly
+34
+save 5a50f6124c7ffb69f269672a ==>successfuly
+34
+save 5a50f6124c7ffb69f269672b ==>successfuly
+32
+save 5a50f6124c7ffb69f269672c ==>successfuly
+32
+save 5a50f6124c7ffb69f269672d ==>successfuly
+32
+save 5a50f6124c7ffb69f269672e ==>successfuly
+30
+save 5a50f6124c7ffb69f269672f ==>successfuly
+29
+save 5a50f6124c7ffb69f2696730 ==>successfuly
+27
+save 5a50f6124c7ffb69f2696731 ==>successfuly
+26
+save 5a50f6124c7ffb69f2696732 ==>successfuly
+26
+save 5a50f6124c7ffb69f2696733 ==>successfuly
+25
+save 5a50f6124c7ffb69f2696734 ==>successfuly
+23
+save 5a50f6124c7ffb69f2696735 ==>successfuly
+22
+save 5a50f6124c7ffb69f2696736 ==>successfuly
+22
+save 5a50f6124c7ffb69f2696737 ==>successfuly
+21
+save 5a50f6124c7ffb69f2696738 ==>successfuly
+20
+save 5a50f6124c7ffb69f2696739 ==>successfuly
+20
+save 5a50f6124c7ffb69f269673a ==>successfuly
+19
+save 5a50f6124c7ffb69f269673b ==>successfuly
+18
+save 5a50f6124c7ffb69f269673c ==>successfuly
+request ===>: https://www.facebook.com/pages_reaction_units/more/?page_id=386192271549563&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001507591800%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1 
+save 5a50f6144c7ffb69f269673d ==>successfuly
+18
+save 5a50f6144c7ffb69f269673e ==>successfuly
+18
+save 5a50f6144c7ffb69f269673f ==>successfuly
+15
+save 5a50f6144c7ffb69f2696740 ==>successfuly
+12
+save 5a50f6144c7ffb69f2696741 ==>successfuly
+11
+save 5a50f6144c7ffb69f2696742 ==>successfuly
+11
+save 5a50f6144c7ffb69f2696743 ==>successfuly
+8
+save 5a50f6144c7ffb69f2696744 ==>successfuly
+8
+save 5a50f6144c7ffb69f2696745 ==>successfuly
+8
+save 5a50f6144c7ffb69f2696746 ==>successfuly
+7
+save 5a50f6144c7ffb69f2696747 ==>successfuly
+6
+save 5a50f6144c7ffb69f2696748 ==>successfuly
+6
+save 5a50f6144c7ffb69f2696749 ==>successfuly
+6
+save 5a50f6144c7ffb69f269674a ==>successfuly
+5
+save 5a50f6144c7ffb69f269674b ==>successfuly
+1
+save 5a50f6144c7ffb69f269674c ==>successfuly
+1
+save 5a50f6144c7ffb69f269674d ==>successfuly
+1
+save 5a50f6144c7ffb69f269674e ==>successfuly
+-1
+此用户的文章爬取完成
+[===未抓取的的id个数为:11172===]
+request ===>: https://www.facebook.com/TedYohoforCongress/posts/ 
+save 5a50f6174c7ffb69f269674f ==>successfuly
+102
+save 5a50f6174c7ffb69f2696750 ==>successfuly
+95
+save 5a50f6174c7ffb69f2696751 ==>successfuly
+94
+save 5a50f6174c7ffb69f2696752 ==>successfuly
+86
+save 5a50f6174c7ffb69f2696753 ==>successfuly
+85
+save 5a50f6174c7ffb69f2696754 ==>successfuly
+77
+save 5a50f6174c7ffb69f2696755 ==>successfuly
+76
+save 5a50f6174c7ffb69f2696756 ==>successfuly
+63
+save 5a50f6174c7ffb69f2696757 ==>successfuly
+63
+save 5a50f6174c7ffb69f2696758 ==>successfuly
+51
+save 5a50f6174c7ffb69f2696759 ==>successfuly
+51
+save 5a50f6174c7ffb69f269675a ==>successfuly
+50
+save 5a50f6174c7ffb69f269675b ==>successfuly
+36
+save 5a50f6174c7ffb69f269675c ==>successfuly
+33
+save 5a50f6174c7ffb69f269675d ==>successfuly
+18
+save 5a50f6174c7ffb69f269675e ==>successfuly
+16
+save 5a50f6174c7ffb69f269675f ==>successfuly
+14
+save 5a50f6174c7ffb69f2696760 ==>successfuly
+12
+save 5a50f6174c7ffb69f2696761 ==>successfuly
+10
+save 5a50f6174c7ffb69f2696762 ==>successfuly
+request ===>: https://www.facebook.com/pages_reaction_units/more/?page_id=199941253369553&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001506862724%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1 
+发生了错误
+Cannot connect to host www.facebook.com:443 ssl:True [None]
+'NoneType' object is not subscriptable
+request ===>: https://www.facebook.com/pages_reaction_units/more/?page_id=199941253369553&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001506862724%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1 

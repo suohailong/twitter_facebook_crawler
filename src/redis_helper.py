@@ -74,7 +74,7 @@ class RedisQueue(RedisBase):
                 item = self.conn().rpop(self.key)
 
         if item:
-            item = json.loads(item[1])
+            item = json.loads(item[1].decode())
         return item
 
     def get_nowait(self):

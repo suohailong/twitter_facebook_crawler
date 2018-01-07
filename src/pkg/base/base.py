@@ -29,7 +29,7 @@ class Base(object):
                     async with ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
                         # session.keep_alive=False
                         try:
-                            async with session.get(url['url'], proxy="http://127.0.0.1:51545",
+                            async with session.get(url['url'], proxy="127.0.0.1:43211",
                                                    headers={'CONNECTION': 'close'}) as response:
                                 response = await response.read()
                                 # print(response.headers)

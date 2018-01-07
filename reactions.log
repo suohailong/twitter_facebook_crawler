@@ -1,0 +1,2198 @@
+我朝你妈妈的
+<=====启动facebook_reactions抓取====>
+connected==>mongodb://127.0.0.1:27017
+[===未抓取的个数为:0===]
+request ===>: https://facebook.com/RepLeeZeldin/posts/873333126168806 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/872792416222877/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/871266259708826 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/870794399756012/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/870268513141934 
+request ===>: https://facebook.com/RepLeeZeldin/videos/869802409855211/ 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.464375777064545.1073741829.386192271549563/869381299897322/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/869356496566469 
+request ===>: https://facebook.com/RepLeeZeldin/posts/867704103398375 
+request ===>: https://facebook.com/RepLeeZeldin/posts/867513383417447 
+request ===>: https://facebook.com/RepLeeZeldin/posts/867143206787798 
+request ===>: https://facebook.com/RepLeeZeldin/videos/866629920172460/ 
+request ===>: https://facebook.com/RepLeeZeldin/posts/865982016903917 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/863221580513294/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/862071350628317 
+request ===>: https://facebook.com/RepLeeZeldin/posts/861689560666496 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.464375777064545.1073741829.386192271549563/860476547454464/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.464375777064545.1073741829.386192271549563/860076937494425/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/859533390882113/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/859482187553900 
+{'share_count': '1', 'likes_count': '163', 'comment_count': '80'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/873333126168806', 'id': '5a50f60e4c7ffb69f2696701'}
+5a50f60e4c7ffb69f2696701
+更新了5a50f60e4c7ffb69f2696701个
+{'share_count': '13', 'likes_count': '122', 'comment_count': '45'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/872792416222877/?type=3', 'id': '5a50f60e4c7ffb69f2696702'}
+5a50f60e4c7ffb69f2696702
+更新了5a50f60e4c7ffb69f2696702个
+{'share_count': '12', 'likes_count': '51', 'comment_count': '21'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/871266259708826', 'id': '5a50f60e4c7ffb69f2696703'}
+5a50f60e4c7ffb69f2696703
+更新了5a50f60e4c7ffb69f2696703个
+{'share_count': '24', 'likes_count': '164', 'comment_count': '37'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/870794399756012/?type=3', 'id': '5a50f60e4c7ffb69f2696704'}
+5a50f60e4c7ffb69f2696704
+更新了5a50f60e4c7ffb69f2696704个
+{'share_count': '41', 'likes_count': '429', 'comment_count': '248'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/870268513141934', 'id': '5a50f60e4c7ffb69f2696705'}
+5a50f60e4c7ffb69f2696705
+更新了5a50f60e4c7ffb69f2696705个
+{'share_count': '36', 'likes_count': '211', 'comment_count': '83'}
+{'url': 'https://facebook.com/RepLeeZeldin/videos/869802409855211/', 'id': '5a50f60e4c7ffb69f2696706'}
+5a50f60e4c7ffb69f2696706
+更新了5a50f60e4c7ffb69f2696706个
+{'share_count': '27', 'likes_count': '321', 'comment_count': '154'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.464375777064545.1073741829.386192271549563/869381299897322/?type=3', 'id': '5a50f60e4c7ffb69f2696707'}
+5a50f60e4c7ffb69f2696707
+更新了5a50f60e4c7ffb69f2696707个
+{'share_count': '3', 'likes_count': '112', 'comment_count': '40'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/869356496566469', 'id': '5a50f60e4c7ffb69f2696708'}
+5a50f60e4c7ffb69f2696708
+更新了5a50f60e4c7ffb69f2696708个
+{'share_count': '58', 'likes_count': '59', 'comment_count': '367'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/867704103398375', 'id': '5a50f60e4c7ffb69f2696709'}
+5a50f60e4c7ffb69f2696709
+更新了5a50f60e4c7ffb69f2696709个
+{'share_count': '21', 'likes_count': '82', 'comment_count': '64'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/867513383417447', 'id': '5a50f60e4c7ffb69f269670a'}
+5a50f60e4c7ffb69f269670a
+更新了5a50f60e4c7ffb69f269670a个
+{'share_count': '38', 'likes_count': '109', 'comment_count': '130'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/867143206787798', 'id': '5a50f60e4c7ffb69f269670b'}
+5a50f60e4c7ffb69f269670b
+更新了5a50f60e4c7ffb69f269670b个
+{'share_count': '22', 'likes_count': '89', 'comment_count': '87'}
+{'url': 'https://facebook.com/RepLeeZeldin/videos/866629920172460/', 'id': '5a50f60e4c7ffb69f269670c'}
+5a50f60e4c7ffb69f269670c
+更新了5a50f60e4c7ffb69f269670c个
+{'share_count': '20', 'likes_count': '189', 'comment_count': '128'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/865982016903917', 'id': '5a50f60e4c7ffb69f269670d'}
+5a50f60e4c7ffb69f269670d
+更新了5a50f60e4c7ffb69f269670d个
+{'share_count': '0', 'likes_count': '271', 'comment_count': '56'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/863221580513294/?type=3', 'id': '5a50f60e4c7ffb69f269670e'}
+5a50f60e4c7ffb69f269670e
+更新了5a50f60e4c7ffb69f269670e个
+{'share_count': '0', 'likes_count': '32', 'comment_count': '71'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/862071350628317', 'id': '5a50f60e4c7ffb69f269670f'}
+5a50f60e4c7ffb69f269670f
+更新了5a50f60e4c7ffb69f269670f个
+{'share_count': '2', 'likes_count': '79', 'comment_count': '42'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/861689560666496', 'id': '5a50f60e4c7ffb69f2696710'}
+5a50f60e4c7ffb69f2696710
+更新了5a50f60e4c7ffb69f2696710个
+{'share_count': '0', 'likes_count': '63', 'comment_count': '26'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.464375777064545.1073741829.386192271549563/860476547454464/?type=3', 'id': '5a50f60e4c7ffb69f2696711'}
+5a50f60e4c7ffb69f2696711
+更新了5a50f60e4c7ffb69f2696711个
+{'share_count': '1', 'likes_count': '57', 'comment_count': '24'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.464375777064545.1073741829.386192271549563/860076937494425/?type=3', 'id': '5a50f60e4c7ffb69f2696712'}
+5a50f60e4c7ffb69f2696712
+更新了5a50f60e4c7ffb69f2696712个
+{'share_count': '1', 'likes_count': '50', 'comment_count': '18'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/859533390882113/?type=3', 'id': '5a50f60e4c7ffb69f2696713'}
+5a50f60e4c7ffb69f2696713
+更新了5a50f60e4c7ffb69f2696713个
+{'share_count': '25', 'likes_count': '349', 'comment_count': '217'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/859482187553900', 'id': '5a50f60e4c7ffb69f2696714'}
+5a50f60e4c7ffb69f2696714
+更新了5a50f60e4c7ffb69f2696714个
+[===未抓取的个数为:0===]
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/849038205264965/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/848606108641508 
+request ===>: https://facebook.com/RepLeeZeldin/posts/848560575312728 
+request ===>: https://facebook.com/RepLeeZeldin/posts/847647305404055 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/847633205405465/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/847527278749391 
+request ===>: https://facebook.com/RepLeeZeldin/posts/846653045503481 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/846271632208289/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/845352905633495 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/844941372341315/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/844859439016175 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/844408235727962/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/843524042483048 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/843022182533234/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/842953995873386 
+request ===>: https://facebook.com/RepLeeZeldin/posts/842441429257976 
+request ===>: https://facebook.com/RepLeeZeldin/posts/842151082620344 
+request ===>: https://facebook.com/RepLeeZeldin/posts/842066862628766 
+request ===>: https://facebook.com/RepLeeZeldin/posts/841566569345462 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/841242316044554/?type=3 
+{'share_count': '1', 'likes_count': '82', 'comment_count': '33'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/849038205264965/?type=3', 'id': '5a50f6124c7ffb69f2696729'}
+5a50f6124c7ffb69f2696729
+更新了5a50f6124c7ffb69f2696729个
+{'share_count': '0', 'likes_count': '14', 'comment_count': '28'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/848606108641508', 'id': '5a50f6124c7ffb69f269672a'}
+5a50f6124c7ffb69f269672a
+更新了5a50f6124c7ffb69f269672a个
+{'share_count': '15', 'likes_count': '98', 'comment_count': '75'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/848560575312728', 'id': '5a50f6124c7ffb69f269672b'}
+5a50f6124c7ffb69f269672b
+更新了5a50f6124c7ffb69f269672b个
+{'share_count': '16', 'likes_count': '128', 'comment_count': '37'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/847647305404055', 'id': '5a50f6124c7ffb69f269672c'}
+5a50f6124c7ffb69f269672c
+更新了5a50f6124c7ffb69f269672c个
+{'share_count': '1', 'likes_count': '45', 'comment_count': '28'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/847633205405465/?type=3', 'id': '5a50f6124c7ffb69f269672d'}
+5a50f6124c7ffb69f269672d
+更新了5a50f6124c7ffb69f269672d个
+{'share_count': '1', 'likes_count': '64', 'comment_count': '42'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/847527278749391', 'id': '5a50f6124c7ffb69f269672e'}
+5a50f6124c7ffb69f269672e
+更新了5a50f6124c7ffb69f269672e个
+{'share_count': '2', 'likes_count': '62', 'comment_count': '39'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/846653045503481', 'id': '5a50f6124c7ffb69f269672f'}
+5a50f6124c7ffb69f269672f
+更新了5a50f6124c7ffb69f269672f个
+{'share_count': '0', 'likes_count': '122', 'comment_count': '39'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/846271632208289/?type=3', 'id': '5a50f6124c7ffb69f2696730'}
+5a50f6124c7ffb69f2696730
+更新了5a50f6124c7ffb69f2696730个
+{'share_count': '0', 'likes_count': '41', 'comment_count': '33'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/845352905633495', 'id': '5a50f6124c7ffb69f2696731'}
+5a50f6124c7ffb69f2696731
+更新了5a50f6124c7ffb69f2696731个
+{'share_count': '1', 'likes_count': '49', 'comment_count': '28'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/844941372341315/?type=3', 'id': '5a50f6124c7ffb69f2696732'}
+5a50f6124c7ffb69f2696732
+更新了5a50f6124c7ffb69f2696732个
+{'share_count': '0', 'likes_count': '81', 'comment_count': '25'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/844859439016175', 'id': '5a50f6124c7ffb69f2696733'}
+5a50f6124c7ffb69f2696733
+更新了5a50f6124c7ffb69f2696733个
+{'share_count': '2', 'likes_count': '69', 'comment_count': '20'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/844408235727962/?type=3', 'id': '5a50f6124c7ffb69f2696734'}
+5a50f6124c7ffb69f2696734
+更新了5a50f6124c7ffb69f2696734个
+{'share_count': '41', 'likes_count': '109', 'comment_count': '105'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/843524042483048', 'id': '5a50f6124c7ffb69f2696735'}
+5a50f6124c7ffb69f2696735
+更新了5a50f6124c7ffb69f2696735个
+{'share_count': '0', 'likes_count': '100', 'comment_count': '16'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/843022182533234/?type=3', 'id': '5a50f6124c7ffb69f2696736'}
+5a50f6124c7ffb69f2696736
+更新了5a50f6124c7ffb69f2696736个
+{'share_count': '36', 'likes_count': '222', 'comment_count': '173'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/842953995873386', 'id': '5a50f6124c7ffb69f2696737'}
+5a50f6124c7ffb69f2696737
+更新了5a50f6124c7ffb69f2696737个
+{'share_count': '1', 'likes_count': '63', 'comment_count': '17'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/842441429257976', 'id': '5a50f6124c7ffb69f2696738'}
+5a50f6124c7ffb69f2696738
+更新了5a50f6124c7ffb69f2696738个
+{'share_count': '18', 'likes_count': '105', 'comment_count': '84'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/842151082620344', 'id': '5a50f6124c7ffb69f2696739'}
+5a50f6124c7ffb69f2696739
+更新了5a50f6124c7ffb69f2696739个
+{'share_count': '30', 'likes_count': '145', 'comment_count': '35'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/842066862628766', 'id': '5a50f6124c7ffb69f269673a'}
+5a50f6124c7ffb69f269673a
+更新了5a50f6124c7ffb69f269673a个
+{'share_count': '3', 'likes_count': '59', 'comment_count': '108'}
+{'url': 'https://facebook.com/RepLeeZeldin/posts/841566569345462', 'id': '5a50f6124c7ffb69f269673b'}
+5a50f6124c7ffb69f269673b
+更新了5a50f6124c7ffb69f269673b个
+{'share_count': '12', 'likes_count': '107', 'comment_count': '82'}
+{'url': 'https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/841242316044554/?type=3', 'id': '5a50f6124c7ffb69f269673c'}
+5a50f6124c7ffb69f269673c
+更新了5a50f6124c7ffb69f269673c个
+[===未抓取的个数为:1===]
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/841242316044554/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/841241266044659/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/841240026044783/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/839859506182835 
+request ===>: https://facebook.com/RepLeeZeldin/posts/838399056328880 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/838063266362459/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/837955033039949 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/836739303161522/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.464375777064545.1073741829.386192271549563/836652493170203/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/836615163173936/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/836189363216516 
+request ===>: https://facebook.com/RepLeeZeldin/posts/835854503250002 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/835781476590638/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/835735949928524/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/posts/835319726636813 
+request ===>: https://facebook.com/RepLeeZeldin/photos/a.387918101376980.1073741828.386192271549563/833559760146143/?type=3 
+request ===>: https://facebook.com/RepLeeZeldin/videos/833610633474389/ 
+request ===>: https://facebook.com/RepLeeZeldin/posts/833562616812524 
+发生了错误
+Response payload is not completed
+Traceback (most recent call last):
+  File "./src/shedule.py", line 100, in crawler_reactions
+    for item in content:
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/index.py", line 123, in <module>
+    serve()
+  File "./src/index.py", line 94, in serve
+    shedule.crawler_reactions(FaceBook(args))
+  File "./src/shedule.py", line 119, in crawler_reactions
+    print(e.with_traceback())
+TypeError: with_traceback() takes exactly one argument (0 given)
+我朝你妈妈的
+<=====启动facebook_reactions抓取====>
+connected==>mongodb://127.0.0.1:27017
+[===未抓取的个数为:3===]
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2306307889395176 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2304826099543355 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2304354456257186 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2294409457251686 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2291404317552200/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2288868577805774 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2283333348359297 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2283038825055416/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2282996735059625 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2281974838495148 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2277769865582312 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2277434345615864 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2275707812455184 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2273269956032303/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2273156902710275 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2273050006054298/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2269851319707500 
+request ===>: https://facebook.com/CongressmanTedYoho/videos/2265431313482834/ 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2264994473526518 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2264085216950777 
+{'share_count': '16', 'likes_count': '59', 'comment_count': '78'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2306307889395176', 'id': '5a50f61f4c7ffb69f269676a'}
+5a50f61f4c7ffb69f269676a
+更新了5a50f61f4c7ffb69f269676a个
+{'share_count': '0', 'likes_count': '37', 'comment_count': '42'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2304826099543355', 'id': '5a50f61f4c7ffb69f269676b'}
+5a50f61f4c7ffb69f269676b
+更新了5a50f61f4c7ffb69f269676b个
+{'share_count': '0', 'likes_count': '23', 'comment_count': '17'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2304354456257186', 'id': '5a50f61f4c7ffb69f269676c'}
+5a50f61f4c7ffb69f269676c
+更新了5a50f61f4c7ffb69f269676c个
+{'share_count': '28', 'likes_count': '35', 'comment_count': '13'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2294409457251686', 'id': '5a50f61f4c7ffb69f269676d'}
+5a50f61f4c7ffb69f269676d
+更新了5a50f61f4c7ffb69f269676d个
+{'share_count': '2', 'likes_count': '149', 'comment_count': '53'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2291404317552200/?type=3', 'id': '5a50f61f4c7ffb69f269676e'}
+5a50f61f4c7ffb69f269676e
+更新了5a50f61f4c7ffb69f269676e个
+{'share_count': '3', 'likes_count': '110', 'comment_count': '72'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2288868577805774', 'id': '5a50f61f4c7ffb69f269676f'}
+5a50f61f4c7ffb69f269676f
+更新了5a50f61f4c7ffb69f269676f个
+{'share_count': '32', 'likes_count': '291', 'comment_count': '256'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2283333348359297', 'id': '5a50f61f4c7ffb69f2696770'}
+5a50f61f4c7ffb69f2696770
+更新了5a50f61f4c7ffb69f2696770个
+{'share_count': '1', 'likes_count': '74', 'comment_count': '114'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2283038825055416/?type=3', 'id': '5a50f61f4c7ffb69f2696771'}
+5a50f61f4c7ffb69f2696771
+更新了5a50f61f4c7ffb69f2696771个
+{'share_count': '23', 'likes_count': '78', 'comment_count': '99'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2282996735059625', 'id': '5a50f61f4c7ffb69f2696772'}
+5a50f61f4c7ffb69f2696772
+更新了5a50f61f4c7ffb69f2696772个
+{'share_count': '11', 'likes_count': '29', 'comment_count': '10'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2281974838495148', 'id': '5a50f61f4c7ffb69f2696773'}
+5a50f61f4c7ffb69f2696773
+更新了5a50f61f4c7ffb69f2696773个
+{'share_count': '1', 'likes_count': '89', 'comment_count': '22'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2277769865582312', 'id': '5a50f61f4c7ffb69f2696774'}
+5a50f61f4c7ffb69f2696774
+更新了5a50f61f4c7ffb69f2696774个
+{'share_count': '27', 'likes_count': '61', 'comment_count': '79'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2277434345615864', 'id': '5a50f61f4c7ffb69f2696775'}
+5a50f61f4c7ffb69f2696775
+更新了5a50f61f4c7ffb69f2696775个
+{'share_count': '1', 'likes_count': '64', 'comment_count': '48'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2275707812455184', 'id': '5a50f61f4c7ffb69f2696776'}
+5a50f61f4c7ffb69f2696776
+更新了5a50f61f4c7ffb69f2696776个
+{'share_count': '3', 'likes_count': '28', 'comment_count': '5'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2273269956032303/?type=3', 'id': '5a50f61f4c7ffb69f2696777'}
+5a50f61f4c7ffb69f2696777
+更新了5a50f61f4c7ffb69f2696777个
+{'share_count': '3', 'likes_count': '34', 'comment_count': '42'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2273156902710275', 'id': '5a50f61f4c7ffb69f2696778'}
+5a50f61f4c7ffb69f2696778
+更新了5a50f61f4c7ffb69f2696778个
+{'share_count': '13', 'likes_count': '71', 'comment_count': '30'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2273050006054298/?type=3', 'id': '5a50f61f4c7ffb69f2696779'}
+5a50f61f4c7ffb69f2696779
+更新了5a50f61f4c7ffb69f2696779个
+{'share_count': '0', 'likes_count': '73', 'comment_count': '20'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2269851319707500', 'id': '5a50f61f4c7ffb69f269677a'}
+5a50f61f4c7ffb69f269677a
+更新了5a50f61f4c7ffb69f269677a个
+{'share_count': '0', 'likes_count': '57', 'comment_count': '17'}
+{'url': 'https://facebook.com/CongressmanTedYoho/videos/2265431313482834/', 'id': '5a50f61f4c7ffb69f269677b'}
+5a50f61f4c7ffb69f269677b
+更新了5a50f61f4c7ffb69f269677b个
+{'share_count': '36', 'likes_count': '95', 'comment_count': '40'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2264994473526518', 'id': '5a50f61f4c7ffb69f269677c'}
+5a50f61f4c7ffb69f269677c
+更新了5a50f61f4c7ffb69f269677c个
+{'share_count': '21', 'likes_count': '266', 'comment_count': '122'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2264085216950777', 'id': '5a50f61f4c7ffb69f269677d'}
+5a50f61f4c7ffb69f269677d
+更新了5a50f61f4c7ffb69f269677d个
+[===未抓取的个数为:3===]
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2264085216950777 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2263526340339998 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2262143833811582/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2260419220650710/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2255447351147897/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2254340507925248 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2253805187978780/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2245400825485883/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2245386698820629 
+request ===>: https://facebook.com/CongressmanTedYoho/videos/2242120962480536/ 
+request ===>: https://facebook.com/CongressmanTedYoho/videos/2242072509152048/ 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2237775042915128 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2236285343064098 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.819874208038559.1073741835.563532937006022/2234604646565501/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2233327483359884/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/videos/2233295860029713/ 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2231928473499785 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2230127440346555 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2228783427147623 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2223766777649288 
+{'share_count': '21', 'likes_count': '266', 'comment_count': '122'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2264085216950777', 'id': '5a50f6214c7ffb69f269677e'}
+5a50f6214c7ffb69f269677e
+更新了5a50f6214c7ffb69f269677e个
+{'share_count': '0', 'likes_count': '70', 'comment_count': '48'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2263526340339998', 'id': '5a50f6214c7ffb69f269677f'}
+5a50f6214c7ffb69f269677f
+更新了5a50f6214c7ffb69f269677f个
+{'share_count': '0', 'likes_count': '22', 'comment_count': '27'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2262143833811582/?type=3', 'id': '5a50f6214c7ffb69f2696780'}
+5a50f6214c7ffb69f2696780
+更新了5a50f6214c7ffb69f2696780个
+{'share_count': '16', 'likes_count': '66', 'comment_count': '45'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2260419220650710/?type=3', 'id': '5a50f6214c7ffb69f2696781'}
+5a50f6214c7ffb69f2696781
+更新了5a50f6214c7ffb69f2696781个
+{'share_count': '2', 'likes_count': '63', 'comment_count': '47'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2255447351147897/?type=3', 'id': '5a50f6214c7ffb69f2696782'}
+5a50f6214c7ffb69f2696782
+更新了5a50f6214c7ffb69f2696782个
+{'share_count': '2', 'likes_count': '37', 'comment_count': '19'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2254340507925248', 'id': '5a50f6214c7ffb69f2696783'}
+5a50f6214c7ffb69f2696783
+更新了5a50f6214c7ffb69f2696783个
+{'share_count': '20', 'likes_count': '108', 'comment_count': '45'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2253805187978780/?type=3', 'id': '5a50f6214c7ffb69f2696784'}
+5a50f6214c7ffb69f2696784
+更新了5a50f6214c7ffb69f2696784个
+{'share_count': '0', 'likes_count': '18', 'comment_count': '39'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2245400825485883/?type=3', 'id': '5a50f6214c7ffb69f2696785'}
+5a50f6214c7ffb69f2696785
+更新了5a50f6214c7ffb69f2696785个
+{'share_count': '1', 'likes_count': '71', 'comment_count': '40'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2245386698820629', 'id': '5a50f6214c7ffb69f2696786'}
+5a50f6214c7ffb69f2696786
+更新了5a50f6214c7ffb69f2696786个
+{'share_count': '20', 'likes_count': '100', 'comment_count': '23'}
+{'url': 'https://facebook.com/CongressmanTedYoho/videos/2242120962480536/', 'id': '5a50f6214c7ffb69f2696787'}
+5a50f6214c7ffb69f2696787
+更新了5a50f6214c7ffb69f2696787个
+{'share_count': '2', 'likes_count': '72', 'comment_count': '26'}
+{'url': 'https://facebook.com/CongressmanTedYoho/videos/2242072509152048/', 'id': '5a50f6214c7ffb69f2696788'}
+5a50f6214c7ffb69f2696788
+更新了5a50f6214c7ffb69f2696788个
+{'share_count': '4', 'likes_count': '95', 'comment_count': '33'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2237775042915128', 'id': '5a50f6214c7ffb69f2696789'}
+5a50f6214c7ffb69f2696789
+更新了5a50f6214c7ffb69f2696789个
+{'share_count': '3', 'likes_count': '44', 'comment_count': '9'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2236285343064098', 'id': '5a50f6214c7ffb69f269678a'}
+5a50f6214c7ffb69f269678a
+更新了5a50f6214c7ffb69f269678a个
+{'share_count': '2', 'likes_count': '100', 'comment_count': '89'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.819874208038559.1073741835.563532937006022/2234604646565501/?type=3', 'id': '5a50f6214c7ffb69f269678b'}
+5a50f6214c7ffb69f269678b
+更新了5a50f6214c7ffb69f269678b个
+{'share_count': '58', 'likes_count': '353', 'comment_count': '38'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2233327483359884/?type=3', 'id': '5a50f6214c7ffb69f269678c'}
+5a50f6214c7ffb69f269678c
+更新了5a50f6214c7ffb69f269678c个
+{'share_count': '0', 'likes_count': '81', 'comment_count': '60'}
+{'url': 'https://facebook.com/CongressmanTedYoho/videos/2233295860029713/', 'id': '5a50f6214c7ffb69f269678d'}
+5a50f6214c7ffb69f269678d
+更新了5a50f6214c7ffb69f269678d个
+{'share_count': '20', 'likes_count': '274', 'comment_count': '306'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2231928473499785', 'id': '5a50f6214c7ffb69f269678e'}
+5a50f6214c7ffb69f269678e
+更新了5a50f6214c7ffb69f269678e个
+{'share_count': '1', 'likes_count': '30', 'comment_count': '9'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2230127440346555', 'id': '5a50f6214c7ffb69f269678f'}
+5a50f6214c7ffb69f269678f
+更新了5a50f6214c7ffb69f269678f个
+{'share_count': '0', 'likes_count': '57', 'comment_count': '40'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2228783427147623', 'id': '5a50f6214c7ffb69f2696790'}
+5a50f6214c7ffb69f2696790
+更新了5a50f6214c7ffb69f2696790个
+{'share_count': '1', 'likes_count': '73', 'comment_count': '11'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2223766777649288', 'id': '5a50f6214c7ffb69f2696791'}
+5a50f6214c7ffb69f2696791
+更新了5a50f6214c7ffb69f2696791个
+[===未抓取的个数为:4===]
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2188038457888787/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2186498071376159 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2185231301502836 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2184887868203846 
+request ===>: https://facebook.com/CongressmanTedYoho/videos/2181014468591186/ 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2179056982120268/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2179480725411227 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2179342818758351 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2177798832246083/?type=3 
+request ===>: https://facebook.com/events/274343566410796/?ref=3&action_history=null 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2176503325708967/?type=3 
+request ===>: https://facebook.com/events/181688879070160/?ref=3&action_history=null 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2176323269060306/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/videos/2174649162561050/ 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2173731722652794 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2169165729776060/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2172041109488522 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2170707406288559/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2169063063119660/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2169062036453096/?type=3 
+{'share_count': '0', 'likes_count': '5', 'comment_count': '2'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2188038457888787/?type=3', 'id': '5a50f6264c7ffb69f26967a6'}
+5a50f6264c7ffb69f26967a6
+更新了5a50f6264c7ffb69f26967a6个
+{'share_count': '18', 'likes_count': '94', 'comment_count': '81'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2186498071376159', 'id': '5a50f6264c7ffb69f26967a7'}
+5a50f6264c7ffb69f26967a7
+更新了5a50f6264c7ffb69f26967a7个
+{'share_count': '186', 'likes_count': '354', 'comment_count': '302'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2185231301502836', 'id': '5a50f6264c7ffb69f26967a8'}
+5a50f6264c7ffb69f26967a8
+更新了5a50f6264c7ffb69f26967a8个
+{'share_count': '11', 'likes_count': '16', 'comment_count': '3'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2184887868203846', 'id': '5a50f6264c7ffb69f26967a9'}
+5a50f6264c7ffb69f26967a9
+更新了5a50f6264c7ffb69f26967a9个
+{'share_count': '15', 'likes_count': '78', 'comment_count': '61'}
+{'url': 'https://facebook.com/CongressmanTedYoho/videos/2181014468591186/', 'id': '5a50f6264c7ffb69f26967aa'}
+5a50f6264c7ffb69f26967aa
+更新了5a50f6264c7ffb69f26967aa个
+{'share_count': '19', 'likes_count': '83', 'comment_count': '19'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2179056982120268/?type=3', 'id': '5a50f6264c7ffb69f26967ab'}
+5a50f6264c7ffb69f26967ab
+更新了5a50f6264c7ffb69f26967ab个
+{'share_count': '11', 'likes_count': '128', 'comment_count': '49'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2179480725411227', 'id': '5a50f6264c7ffb69f26967ac'}
+5a50f6264c7ffb69f26967ac
+更新了5a50f6264c7ffb69f26967ac个
+{'share_count': '3', 'likes_count': '33', 'comment_count': '37'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2179342818758351', 'id': '5a50f6264c7ffb69f26967ad'}
+5a50f6264c7ffb69f26967ad
+更新了5a50f6264c7ffb69f26967ad个
+{'share_count': '23', 'likes_count': '107', 'comment_count': '34'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2177798832246083/?type=3', 'id': '5a50f6264c7ffb69f26967ae'}
+5a50f6264c7ffb69f26967ae
+更新了5a50f6264c7ffb69f26967ae个
+{'share_count': '0', 'likes_count': '0', 'comment_count': '0'}
+{'url': 'https://facebook.com/events/274343566410796/?ref=3&action_history=null', 'id': '5a50f6264c7ffb69f26967af'}
+5a50f6264c7ffb69f26967af
+更新了5a50f6264c7ffb69f26967af个
+{'share_count': '12', 'likes_count': '14', 'comment_count': '1'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2176503325708967/?type=3', 'id': '5a50f6264c7ffb69f26967b0'}
+5a50f6264c7ffb69f26967b0
+更新了5a50f6264c7ffb69f26967b0个
+{'share_count': '0', 'likes_count': '0', 'comment_count': '0'}
+{'url': 'https://facebook.com/events/181688879070160/?ref=3&action_history=null', 'id': '5a50f6264c7ffb69f26967b1'}
+5a50f6264c7ffb69f26967b1
+更新了5a50f6264c7ffb69f26967b1个
+{'share_count': '51', 'likes_count': '90', 'comment_count': '37'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2176323269060306/?type=3', 'id': '5a50f6264c7ffb69f26967b2'}
+5a50f6264c7ffb69f26967b2
+更新了5a50f6264c7ffb69f26967b2个
+{'share_count': '38', 'likes_count': '86', 'comment_count': '17'}
+{'url': 'https://facebook.com/CongressmanTedYoho/videos/2174649162561050/', 'id': '5a50f6264c7ffb69f26967b3'}
+5a50f6264c7ffb69f26967b3
+更新了5a50f6264c7ffb69f26967b3个
+{'share_count': '0', 'likes_count': '94', 'comment_count': '9'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2173731722652794', 'id': '5a50f6264c7ffb69f26967b4'}
+5a50f6264c7ffb69f26967b4
+更新了5a50f6264c7ffb69f26967b4个
+{'share_count': '0', 'likes_count': '9', 'comment_count': '2'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2169165729776060/?type=3', 'id': '5a50f6264c7ffb69f26967b5'}
+5a50f6264c7ffb69f26967b5
+更新了5a50f6264c7ffb69f26967b5个
+{'share_count': '1', 'likes_count': '53', 'comment_count': '14'}
+{'url': 'https://facebook.com/CongressmanTedYoho/posts/2172041109488522', 'id': '5a50f6264c7ffb69f26967b6'}
+5a50f6264c7ffb69f26967b6
+更新了5a50f6264c7ffb69f26967b6个
+{'share_count': '1', 'likes_count': '48', 'comment_count': '28'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2170707406288559/?type=3', 'id': '5a50f6264c7ffb69f26967b7'}
+5a50f6264c7ffb69f26967b7
+更新了5a50f6264c7ffb69f26967b7个
+{'share_count': '0', 'likes_count': '10', 'comment_count': '5'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2169063063119660/?type=3', 'id': '5a50f6264c7ffb69f26967b8'}
+5a50f6264c7ffb69f26967b8
+更新了5a50f6264c7ffb69f26967b8个
+{'share_count': '0', 'likes_count': '18', 'comment_count': '13'}
+{'url': 'https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2169062036453096/?type=3', 'id': '5a50f6264c7ffb69f26967b9'}
+5a50f6264c7ffb69f26967b9
+更新了5a50f6264c7ffb69f26967b9个
+[===未抓取的个数为:5===]
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1731245050261734 
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1748462358540003 
+request ===>: https://facebook.com/CongressmanKevinYoder/photos/a.154324054620516.46056.154026694650252/1747239381995634/?type=3 
+request ===>: https://facebook.com/CongressmanKevinYoder/photos/a.738976989488550.1073741857.154026694650252/1747084558677783/?type=3 
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1746129642106608 
+request ===>: https://facebook.com/CongressmanKevinYoder/videos/1745961845456721/ 
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1745855088800730 
+request ===>: https://facebook.com/CongressmanKevinYoder/photos/a.154324054620516.46056.154026694650252/1745167252202847/?type=3 
+request ===>: https://facebook.com/CongressmanKevinYoder/photos/a.738976989488550.1073741857.154026694650252/1744313032288269/?type=3 
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1743440299042209 
+request ===>: https://facebook.com/CongressmanKevinYoder/photos/a.154324054620516.46056.154026694650252/1736143539771885/?type=3 
+request ===>: https://facebook.com/CongressmanKevinYoder/photos/a.154324054620516.46056.154026694650252/1734034843316088/?type=3 
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1732834466769459 
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1731960013523571 
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1731230980263141 
+request ===>: https://facebook.com/CongressmanKevinYoder/photos/a.738976989488550.1073741857.154026694650252/1730783643641208/?type=3 
+request ===>: https://facebook.com/CongressmanKevinYoder/videos/1724890890897150/ 
+request ===>: https://facebook.com/CongressmanKevinYoder/posts/1724786130907626 
+request ===>: https://facebook.com/CongressmanKevinYoder/videos/1724720154247557/ 
+request ===>: https://facebook.com/CongressmanKevinYoder/videos/1724614297591476/ 
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Traceback (most recent call last):
+  File "./src/shedule.py", line 100, in crawler_reactions
+    for item in content:
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/index.py", line 123, in <module>
+    serve()
+  File "./src/index.py", line 94, in serve
+    shedule.crawler_reactions(FaceBook(args))
+  File "./src/shedule.py", line 119, in crawler_reactions
+    print(e.with_traceback())
+TypeError: with_traceback() takes exactly one argument (0 given)
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+我朝你妈妈的
+<=====启动facebook_reactions抓取====>
+connected==>mongodb://127.0.0.1:27017
+[===未抓取的个数为:4===]
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2169062036453096/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2169007216458578/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2168986323127334 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2167595156599784 
+request ===>: https://facebook.com/CongressmanTedYoho/videos/2167251949967438/ 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2164880956871204 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2164289310263702 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2161636643862302 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2160342840658349 
+request ===>: https://facebook.com/CongressmanTedYoho/videos/2159963924029574/ 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2158694210823212/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2159148757444424 
+request ===>: https://facebook.com/CongressmanTedYoho/photos/a.607664815926167.159260.563532937006022/2158692990823334/?type=3 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2155237967835503 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2154866907872609 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2154651037894196 
+request ===>: https://facebook.com/CongressmanTedYoho/posts/2150903124935654 
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+发生了错误
+Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Traceback (most recent call last):
+  File "./src/shedule.py", line 100, in crawler_reactions
+    for item in content:
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/index.py", line 123, in <module>
+    serve()
+  File "./src/index.py", line 94, in serve
+    shedule.crawler_reactions(FaceBook(args))
+  File "./src/shedule.py", line 119, in crawler_reactions
+    print(e.with_traceback())
+TypeError: with_traceback() takes exactly one argument (0 given)
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+Task exception was never retrieved
+future: <Task finished coro=<Base.asynchronous_request.<locals>.request() done, defined at ./src/pkg/base/base.py:25> exception=Exception(ClientProxyConnectionError(60, "Connect call failed ('127.0.0.1', 51545)"),)>
+Traceback (most recent call last):
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 796, in _wrap_create_connection
+    return (yield from self._loop.create_connection(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/asyncio/selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 60] Connect call failed ('127.0.0.1', 51545)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 33, in request
+    headers={'CONNECTION': 'close'}) as response:
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/client.py", line 267, in _request
+    conn = yield from self._connector.connect(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 402, in connect
+    proto = yield from self._create_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 746, in _create_connection
+    _, proto = yield from self._create_proxy_connection(req)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 879, in _create_proxy_connection
+    proxy_req, client_error=ClientProxyConnectionError)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 859, in _create_direct_connection
+    raise last_exc
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 831, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/Users/suohailong/.local/share/virtualenvs/twitfaceCrawler-xO6FQF-R/lib/python3.6/site-packages/aiohttp/connector.py", line 803, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientProxyConnectionError: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./src/pkg/base/base.py", line 42, in request
+    raise Exception(e)
+Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]

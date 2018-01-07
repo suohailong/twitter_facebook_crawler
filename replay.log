@@ -1,0 +1,906 @@
+我朝你妈妈的
+<=====启动tweet_replay抓取====>
+connected==>mongodb://127.0.0.1:27017
+[===未抓取的个数为:0===]
+request ===>: https://twitter.com/rep_stevewomack/status/923187768297222146 
+request ===>: https://twitter.com/rep_stevewomack/status/922504309002162176 
+request ===>: https://twitter.com/rep_stevewomack/status/922182521093271553 
+request ===>: https://twitter.com/rep_stevewomack/status/921873734717267968 
+request ===>: https://twitter.com/rep_stevewomack/status/921824431344930816 
+request ===>: https://twitter.com/rep_stevewomack/status/921795789596307456 
+request ===>: https://twitter.com/rep_stevewomack/status/921794464124989440 
+request ===>: https://twitter.com/rep_stevewomack/status/921782239511371776 
+request ===>: https://twitter.com/rep_stevewomack/status/921763565803114498 
+request ===>: https://twitter.com/rep_stevewomack/status/921491654414041096 
+request ===>: https://twitter.com/rep_stevewomack/status/921438122126299136 
+request ===>: https://twitter.com/rep_stevewomack/status/921418254953992192 
+request ===>: https://twitter.com/rep_stevewomack/status/921375452979187712 
+request ===>: https://twitter.com/rep_stevewomack/status/921142967431200768 
+request ===>: https://twitter.com/rep_stevewomack/status/921123173671886849 
+request ===>: https://twitter.com/rep_stevewomack/status/921116927812100096 
+request ===>: https://twitter.com/rep_stevewomack/status/921114995655630849 
+request ===>: https://twitter.com/rep_stevewomack/status/921088565345423360 
+request ===>: https://twitter.com/rep_stevewomack/status/921016804062957568 
+request ===>: https://twitter.com/rep_stevewomack/status/921016084895096832 
+request ===>: https://twitter.com/rep_stevewomack/status/921009799944441856 
+request ===>: https://twitter.com/rep_stevewomack/status/920800998653804544 
+request ===>: https://twitter.com/rep_stevewomack/status/920738571023249409 
+request ===>: https://twitter.com/rep_stevewomack/status/920665272930963456 
+request ===>: https://twitter.com/rep_stevewomack/status/920395829801824256 
+request ===>: https://twitter.com/rep_stevewomack/status/920371656950013959 
+request ===>: https://twitter.com/rep_stevewomack/status/920358212959907840 
+request ===>: https://twitter.com/rep_stevewomack/status/920315278675861505 
+request ===>: https://twitter.com/rep_stevewomack/status/920301023360626688 
+request ===>: https://twitter.com/rep_stevewomack/status/920102481639739394 
+request ===>: https://twitter.com/rep_stevewomack/status/920016867300868099 
+request ===>: https://twitter.com/rep_stevewomack/status/920000152823312389 
+request ===>: https://twitter.com/rep_stevewomack/status/919992724719394816 
+request ===>: https://twitter.com/rep_stevewomack/status/919988559909703680 
+request ===>: https://twitter.com/rep_stevewomack/status/919937249936117761 
+request ===>: https://twitter.com/rep_stevewomack/status/919924897047969793 
+request ===>: https://twitter.com/rep_stevewomack/status/919622148246839296 
+request ===>: https://twitter.com/rep_stevewomack/status/919234164381175808 
+request ===>: https://twitter.com/rep_stevewomack/status/919213203581632513 
+request ===>: https://twitter.com/rep_stevewomack/status/918861891061067776 
+request ===>: https://twitter.com/rep_stevewomack/status/918857139627679755 
+request ===>: https://twitter.com/rep_stevewomack/status/918545053013995520 
+request ===>: https://twitter.com/rep_stevewomack/status/918523371889012737 
+request ===>: https://twitter.com/rep_stevewomack/status/918483148236886016 
+request ===>: https://twitter.com/rep_stevewomack/status/918477533896695808 
+request ===>: https://twitter.com/rep_stevewomack/status/918163065706897408 
+request ===>: https://twitter.com/rep_stevewomack/status/918121260302745600 
+request ===>: https://twitter.com/rep_stevewomack/status/917869971627298821 
+request ===>: https://twitter.com/rep_stevewomack/status/917757114067705856 
+request ===>: https://twitter.com/rep_stevewomack/status/917485283129614338 
+request ===>: https://twitter.com/rep_stevewomack/status/917411841353056257 
+request ===>: https://twitter.com/rep_stevewomack/status/917396991256285184 
+request ===>: https://twitter.com/rep_stevewomack/status/917395732872736768 
+request ===>: https://twitter.com/rep_stevewomack/status/917376607110811648 
+request ===>: https://twitter.com/rep_stevewomack/status/917121168229801984 
+request ===>: https://twitter.com/rep_stevewomack/status/917078386102513666 
+request ===>: https://twitter.com/rep_stevewomack/status/916762053376827392 
+request ===>: https://twitter.com/rep_stevewomack/status/916758532946612226 
+request ===>: https://twitter.com/rep_stevewomack/status/916755367148826624 
+request ===>: https://twitter.com/rep_stevewomack/status/916684792996937729 
+request ===>: https://twitter.com/rep_stevewomack/status/916651071711383557 
+request ===>: https://twitter.com/rep_stevewomack/status/916452512068259840 
+request ===>: https://twitter.com/rep_stevewomack/status/916370472551432192 
+request ===>: https://twitter.com/rep_stevewomack/status/916325929835569154 
+request ===>: https://twitter.com/rep_stevewomack/status/916277359904546816 
+request ===>: https://twitter.com/rep_stevewomack/status/916037026528493569 
+request ===>: https://twitter.com/rep_stevewomack/status/915988708033212416 
+request ===>: https://twitter.com/rep_stevewomack/status/915977863324565504 
+request ===>: https://twitter.com/rep_stevewomack/status/915955742695350272 
+request ===>: https://twitter.com/rep_stevewomack/status/915932959672344576 
+request ===>: https://twitter.com/rep_stevewomack/status/915690607930167296 
+request ===>: https://twitter.com/rep_stevewomack/status/915668052825530368 
+request ===>: https://twitter.com/rep_stevewomack/status/915642174292738048 
+request ===>: https://twitter.com/rep_stevewomack/status/915595404724592640 
+request ===>: https://twitter.com/rep_stevewomack/status/915567936173170688 
+request ===>: https://twitter.com/rep_stevewomack/status/915337260391895040 
+request ===>: https://twitter.com/rep_stevewomack/status/915323456211898368 
+request ===>: https://twitter.com/rep_stevewomack/status/915278276339187712 
+request ===>: https://twitter.com/rep_stevewomack/status/915220145886388226 
+request ===>: https://twitter.com/rep_stevewomack/status/915202277006364672 
+request ===>: https://twitter.com/rep_stevewomack/status/914856747784798208 
+request ===>: https://twitter.com/rep_stevewomack/status/914807734880567297 
+request ===>: https://twitter.com/rep_stevewomack/status/914642060367581189 
+request ===>: https://twitter.com/rep_stevewomack/status/914146820611227648 
+request ===>: https://twitter.com/rep_stevewomack/status/913801797223018496 
+request ===>: https://twitter.com/rep_stevewomack/status/913788993552175105 
+request ===>: https://twitter.com/rep_stevewomack/status/913757435285864448 
+request ===>: https://twitter.com/rep_stevewomack/status/913513663448981504 
+request ===>: https://twitter.com/rep_stevewomack/status/913451740770459649 
+request ===>: https://twitter.com/rep_stevewomack/status/913450148440797184 
+request ===>: https://twitter.com/rep_stevewomack/status/913425614442516480 
+request ===>: https://twitter.com/rep_stevewomack/status/913205230145294336 
+request ===>: https://twitter.com/rep_stevewomack/status/913157157385900032 
+request ===>: https://twitter.com/rep_stevewomack/status/913140451905015808 
+request ===>: https://twitter.com/rep_stevewomack/status/913129890945396737 
+request ===>: https://twitter.com/rep_stevewomack/status/913098522727190528 
+request ===>: https://twitter.com/rep_stevewomack/status/913066864993021952 
+request ===>: https://twitter.com/rep_stevewomack/status/913034661198221312 
+request ===>: https://twitter.com/rep_stevewomack/status/913031469999693825 
+request ===>: https://twitter.com/rep_stevewomack/status/912853414257807360 
+request ===>: https://twitter.com/rep_stevewomack/status/912788820806049792 
+request ===>: https://twitter.com/rep_stevewomack/status/912777548274089984 
+request ===>: https://twitter.com/rep_stevewomack/status/912758063517589509 
+request ===>: https://twitter.com/rep_stevewomack/status/912726295079014403 
+request ===>: https://twitter.com/rep_stevewomack/status/912692527022710784 
+request ===>: https://twitter.com/rep_stevewomack/status/912434380945096704 
+request ===>: https://twitter.com/rep_stevewomack/status/912333132094955521 
+request ===>: https://twitter.com/rep_stevewomack/status/912329906767396865 
+request ===>: https://twitter.com/rep_stevewomack/status/912053976882917378 
+request ===>: https://twitter.com/rep_stevewomack/status/911345216862539776 
+request ===>: https://twitter.com/rep_stevewomack/status/911277402462007298 
+request ===>: https://twitter.com/rep_stevewomack/status/911247447896322049 
+request ===>: https://twitter.com/rep_stevewomack/status/911215004673888256 
+html内容:
+3
+15
+11
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/923187768297222146', 'reply_count': '3', 'retweet_count': '15', 'favorite_count': '11'}
+
+
+
+html内容:
+2
+1
+7
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/922504309002162176', 'reply_count': '2', 'retweet_count': '1', 'favorite_count': '7'}
+
+
+
+html内容:
+2
+1
+1
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/922182521093271553', 'reply_count': '2', 'retweet_count': '1', 'favorite_count': '1'}
+
+
+
+html内容:
+1
+3
+7
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921873734717267968', 'reply_count': '1', 'retweet_count': '3', 'favorite_count': '7'}
+
+
+
+html内容:
+2
+9
+85
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921824431344930816', 'reply_count': '2', 'retweet_count': '9', 'favorite_count': '85'}
+
+
+
+html内容:
+0
+33
+44
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921795789596307456', 'reply_count': '0', 'retweet_count': '33', 'favorite_count': '44'}
+
+
+
+html内容:
+3
+2
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921794464124989440', 'reply_count': '3', 'retweet_count': '2', 'favorite_count': '3'}
+
+
+
+html内容:
+0
+3
+22
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921782239511371776', 'reply_count': '0', 'retweet_count': '3', 'favorite_count': '22'}
+
+
+
+html内容:
+1
+2
+25
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921763565803114498', 'reply_count': '1', 'retweet_count': '2', 'favorite_count': '25'}
+
+
+
+html内容:
+2
+1
+6
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921491654414041096', 'reply_count': '2', 'retweet_count': '1', 'favorite_count': '6'}
+
+
+
+html内容:
+9
+4
+6
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921438122126299136', 'reply_count': '9', 'retweet_count': '4', 'favorite_count': '6'}
+
+
+
+html内容:
+1
+8
+26
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921418254953992192', 'reply_count': '1', 'retweet_count': '8', 'favorite_count': '26'}
+
+
+
+html内容:
+42
+13
+30
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921375452979187712', 'reply_count': '42', 'retweet_count': '13', 'favorite_count': '30'}
+
+
+
+html内容:
+4
+9
+45
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921142967431200768', 'reply_count': '4', 'retweet_count': '9', 'favorite_count': '45'}
+
+
+
+html内容:
+0
+4
+6
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921123173671886849', 'reply_count': '0', 'retweet_count': '4', 'favorite_count': '6'}
+
+
+
+html内容:
+0
+1
+1
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921116927812100096', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '1'}
+
+
+
+html内容:
+0
+1
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921114995655630849', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '0'}
+
+
+
+html内容:
+0
+1
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921088565345423360', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '0'}
+
+
+
+html内容:
+0
+4
+11
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921016804062957568', 'reply_count': '0', 'retweet_count': '4', 'favorite_count': '11'}
+
+
+
+html内容:
+1
+3
+1
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921016084895096832', 'reply_count': '1', 'retweet_count': '3', 'favorite_count': '1'}
+
+
+
+html内容:
+0
+1
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/921009799944441856', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '0'}
+
+
+
+html内容:
+171
+49
+123
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920800998653804544', 'reply_count': '171', 'retweet_count': '49', 'favorite_count': '123'}
+
+
+
+html内容:
+40
+12
+16
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920738571023249409', 'reply_count': '40', 'retweet_count': '12', 'favorite_count': '16'}
+
+
+
+html内容:
+0
+4
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920665272930963456', 'reply_count': '0', 'retweet_count': '4', 'favorite_count': '3'}
+
+
+
+html内容:
+0
+3
+7
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920395829801824256', 'reply_count': '0', 'retweet_count': '3', 'favorite_count': '7'}
+
+
+
+html内容:
+0
+5
+9
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920371656950013959', 'reply_count': '0', 'retweet_count': '5', 'favorite_count': '9'}
+
+
+
+html内容:
+0
+3
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920358212959907840', 'reply_count': '0', 'retweet_count': '3', 'favorite_count': '3'}
+
+
+
+html内容:
+7
+4
+9
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920315278675861505', 'reply_count': '7', 'retweet_count': '4', 'favorite_count': '9'}
+
+
+
+html内容:
+0
+1
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920301023360626688', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '3'}
+
+
+
+html内容:
+0
+3
+10
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920102481639739394', 'reply_count': '0', 'retweet_count': '3', 'favorite_count': '10'}
+
+
+
+html内容:
+8
+1
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920016867300868099', 'reply_count': '8', 'retweet_count': '1', 'favorite_count': '3'}
+
+
+
+html内容:
+1
+2
+4
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/920000152823312389', 'reply_count': '1', 'retweet_count': '2', 'favorite_count': '4'}
+
+
+
+html内容:
+0
+4
+21
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/919992724719394816', 'reply_count': '0', 'retweet_count': '4', 'favorite_count': '21'}
+
+
+
+html内容:
+0
+1
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/919988559909703680', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '0'}
+
+
+
+html内容:
+2
+9
+15
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/919937249936117761', 'reply_count': '2', 'retweet_count': '9', 'favorite_count': '15'}
+
+
+
+html内容:
+0
+4
+1
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/919924897047969793', 'reply_count': '0', 'retweet_count': '4', 'favorite_count': '1'}
+
+
+
+html内容:
+5
+3
+8
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/919622148246839296', 'reply_count': '5', 'retweet_count': '3', 'favorite_count': '8'}
+
+
+
+html内容:
+1
+3
+22
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/919234164381175808', 'reply_count': '1', 'retweet_count': '3', 'favorite_count': '22'}
+
+
+
+html内容:
+3
+2
+1
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/919213203581632513', 'reply_count': '3', 'retweet_count': '2', 'favorite_count': '1'}
+
+
+
+html内容:
+1
+3
+14
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/918861891061067776', 'reply_count': '1', 'retweet_count': '3', 'favorite_count': '14'}
+
+
+
+html内容:
+57
+10
+25
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/918857139627679755', 'reply_count': '57', 'retweet_count': '10', 'favorite_count': '25'}
+
+
+
+html内容:
+3
+7
+19
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/918545053013995520', 'reply_count': '3', 'retweet_count': '7', 'favorite_count': '19'}
+
+
+
+html内容:
+21
+5
+18
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/918523371889012737', 'reply_count': '21', 'retweet_count': '5', 'favorite_count': '18'}
+
+
+
+html内容:
+5
+1
+4
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/918483148236886016', 'reply_count': '5', 'retweet_count': '1', 'favorite_count': '4'}
+
+
+
+html内容:
+15
+6
+41
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/918477533896695808', 'reply_count': '15', 'retweet_count': '6', 'favorite_count': '41'}
+
+
+
+html内容:
+20
+4
+104
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/918163065706897408', 'reply_count': '20', 'retweet_count': '4', 'favorite_count': '104'}
+
+
+
+html内容:
+0
+1
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/918121260302745600', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '0'}
+
+
+
+html内容:
+0
+8
+25
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917869971627298821', 'reply_count': '0', 'retweet_count': '8', 'favorite_count': '25'}
+
+
+
+html内容:
+2
+10
+15
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917757114067705856', 'reply_count': '2', 'retweet_count': '10', 'favorite_count': '15'}
+
+
+
+html内容:
+0
+2
+7
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917485283129614338', 'reply_count': '0', 'retweet_count': '2', 'favorite_count': '7'}
+
+
+
+html内容:
+3
+3
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917411841353056257', 'reply_count': '3', 'retweet_count': '3', 'favorite_count': '3'}
+
+
+
+html内容:
+0
+2
+2
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917396991256285184', 'reply_count': '0', 'retweet_count': '2', 'favorite_count': '2'}
+
+
+
+html内容:
+0
+3
+2
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917395732872736768', 'reply_count': '0', 'retweet_count': '3', 'favorite_count': '2'}
+
+
+
+html内容:
+10
+3
+19
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917376607110811648', 'reply_count': '10', 'retweet_count': '3', 'favorite_count': '19'}
+
+
+
+html内容:
+9
+4
+4
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917121168229801984', 'reply_count': '9', 'retweet_count': '4', 'favorite_count': '4'}
+
+
+
+html内容:
+3
+6
+6
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/917078386102513666', 'reply_count': '3', 'retweet_count': '6', 'favorite_count': '6'}
+
+
+
+html内容:
+0
+2
+1
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916762053376827392', 'reply_count': '0', 'retweet_count': '2', 'favorite_count': '1'}
+
+
+
+html内容:
+0
+3
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916758532946612226', 'reply_count': '0', 'retweet_count': '3', 'favorite_count': '0'}
+
+
+
+html内容:
+0
+3
+4
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916755367148826624', 'reply_count': '0', 'retweet_count': '3', 'favorite_count': '4'}
+
+
+
+html内容:
+1
+5
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916684792996937729', 'reply_count': '1', 'retweet_count': '5', 'favorite_count': '3'}
+
+
+
+html内容:
+6
+1
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916651071711383557', 'reply_count': '6', 'retweet_count': '1', 'favorite_count': '3'}
+
+
+
+html内容:
+1
+3
+5
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916452512068259840', 'reply_count': '1', 'retweet_count': '3', 'favorite_count': '5'}
+
+
+
+html内容:
+1
+4
+10
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916370472551432192', 'reply_count': '1', 'retweet_count': '4', 'favorite_count': '10'}
+
+
+
+html内容:
+2
+5
+6
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916325929835569154', 'reply_count': '2', 'retweet_count': '5', 'favorite_count': '6'}
+
+
+
+html内容:
+0
+1
+1
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916277359904546816', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '1'}
+
+
+
+html内容:
+1
+2
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/916037026528493569', 'reply_count': '1', 'retweet_count': '2', 'favorite_count': '3'}
+
+
+
+html内容:
+0
+1
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915988708033212416', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '0'}
+
+
+
+html内容:
+7
+6
+10
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915977863324565504', 'reply_count': '7', 'retweet_count': '6', 'favorite_count': '10'}
+
+
+
+html内容:
+9
+1
+2
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915955742695350272', 'reply_count': '9', 'retweet_count': '1', 'favorite_count': '2'}
+
+
+
+html内容:
+5
+1
+5
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915932959672344576', 'reply_count': '5', 'retweet_count': '1', 'favorite_count': '5'}
+
+
+
+html内容:
+1
+3
+13
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915690607930167296', 'reply_count': '1', 'retweet_count': '3', 'favorite_count': '13'}
+
+
+
+html内容:
+4
+4
+5
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915668052825530368', 'reply_count': '4', 'retweet_count': '4', 'favorite_count': '5'}
+
+
+
+html内容:
+0
+1
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915642174292738048', 'reply_count': '0', 'retweet_count': '1', 'favorite_count': '0'}
+
+
+
+html内容:
+7
+3
+5
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915595404724592640', 'reply_count': '7', 'retweet_count': '3', 'favorite_count': '5'}
+
+
+
+html内容:
+3
+4
+1
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915567936173170688', 'reply_count': '3', 'retweet_count': '4', 'favorite_count': '1'}
+
+
+
+html内容:
+32
+33
+123
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915337260391895040', 'reply_count': '32', 'retweet_count': '33', 'favorite_count': '123'}
+
+
+
+html内容:
+1
+3
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915323456211898368', 'reply_count': '1', 'retweet_count': '3', 'favorite_count': '3'}
+
+
+
+html内容:
+11
+5
+5
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915278276339187712', 'reply_count': '11', 'retweet_count': '5', 'favorite_count': '5'}
+
+
+
+html内容:
+2
+4
+4
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915220145886388226', 'reply_count': '2', 'retweet_count': '4', 'favorite_count': '4'}
+
+
+
+html内容:
+20
+13
+40
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/915202277006364672', 'reply_count': '20', 'retweet_count': '13', 'favorite_count': '40'}
+
+
+
+html内容:
+3
+2
+3
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/914856747784798208', 'reply_count': '3', 'retweet_count': '2', 'favorite_count': '3'}
+
+
+
+html内容:
+24
+7
+26
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/914807734880567297', 'reply_count': '24', 'retweet_count': '7', 'favorite_count': '26'}
+
+
+
+html内容:
+1
+2
+22
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/914642060367581189', 'reply_count': '1', 'retweet_count': '2', 'favorite_count': '22'}
+
+
+
+html内容:
+2
+2
+2
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/914146820611227648', 'reply_count': '2', 'retweet_count': '2', 'favorite_count': '2'}
+
+
+
+html内容:
+0
+2
+0
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/913801797223018496', 'reply_count': '0', 'retweet_count': '2', 'favorite_count': '0'}
+
+
+
+html内容:
+1
+27
+99
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/913788993552175105', 'reply_count': '1', 'retweet_count': '27', 'favorite_count': '99'}
+
+
+
+html内容:
+5
+2
+18
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/913757435285864448', 'reply_count': '5', 'retweet_count': '2', 'favorite_count': '18'}
+
+
+
+html内容:
+3
+8
+39
+处理后的结果:
+{'url': 'https://twitter.com/rep_stevewomack/status/913513663448981504', 'reply_count': '3', 'retweet_count': '8', 'favorite_count': '39'}
