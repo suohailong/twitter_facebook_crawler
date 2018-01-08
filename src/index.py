@@ -40,7 +40,7 @@ def serve():
                         action="store")
     parser.add_argument('-i', "--init",
                         help="init tweets",
-                        default="tweets",
+                        default=None,
                         action="store")
     parser.add_argument('-j', '--json',
                         help="the location of the json file that has a list of user_ids or screen_names",
