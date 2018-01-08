@@ -3,3 +3,4 @@ export
 cookies.txt
 geckodriver.log
 twitter.csv
+__pycache__
