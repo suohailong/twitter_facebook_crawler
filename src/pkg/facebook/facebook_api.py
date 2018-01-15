@@ -158,7 +158,18 @@ class FaceBook(Base):
                 for x in filter(lambda x:x['create_at'],tweets):
                     # print(re.search(r'[年月日]',x['create_at']).group())
                     x['create_at']=re.sub(r'[年月日\(\)金木水火土]', ' ', x['create_at'])
-                    x['create_at'] = datetime.strptime(x['create_at'], '%Y %m  %d    %H:%M').strftime('%Y-%m-%d %H:%M')
+
+                    thisTime = x['create_at']
+                    thisTime = thisTime.replace(',', '')
+                    thisTime = thisTime.replace('at', '')
+                    if 'am' in thisTime:
+                        thisTime = thisTime.replace('am', ' AM')
+                    if 'pm' in thisTime:
+                        thisTime = thisTime.replace('pm', ' PM')
+                    if 'Surday' in thisTime:
+                        thisTime = thisTime.replace('Surday', 'Saturday')
+                    x['create_at'] = datetime.strptime(thisTime, '%Y %m  %d    %H:%M').strftime('%Y-%m-%d %H:%M')
+                    #x['create_at'] = datetime.strptime(x['create_at'], '%Y %m  %d    %H:%M').strftime('%Y-%m-%d %H:%M') #在本地跑数据
                     tweet3.append(x)
 
                 def dedupe(items, key=None):
