@@ -1241,11 +1241,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="48" column="88" lean-forward="true" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="170" column="88" lean-forward="false" selection-start-line="170" selection-start-column="88" selection-end-line="170" selection-end-column="88" />
+              <folding>
+                <element signature="e#1524#3509#0" expanded="false" />
+                <element signature="e#10845#12004#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test_facebook" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_facebook">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="150">
+              <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="56" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -1253,11 +1286,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="48" column="88" lean-forward="true" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
+            <state relative-caret-position="180">
+              <caret line="12" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -1323,7 +1356,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/twitter_user_ids的副本 4.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/../tweetf0rm/export_script/export_localdb_to_remotdb.py" />
         <option value="$PROJECT_DIR$/twitter_user_ids的副本 2.json" />
         <option value="$PROJECT_DIR$/twitter_user_ids的副本 3.json" />
@@ -1371,8 +1403,9 @@
         <option value="$PROJECT_DIR$/src/pkg/twitter/twitter.py" />
         <option value="$PROJECT_DIR$/history_data_back_scrpt/start_crawler_with_user_ids.py" />
         <option value="$PROJECT_DIR$/test/test_facebook" />
-        <option value="$PROJECT_DIR$/src/pkg/facebook/facebook_api.py" />
         <option value="$PROJECT_DIR$/src/pkg/base/base.py" />
+        <option value="$PROJECT_DIR$/src/pkg/facebook/facebook_api.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1447,6 +1480,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pkg" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="facebook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
@@ -1670,13 +1715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/export_py/idatage_export.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../tweetf0rm/tweetf0rm/redis_helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -1944,14 +1982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shedule.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1525">
@@ -2058,31 +2088,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
+    <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="165" column="64" lean-forward="true" selection-start-line="165" selection-start-column="64" selection-end-line="165" selection-end-column="64" />
-          <folding>
-            <element signature="e#1524#3509#0" expanded="false" />
-            <element signature="e#10842#12001#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="48" column="88" lean-forward="true" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_facebook">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="150">
+          <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="56" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+    <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="48" column="88" lean-forward="true" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
+        <state relative-caret-position="312">
+          <caret line="170" column="88" lean-forward="false" selection-start-line="170" selection-start-column="88" selection-end-line="170" selection-end-column="88" />
+          <folding>
+            <element signature="e#1524#3509#0" expanded="false" />
+            <element signature="e#10845#12004#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
