@@ -7,6 +7,7 @@
 import schedule
 import datetime,time,sys,os
 sys.path.append('.')
+# print(sys)
 from src.shedule import Shedule
 from src.pkg.twitter.twitter import TWitter
 from src.pkg.facebook.facebook_api import FaceBook
