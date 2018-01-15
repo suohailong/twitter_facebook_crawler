@@ -1,4 +1,5 @@
 from pymongo import MongoClient,DESCENDING,ReturnDocument
+from bson import objectid
 import openpyxl
 from openpyxl.workbook import Workbook
 from openpyxl.writer.excel import ExcelWriter
@@ -11,6 +12,7 @@ from datetime import datetime
 import asyncio,os,json,re
 from aiohttp import ClientSession
 import aiohttp
+import hashlib
 
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -49,6 +51,9 @@ class Espusher(object):
             loop.run_until_complete(asyncio.wait(tasks))
             return [json.loads(task.result()) for task in tasks]
 
+    def makeId(self,mdstr):
+        m = hashlib.md5(mdstr.encode(encoding='utf-8'))
+        return m.hexdigest()
     def rsetStatus(self):
         doc = self.dbs.user_post.update_many({'site':'facebook','es_pushed':True},{'$set':{'es_pushed':False}})
         print(doc.modified_count)
@@ -168,7 +173,7 @@ class Espusher(object):
                     facebook_es_data={
                         'index_name':'rowlet_facebook_articles',
                         'type_name':'rowlet_facebook_articles',
-                        'id':str(item['_id']),
+                        'id':self.makeId(item['permalink_url']),
                         'create_at':item['create_at'],
                         'user':item['user'],
                         'text':item['message'],
@@ -176,6 +181,7 @@ class Espusher(object):
                         'likes_num':item['likes_num'],
                         'share_count':item['share_count'],
                         'last_untime':item['last_untime'],
+                        'permalink_url':'https://facebook.com%s' % item['permalink_url'],
                         'topick':list(map(lambda x:re.sub(r"[\u4E00-\u9FA5]|[\u3040-\u30FF\u31F0-\u31FF]|[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]", '', x),topick))
 
                     }
@@ -186,7 +192,7 @@ class Espusher(object):
                         'url': 'http://59.110.52.213/stq/api/v1/pa/topicRowletFacebook/add',
                         'data': data
                     }])
-                    print('更新了%s用户' % item['_id'])
+                    print('更新了%s用户' % facebook_es_data['id'])
                     print(result)
                 except Exception as e:
                     print(e)
@@ -275,7 +281,7 @@ class Espusher(object):
         facebook_es_data = {
             'index_name': 'rowlet_facebook_articles',
             'type_name': 'rowlet_facebook_articles',
-            'id': str(item['_id']),
+            'id': self.makeId(item['permalink_url']),
             'create_at': item['create_at'],
             'user': item['user'],
             'text': item['message'],

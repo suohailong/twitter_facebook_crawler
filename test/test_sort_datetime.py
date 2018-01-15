@@ -1,12 +1,6 @@
-import datetime
+from pymongo import MongoClient,DESCENDING,ReturnDocument
+client = MongoClient('mongodb://root:joke123098@101.201.37.28:3717/?authSource=admin')
+dbs = client.TUserPost  # config['mongo_config']['db']
 
+dbs.Tuser_post.distinct('message').length
 
-def date_key(a):
-    """
-    a: date as string
-    """
-    a = datetime.datetime.strptime(a, '%d.%m.%Y').date()
-    return a
-
-
-sorted_dates = sorted(sorted_dates, key=date_key)

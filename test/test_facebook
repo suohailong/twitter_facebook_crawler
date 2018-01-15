@@ -1,6 +1,7 @@
 from datetime import datetime
 import re
-
+import hashlib
+from bson import objectid
 
 thisTime = 'Saturday, January 13, 2018 at 9:34am'
 thisTime=thisTime.replace(',','')
@@ -9,3 +10,10 @@ thisTime=thisTime.replace('am',' AM')
 thisTime=thisTime.replace('pm',' PM')
 thisTime = thisTime.replace('Surday','Saturday')
 print(datetime.strptime(thisTime,'%A %B %d %Y  %H:%M %p'))
+# print(objectid.ObjectId("/DonaldTrump/videos/10160322387075725/"))
+
+
+def makeId(mdstr):
+    m = hashlib.md5(mdstr.encode(encoding='utf-8'))
+    return m.hexdigest()
+print(makeId("/DonaldTrump/videos/10160322387075725/"))
