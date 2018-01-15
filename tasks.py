@@ -5,7 +5,7 @@ import time
 import sys, time, argparse, json, os, pprint
 from pymongo import MongoClient,DESCENDING,ReturnDocument
 sys.path.append(".")
-from src.shedule import crawler_tweets_replay
+from src.shedule import Shedule
 
 brokers = 'redis://:Abc123098@101.201.227.186:6007/6'
 backend = 'redis://:Abc123098@101.201.227.186:6007/7'
@@ -44,6 +44,10 @@ def crawler_tweet_replay(*tweets):
     return crawler_tweets_replay(*tweets)
 
 
+
+if __name__ == '__main__':
+    shedule = Shedule()
+    shedule.crawler_tweets_replay()
 
 # @app.task(bind=True)
 # def test_mes(self):

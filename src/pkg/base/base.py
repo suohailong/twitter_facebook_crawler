@@ -21,6 +21,7 @@ class Base(object):
     def asynchronous_request(self, urls):
         if type(urls) == str:
             urls = [urls]
+        # print(urls)
         try:
             async def request(url):
 
@@ -29,7 +30,7 @@ class Base(object):
                     async with ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
                         # session.keep_alive=False
                         try:
-                            async with session.get(url['url'], proxy="127.0.0.1:43211",
+                            async with session.get(url['url'], proxy="http://127.0.0.1:51545",
                                                    headers={'CONNECTION': 'close'}) as response:
                                 response = await response.read()
                                 # print(response.headers)
@@ -66,7 +67,9 @@ class Base(object):
             return [task.result() for task in tasks]
         # loop.close()
         except Exception as e:
-            print(e)
+            if(len(urls)==0):
+                print('crawler url is empty')
+
     def save(self,doc):
         db = self.__client['%s' % self.__dbName]
         collection = db['%s' % self.__collectionName]

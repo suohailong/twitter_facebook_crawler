@@ -69,11 +69,11 @@ def serve():
         if args.site=='twitter':
             if args.init == 'tweets':
                 crawler_init(name='twitter')
-            shedule.crawler_tweets(TWitter(args),args.site,args.json)
+            shedule.crawler_tweets(TWitter(args),args.site)
         else:
             if args.init == 'tweets':
                 crawler_init(name='facebook')
-            shedule.crawler_tweets(FaceBook(args),args.site,args.json)
+            shedule.crawler_tweets(FaceBook(args),args.site)
     elif args.cmd =='crawler_users':
         items = pd.read_excel('./keywords.xlsx', args.sheet, index_col=None, na_values=['NA'])
         df = pd.DataFrame(items)
@@ -82,21 +82,21 @@ def serve():
             shedule.crawler_users(TWitter(args),keyWordItems,args.type)
         else:
             shedule.crawler_users(FaceBook(args),keyWordItems,args.type)
-    elif args.cmd=='crawler_list_count':
+    elif args.cmd=='Update_twitter_users':
         if args.site=='facebook':
             print('this cmd is only for twitter')
             quit()
-        shedule.crawler_user_listcounts(TWitter(args))
+        shedule.update_twitter_users_count(TWitter(args))
     elif args.cmd=='crawler_reactions':
         if args.site=='twitter':
             print('this cmd is only for facebook')
             quit()
         shedule.crawler_reactions(FaceBook(args))
-    elif args.cmd=='crawler_user_likes':
+    elif args.cmd=='Update_facebook_users':
         if args.site=='twitter':
             print('this cmd is only for facebook')
             quit()
-        shedule.crawler_user_likes_counts(FaceBook(args))
+        shedule.update_facebook_users_count(FaceBook(args))
     elif args.cmd=='crawler_tweet_replay':
         if args.site=='facebook':
             print('this cmd is only for twitter')
@@ -119,5 +119,4 @@ def serve():
 
 
 if __name__ == "__main__":
-    print('我朝你妈妈的')
     serve()

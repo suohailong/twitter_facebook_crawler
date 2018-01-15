@@ -75,8 +75,8 @@ class TWitter(Base,twython.Twython):
                         tweet['latest']='true'
                         tweet['update_status'] = False
                         # print('存入mongo')
-                        crawler_replay_list.append("https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id_str']))
                         object_id = self.save(tweet)
+                        crawler_replay_list.append("https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id_str']))
                         print('save %s ==>successfuly' % object_id)
                     time_line = re.search(r'\w{3}\sOct\s\d{2}\s\d{2}:\d{2}:\d{2}\s\+\d{4}\s2017',tweet['created_at'])
                     if current_max_id == 0 or current_max_id > int(tweet['id']):
@@ -96,16 +96,23 @@ class TWitter(Base,twython.Twython):
         try:
             reponse=self.asynchronous_request(
                 "https://twitter.com/%s" % user_sreen_name)
-            # print(response.text)
-            bs = bs4.BeautifulSoup(reponse[0]['content'], 'html.parser')
-            list_html = bs.select(
-                '#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--lists > a > span.ProfileNav-value')
-            moment_html = bs.select('#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--moments > a > span.ProfileNav-value')
-            print(list_html,moment_html)
-            list_count = list_html[0].text if len(list_html)>0 else 0
-            moment_count = moment_html[0].text if len(moment_html)>0 else 0
+            _ = pq(reponse[0]['content'])
+
+            tweet_count = _('ul.ProfileNav-list>li.ProfileNav-item--tweets span.ProfileNav-value').attr('data-count')
+            flowing_count = _('ul.ProfileNav-list>li.ProfileNav-item--following span.ProfileNav-value').attr('data-count')
+            followers_count = _('ul.ProfileNav-list>li.ProfileNav-item--followers span.ProfileNav-value').attr('data-count')
+            favorites_count = _('ul.ProfileNav-list>li.ProfileNav-item--favorites span.ProfileNav-value').attr('data-count')
+            list_count = _('ul.ProfileNav-list>li.ProfileNav-item--lists span.ProfileNav-value').text()
+            moment_count = _('ul.ProfileNav-list>li.ProfileNav-item--moments span.ProfileNav-value').text()
+            # bs = bs4.BeautifulSoup(reponse[0]['content'], 'html.parser')
+            # list_html = bs.select(
+            #     '#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--lists > a > span.ProfileNav-value')
+            # moment_html = bs.select('#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--moments > a > span.ProfileNav-value')
+
+            list_count =list_count if list_count else 0
+            moment_count = moment_count if moment_count else 0
             # print(list_count)
-            return (list_count,moment_count)
+            return (tweet_count,flowing_count,followers_count,favorites_count,list_count,moment_count)
         except Exception as e:
             print(e)
             return None,None
@@ -117,57 +124,46 @@ class TWitter(Base,twython.Twython):
             #     "https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id']))
             # # print(response.text)
             result_list = []
-            for item in response:
+            if response:
+                for item in response:
                 # print(item)
-                try:
-                    _ = pq(item['content'])
-                    # bs = bs4.BeautifulSoup(item['content'], 'html.parser')
-                    # html = bs.select(
-                    # print('你是个什么东西')
-                    # print(_('div.inline-reply-tweetbox-container').html())
-                    replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--reply.u-hiddenVisually>span').attr('data-tweet-stat-count')
-                    retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--retweet.u-hiddenVisually>span').attr('data-tweet-stat-count')
-                    like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--favorite.u-hiddenVisually>span').attr('data-tweet-stat-count')
+                    try:
+                        _ = pq(item['content'])
+                        # bs = bs4.BeautifulSoup(item['content'], 'html.parser')
+                        # html = bs.select(
+                        # print('你是个什么东西')
+                        # print(_('div.inline-reply-tweetbox-container').html())
+                        replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--reply.u-hiddenVisually>span').attr('data-tweet-stat-count')
+                        retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--retweet.u-hiddenVisually>span').attr('data-tweet-stat-count')
+                        like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--favorite.u-hiddenVisually>span').attr('data-tweet-stat-count')
 
-                    # replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--reply').text()
-                    # retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--retweet.js-toggleState.js-toggleRt').text()
-                    # like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--favorite.js-toggleState').text()
+                        # replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--reply').text()
+                        # retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--retweet.js-toggleState.js-toggleRt').text()
+                        # like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--favorite.js-toggleState').text()
 
-                    # replay_re = re.search(r'(\d+,\d+)|\d+',replay)
-                    # retweet_re = re.search(r'(\d+,\d+)|\d+',retweet)
-                    # like_re = re.search(r'(\d+,\d+)|\d+',like)
+                        # replay_re = re.search(r'(\d+,\d+)|\d+',replay)
+                        # retweet_re = re.search(r'(\d+,\d+)|\d+',retweet)
+                        # like_re = re.search(r'(\d+,\d+)|\d+',like)
 
-                    # print(item['url'].split('/')[-1])
-                    # replay2 = _('div.PermalinkOverlay-content > div > div > div.permalink.light-inline-actions.stream-uncapped.has-replies.original-permalink-page > div.permalink-inner.permalink-tweet-container.ThreadedConversation.ThreadedConversation--permalinkTweetWithAncestors > div > div.stream-item-footer > div.ProfileTweet-actionList.js-actions > div.ProfileTweet-action.ProfileTweet-action--reply > button > span > span').text()
-                    print('html内容:')
-                    print(replay)
-                    print(retweet)
-                    print(like)
-                    print('处理后的结果:')
-                    print({
-                        "url":item['url'],
-                        "reply_count":replay if replay else 0,
-                        "retweet_count":retweet if retweet else 0,
-                        "favorite_count":like if like else 0
-                    })
-                    print('\n\n')
+                        # print(item['url'].split('/')[-1])
+                        # replay2 = _('div.PermalinkOverlay-content > div > div > div.permalink.light-inline-actions.stream-uncapped.has-replies.original-permalink-page > div.permalink-inner.permalink-tweet-container.ThreadedConversation.ThreadedConversation--permalinkTweetWithAncestors > div > div.stream-item-footer > div.ProfileTweet-actionList.js-actions > div.ProfileTweet-action.ProfileTweet-action--reply > button > span > span').text()
 
 
-                    # reply_count = replay if replay.isalnum() and not replay.isspace() else 0#html.text
-                    result_list.append({
-                        "url":item['url'],
-                        "reply_count":replay if replay else 0,
-                        "retweet_count":retweet if retweet else 0,
-                        "favorite_count":like if like else 0
-                    })
-                except Exception as e:
-                    print(e)
-                    result_list.append({
-                        "url": item['url'],
-                        "reply_count": None,
-                        "retweet_count":None,
-                        "favorite_count":None
-                    })
+                        # reply_count = replay if replay.isalnum() and not replay.isspace() else 0#html.text
+                        result_list.append({
+                            "url":item['url'],
+                            "reply_count":replay if replay else 0,
+                            "retweet_count":retweet if retweet else 0,
+                            "favorite_count":like if like else 0
+                        })
+                    except Exception as e:
+                        print(e)
+                        result_list.append({
+                            "url": item['url'],
+                            "reply_count": None,
+                            "retweet_count":None,
+                            "favorite_count":None
+                        })
             return result_list
         except Exception as e:
             print(e)
@@ -210,7 +206,7 @@ if __name__ == '__main__':
     # twitter
     # doc = twitter.fetch_user_tweets(user_id='15949499',deadline='2017-12-10')
     # print(twitter.crawler_list_count(user_sreen_name='RepDianaDeGette'))
-    repaly = twitter.crawler_replay_num('https://twitter.com/realDonaldTrump/status/930089374187950081')
+    repaly = twitter.crawler_list_count('RepSpeier')
     print(repaly)
 
 

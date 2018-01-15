@@ -2,4 +2,5 @@
 
 PYTHONPATH=$PYTHONPATH:.
 
+
 pipenv run python3 ./src/index.py -c crawler_tweets

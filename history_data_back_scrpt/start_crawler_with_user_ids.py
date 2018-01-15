@@ -12,19 +12,20 @@ def crawler_init(name='twitter'):
     if name == 'twitter':
         twitter_crawler_queue = RedisQueue(name='twitter',redis_config=config['redis_config'])
         if twitter_crawler_queue.qsize()>0:
-            twitter_crawler_queue.clear()
-        if twitter_crawler_queue.qsize() == 0:
+            print('<-----有%s个任务还未完成---->')
+        if twitter_crawler_queue.empty():
             with open(os.path.abspath('twitter_user_ids.json'), 'r') as f:
                 user_ids = json.load(f)
                 for id in user_ids['ids']:
                     twitter_crawler_queue.put(id)
+                    # print(id)
         print('<-----有%s个任务需要完成----->',twitter_crawler_queue.qsize())
         print('<-----twitter初始化完成----->')
     else:
         facebook_crawler_queue = RedisQueue(name='facebook',redis_config=config['redis_config'])
         if facebook_crawler_queue.qsize()>0:
-            facebook_crawler_queue.clear()
-        if facebook_crawler_queue.qsize()==0:
+            print('<-----有%s个任务还未完成---->')
+        if facebook_crawler_queue.empty():
             with open(os.path.abspath('facebook_user_ids.json'), 'r') as f:
                 user_ids = json.load(f)
                 for id in user_ids['ids']:

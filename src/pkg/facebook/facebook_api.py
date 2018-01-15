@@ -74,7 +74,7 @@ class FaceBook(Base):
             except Exception as e:
                 result_list.append({
                     "url":item['url'],
-                    "reactions":None
+                    "reactions":[]
                 })
         return result_list
 
@@ -108,8 +108,8 @@ class FaceBook(Base):
         return_list = []
         for item in content:
             # print(item['content'])
-            likes_count = pq(item['content'])('._3xom').html()
-            # print(likes_count)
+            user_community = pq(item['content'])('._3xom').text()
+            likes_count,fan_count, = tuple(user_community.split(' '))
             # if likes_count:
             #     people_likes_num = re.search(r'\d+,\d+,\d+',likes_count) if re.search(r'\d+,\d+,\d+',likes_count) else 0
             # else:
@@ -118,7 +118,8 @@ class FaceBook(Base):
             # print(likes_count)
             return_list.append({
                 "url":item['url'],
-                "like_count":likes_count if likes_count!=None else 0
+                "like_count":likes_count if likes_count!=None else 0,
+                "fan_count":fan_count if fan_count != None else 0
             })
         return return_list;
 
@@ -133,7 +134,7 @@ class FaceBook(Base):
                     # print(content)
                     origin_html = content[0]['content']
                 else:
-                    origin = json.loads(content[0]['content'][9:])['domops']
+                    origin = json.loads(content[0]['content'].decode()[9:])['domops']
                     origin_html = list(filter(lambda x: type(x) == dict, origin[0]))
                     # print(origin_html)
                     origin_html = origin_html[0]['__html']
@@ -181,8 +182,11 @@ class FaceBook(Base):
                     # item['likes_num'] = None  # reactions[0]['reactions']['likes_count'] if reactions else 0
                     # item['comment_num'] = None  # reactions[0]['reactions']['comment_count'] if reactions else 0
                     item['user_id'] = id
+                    print(item['create_at'])
                     if deadline and tweet3.index(item)!= 0:
+
                         date = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
+                        #print(date)
                         deadline_panduan = datetime.strptime('%s' % deadline, '%Y-%m-%d')
                         print((date - deadline_panduan).days)
                         if (date - deadline_panduan).days <= 0:
@@ -277,8 +281,8 @@ class FaceBook(Base):
 
 if __name__ == '__main__':
     facebook = FaceBook()
-    facebook.crawler_reactions_nums('https://facebook.com/permalink.php?story_fbid=10155796394206704&id=101464786703')
-    # result = facebook.crawler_user_likes('https://www.facebook.com/DonaldJTrumpJr/')
-    # print(result)
+    # facebook.crawler_reactions_nums('https://facebook.com/permalink.php?story_fbid=10155796394206704&id=101464786703')
+    result = facebook.crawler_user_likes('https://www.facebook.com/pg/DonaldTrump/community/')
+    print(result)
     # facebook.fetch_user_tweets(id='295644160460352',urls='https://www.facebook.com/pages_reaction_units/more/?page_id=153080620724&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001509137254%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1')
 

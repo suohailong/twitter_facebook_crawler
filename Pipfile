@@ -23,6 +23,7 @@ aiohttp = "*"
 twython = "*"
 redis = "*"
 celery = "*"
+schedule = "*"
 
 
 [dev-packages]
