@@ -14,5 +14,6 @@
           "collection":"Tuser_post"
 
 	},
-	"run_platform":"localhost"
+	"run_platform":"localhost",
+	"deadtime":"2016-12-31"
 }
