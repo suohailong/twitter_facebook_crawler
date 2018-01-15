@@ -1241,11 +1241,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
-              <caret line="28" column="74" lean-forward="false" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+              <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -1261,14 +1261,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="202" column="50" lean-forward="false" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
+            <state relative-caret-position="429">
+              <caret line="199" column="36" lean-forward="true" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="36" />
               <folding>
                 <element signature="e#1524#3509#0" expanded="false" />
-                <element signature="e#10950#12109#0" expanded="false" />
+                <element signature="e#10845#12004#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1277,17 +1277,17 @@
       <file leaf-file-name="shedule.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="69" column="71" lean-forward="false" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
+            <state relative-caret-position="600">
+              <caret line="108" column="74" lean-forward="false" selection-start-line="108" selection-start-column="74" selection-end-line="108" selection-end-column="74" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
                 <element signature="e#943#1403#0" expanded="false" />
                 <element signature="e#1481#2429#0" expanded="false" />
                 <element signature="e#2495#2796#0" expanded="false" />
-                <element signature="e#4778#7688#0" expanded="false" />
-                <element signature="e#7774#8533#0" expanded="false" />
-                <element signature="e#8635#12358#0" expanded="false" />
-                <element signature="e#12436#15274#0" expanded="false" />
+                <element signature="e#4720#7630#0" expanded="false" />
+                <element signature="e#7716#8475#0" expanded="false" />
+                <element signature="e#8577#12301#0" expanded="false" />
+                <element signature="e#12379#15217#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1436,9 +1436,9 @@
         <option value="$PROJECT_DIR$/es_srcipt/twitter_pusher.py" />
         <option value="$PROJECT_DIR$/history_data_back_scrpt/start_crawler_with_user_ids.py" />
         <option value="$PROJECT_DIR$/supervisord.conf" />
+        <option value="$PROJECT_DIR$/src/pkg/facebook/facebook_api.py" />
         <option value="$PROJECT_DIR$/src/shedule.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
-        <option value="$PROJECT_DIR$/src/pkg/facebook/facebook_api.py" />
       </list>
     </option>
   </component>
@@ -2122,31 +2122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shedule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="69" column="71" lean-forward="false" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-            <element signature="e#943#1403#0" expanded="false" />
-            <element signature="e#1481#2429#0" expanded="false" />
-            <element signature="e#2495#2796#0" expanded="false" />
-            <element signature="e#4778#7688#0" expanded="false" />
-            <element signature="e#7774#8533#0" expanded="false" />
-            <element signature="e#8635#12358#0" expanded="false" />
-            <element signature="e#12436#15274#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="28" column="74" lean-forward="false" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/supervisord.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -2157,12 +2132,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="202" column="50" lean-forward="false" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
+        <state relative-caret-position="429">
+          <caret line="199" column="36" lean-forward="true" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="36" />
           <folding>
             <element signature="e#1524#3509#0" expanded="false" />
-            <element signature="e#10950#12109#0" expanded="false" />
+            <element signature="e#10845#12004#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="108" column="74" lean-forward="false" selection-start-line="108" selection-start-column="74" selection-end-line="108" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#943#1403#0" expanded="false" />
+            <element signature="e#1481#2429#0" expanded="false" />
+            <element signature="e#2495#2796#0" expanded="false" />
+            <element signature="e#4720#7630#0" expanded="false" />
+            <element signature="e#7716#8475#0" expanded="false" />
+            <element signature="e#8577#12301#0" expanded="false" />
+            <element signature="e#12379#15217#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

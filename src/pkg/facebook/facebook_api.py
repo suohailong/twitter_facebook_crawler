@@ -124,7 +124,7 @@ class FaceBook(Base):
         return return_list;
 
 
-    def fetch_user_tweets(self,id=None,deadFrom ='2017-9-21',deadline='2017-09-21',urls=[]):
+    def fetch_user_tweets(self,id=None,deadline='2017-09-21',urls=[]):
         flag=True
         while True:
             try:
@@ -193,15 +193,14 @@ class FaceBook(Base):
                     # item['likes_num'] = None  # reactions[0]['reactions']['likes_count'] if reactions else 0
                     # item['comment_num'] = None  # reactions[0]['reactions']['comment_count'] if reactions else 0
                     item['user_id'] = id
+                    print(item['create_at'])
                     if deadline and tweet3.index(item)!= 0:
 
                         date = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
                         #print(date)
-                        dateFrom = datetime.strptime('%s' % deadFrom, '%Y-%m-%d')
-                        dateTo = datetime.strptime('%s' % deadline, '%Y-%m-%d')
-                        # print((date - dateTo).days)
-                        if (date - dateTo).days >= (dateFrom-dateTo).days:
-                            print(item['create_at'])
+                        deadline_panduan = datetime.strptime('%s' % deadline, '%Y-%m-%d')
+                        print((date - deadline_panduan).days)
+                        if (date - deadline_panduan).days <= 0:
                             flag=False;
                             break;
                     # print(item['name'])

@@ -26,9 +26,9 @@ def facebook_every_day_job(dateline=None):
     if not dateline:
         dateline = datetime.datetime.strftime(datetime.date.today() - datetime.timedelta(days=3), '%Y-%m-%d')
         datetimeline = copy.deepcopy(dateline)
-        s.crawler_tweets(FaceBook(), site='facebook',deadFrom='2017-9-26', deadtime=datetimeline)
+        s.crawler_tweets(FaceBook(), site='facebook', deadtime=datetimeline)
     else:
-        s.crawler_tweets(FaceBook(), site='facebook',deadFrom='2017-9-26', deadtime=dateline)
+        s.crawler_tweets(FaceBook(), site='facebook', deadtime=dateline)
     print('crawler facebook posts finished')
 
 

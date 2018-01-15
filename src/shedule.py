@@ -67,7 +67,7 @@ class Shedule(object):
             time.sleep(1)
         print('all kws is processed')
 
-    def crawler_tweets(self,crawler,site='facebook',deadFrom='2017-9-21',deadtime='2017-1-1'):
+    def crawler_tweets(self,crawler,site='facebook',deadtime='2017-1-1'):
         print('<-----启动文章抓取----->')
         weipa_count = 1
         if site=='twitter':
@@ -86,7 +86,7 @@ class Shedule(object):
                         continue
 
                 id = twitter_crawler_queue.get()
-                crawler.fetch_user_tweets(user_id=id,deadFrom=deadFrom,deadline=deadtime)
+                crawler.fetch_user_tweets(user_id=id,deadline=deadtime)
                 weipa_count = 1;
         else:
             facebook_crawler_queue = RedisQueue(name='facebook',redis_config=self.app_config['redis_config'])
@@ -106,7 +106,7 @@ class Shedule(object):
 
                 id = facebook_crawler_queue.get()
                 doc = db.find_one({"id":id})
-                crawler.fetch_user_tweets(id=id,urls=doc['link']+'posts/',deadFrom=deadFrom, deadline=deadtime)
+                crawler.fetch_user_tweets(id=id,urls=doc['link']+'posts/',deadline=deadtime)
             # print('完成全部抓取')
                 weipa_count = 1;
 
@@ -251,7 +251,7 @@ class Shedule(object):
                         data['replay_count'] = item['reply_count']
                         data['favorite_count'] = item['favorite_count']
                         data['retweet_count'] = item['retweet_count']
-                        es.twitter_pusher(data)
+                        es.facebook_pusher(data)
                 weipa_count=1;
 
             except Exception as e:
