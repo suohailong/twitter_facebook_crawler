@@ -19,13 +19,13 @@ def facebook_every_day_update_count_job():
     s.crawler_reactions(FaceBook())
     print('crawler facebook reactions finished')
 
-schedule.every().day.at("10:30").do(facebook_every_day_update_count_job)
+schedule.every(3).hour.do(facebook_every_day_update_count_job)
 
 if __name__ == '__main__':
     print('<-----reactions定时任务启动----->')
-    facebook_every_day_update_count_job()
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(1)
+    # facebook_every_day_update_count_job()
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 

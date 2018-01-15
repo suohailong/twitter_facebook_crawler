@@ -20,14 +20,14 @@ def twitter_every_day_update_count_job():
     s.crawler_tweets_replay_count(TWitter())
     print('crawler twitter replay finished')
 
-schedule.every().days.at("10:59").do(twitter_every_day_update_count_job)
+schedule.every(3).hour.do(twitter_every_day_update_count_job)
 
 
 if __name__ == '__main__':
     print('<-----replay定时任务启动----->')
-    twitter_every_day_update_count_job()
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(1)
+    # twitter_every_day_update_count_job()
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 

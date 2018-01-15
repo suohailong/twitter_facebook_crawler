@@ -132,7 +132,7 @@ class Shedule(object):
                     else:
                         weipa_count+=1
                         print('[==Retry:%s==]' % (weipa_count-1))
-                        time.sleep(5)
+                        time.sleep(10)
                         continue
                 urls = crawler_reactions_queue.get()#map(lambda x:{"url":'https://facebook.com%s' % x['permalink_url'],'id':x['_id']},tweets)
                 content = crawler.crawler_reactions_nums(urls)
@@ -219,7 +219,7 @@ class Shedule(object):
                     else:
                         weipa_count+=1
                         print('[==Retry:%s==]' % (weipa_count-1))
-                        time.sleep(5)
+                        time.sleep(10)
                         continue
                 print(weipa_count)
                 urls = crawler_tweet_replay_queue.get()
