@@ -52,11 +52,21 @@ if __name__ == '__main__':
                         help="push all",
                         default=" ",
                         action="store")
+    parser.add_argument('-c', "--clear",
+                        help="clear all",
+                        default=" ",
+                        action="store")
     args = parser.parse_args()
-
-    if args.all=='all':
-        crawler_init(name='twitter')
-        crawler_init(name='facebook')
+    if args.clear==True:
+        if args.all=='all':
+            clear_queue(site='twitter')
+            clear_queue(site='facebook')
+        else:
+            clear_queue(site=args.name)
     else:
-        crawler_init(name=args.name)
+        if args.all=='all':
+            crawler_init(name='twitter')
+            crawler_init(name='facebook')
+        else:
+            crawler_init(name=args.name)
 
