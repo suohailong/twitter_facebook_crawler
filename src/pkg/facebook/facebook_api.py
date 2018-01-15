@@ -200,7 +200,7 @@ class FaceBook(Base):
                         dateFrom = datetime.strptime('%s' % deadFrom, '%Y-%m-%d')
                         dateTo = datetime.strptime('%s' % deadline, '%Y-%m-%d')
                         # print((date - dateTo).days)
-                        if (date - dateTo).days <= (dateFrom-dateTo).days:
+                        if (date - dateTo).days >= (dateFrom-dateTo).days:
                             print(item['create_at'])
                             flag=False;
                             break;
