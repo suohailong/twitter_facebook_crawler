@@ -42,6 +42,7 @@ class TWitter(Base,twython.Twython):
         self.args = args
         # self.crawler_list_queue = RedisQueue(name='twitter_list',redis_config=redis_config)
         self.crawler_replay_queue = RedisQueue(name='twitter_replay', redis_config=self.app_config['redis_config'])
+        self.crawler_tweets_queue = RedisQueue(name='twitter',redis_config=self.app_config['redis_config'])
 
     def fetch_user_tweets(self, user_id=None,deadline=None, bucket="timelines"):
 
@@ -74,6 +75,7 @@ class TWitter(Base,twython.Twython):
                         tweet['site']='twitter'
                         tweet['latest']='true'
                         tweet['update_status'] = False
+                        tweet['update_time'] = datetime.datetime.today()
                         # print('存入mongo')
                         object_id = self.save(tweet)
                         crawler_replay_list.append("https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id_str']))
@@ -89,8 +91,10 @@ class TWitter(Base,twython.Twython):
                     break;
 
             except Exception as e:
-                print('发生错误')
-                print(e)
+                print('<发生错误，%s重新加载到文章队列>' % user_id)
+                self.crawler_tweets_queue.put(user_id)
+                continue;
+                # print(e)
 
     def crawler_list_count(self,user_sreen_name=None):
         try:

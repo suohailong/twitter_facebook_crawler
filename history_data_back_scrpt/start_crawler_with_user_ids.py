@@ -1,5 +1,8 @@
+import os,json, argparse,sys
+
+sys.path.append('.')
 from src.redis_helper import RedisQueue
-import os,json, argparse
+
 
 def read_config():
     with open(os.path.abspath('config.json'), 'r') as f:
@@ -57,7 +60,7 @@ if __name__ == '__main__':
                         default=" ",
                         action="store")
     args = parser.parse_args()
-    if args.clear==True:
+    if args.clear=='true':
         if args.all=='all':
             clear_queue(site='twitter')
             clear_queue(site='facebook')

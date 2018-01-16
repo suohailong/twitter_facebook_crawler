@@ -105,7 +105,7 @@ class Shedule(object):
                         continue
 
                 id = facebook_crawler_queue.get()
-                doc = db.find_one({"id":id})
+                doc = db.find_one({"id":str(id)})
                 crawler.fetch_user_tweets(id=id,urls=doc['link']+'posts/',deadline=deadtime)
             # print('完成全部抓取')
                 weipa_count = 1;
@@ -164,7 +164,7 @@ class Shedule(object):
                             es.facebook_pusher(data)
                 weipa_count = 1;
             except Exception as e:
-                print(e.with_traceback())
+                print(e.with_traceback(0))
 
     def update_facebook_users_count(self,crawler):#facebook 用户账户的like_num字段
         db = self.create_mongo_conn(db='FaceBook', collection='facebook')

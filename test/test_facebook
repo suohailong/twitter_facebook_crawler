@@ -9,10 +9,10 @@ thisTime=thisTime.replace('at','')
 thisTime=thisTime.replace('am',' AM')
 thisTime=thisTime.replace('pm',' PM')
 thisTime = thisTime.replace('Surday','Saturday')
-print(datetime.strptime(thisTime,'%A %B %d %Y  %H:%M %p'))
+# print(datetime.strptime(thisTime,'%A %B %d %Y  %H:%M %p'))
 # print(objectid.ObjectId("/DonaldTrump/videos/10160322387075725/"))
 
-
+print(datetime.today())
 def makeId(mdstr):
     m = hashlib.md5(mdstr.encode(encoding='utf-8'))
     return m.hexdigest()

@@ -5,21 +5,33 @@
 # print(list(map(lambda x:x.replace('#',''),huati)))
 
 import schedule
-import datetime,time,sys,os
+import datetime,time,sys,os,json
 sys.path.append('.')
 from src.shedule import Shedule
 from src.pkg.twitter.twitter import TWitter
 from src.pkg.facebook.facebook_api import FaceBook
+from src.redis_helper import RedisQueue
 
-
+with open(os.path.abspath('config.json'), 'r') as f:
+    app_config = json.load(f)
 
 def facebook_every_day_update_count_job():
     s = Shedule()
     print("crawler facebook reactions  working...")
-    s.crawler_reactions(FaceBook())
+    s.crawler_reactions(FaceBook(),history=True)
     print('crawler facebook reactions finished')
 
-schedule.every(3).hours.do(facebook_every_day_update_count_job)
+def check_queue_isEmpty():
+    queue = RedisQueue(name='facebook_reactions', redis_config=app_config['redis_config'])
+    if queue.qsize()>0:
+        facebook_every_day_update_count_job()
+    else:
+        print('[没有任务！！]')
+    return
+
+
+
+schedule.every(3).minutes.do(check_queue_isEmpty)
 
 if __name__ == '__main__':
     print('<-----reactions定时任务启动----->')

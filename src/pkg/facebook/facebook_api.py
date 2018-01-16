@@ -39,6 +39,7 @@ class FaceBook(Base):
         self.__flag = 'facebook'
         self.args = args
         self.crawler_reactions_queue = RedisQueue(name='facebook_reactions',redis_config=self.app_config['redis_config'])
+        self.crawler_tweets_queue = RedisQueue(name='facebook',redis_config=self.app_config['redis_config'])
 
     def __reactions_handler(self,responseText=[]):
         # print(responseText)
@@ -78,26 +79,16 @@ class FaceBook(Base):
                 })
         return result_list
 
-    def make_next_page_url(self,url,page_id,next_time):
-        # o = urlparse(url)
-        # query_str = parse_qs(o.query)
-        # for k, v in query_str.items():
-        #     query_str[k] = v[0]
-        # query_dict_cursor = json.loads(query_str['cursor'])
-        # # print(query_str)
-        # time_line = query_dict_cursor['timeline_cursor']
-        # time_line_constructor = time_line.split(':')
-        # time_line_constructor[2] = '00000000000%s' % next_time
-        # time_line_constructor[4] = '%d' % (int(time_line_constructor[4]) - 20)
-        # new_time_line = ':'.join(time_line_constructor)
-        #
-        # query_dict_cursor['timeline_cursor'] = new_time_line
-        # query_str['cursor'] = query_dict_cursor
-        # l_url = url.split('?')
-        # l_url[1] = urlencode(query_str)
-        # return '?'.join(l_url)
+    def make_next_page_url(self,url,page_id,next_time,back_end=False):
+
         default_next_page_ma = '09223372036854775788';
-        return "https://www.facebook.com/pages_reaction_units/more/?page_id={0}&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A0000000000{1}%3A04611686018427387904%3A{2}%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1".format(page_id,next_time,int(default_next_page_ma)-20)
+        if back_end==1:
+            return "https://www.facebook.com/pages_reaction_units/more/?page_id={0}&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A0000000000{1}%3A04611686018427387904%3A{2}%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%22profile_id%22%3A{3}%2C%22start%22%3A0%2C%22end%22%3A1517471999%2C%22query_type%22%3A36%2C%22filter%22%3A1%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843".format(page_id,next_time,int(default_next_page_ma)-9,page_id)
+        elif back_end==2:
+            return "https://www.facebook.com/pages_reaction_units/more/?page_id={0}&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A0000000000{1}%3A04611686018427387904%3A{2}%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%22profile_id%22%3A6{3}%2C%22start%22%3A1483257600%2C%22end%22%3A1514793599%2C%22query_type%22%3A8%2C%22filter%22%3A1%2C%22filter_after_timestamp%22%3A1489029481%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843".format(
+                page_id, next_time, int(default_next_page_ma) - 9,page_id)
+        elif back_end==0:
+            return "https://www.facebook.com/pages_reaction_units/more/?page_id={0}&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A0000000000{1}%3A04611686018427387904%3A{2}%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843".format(page_id,next_time,int(default_next_page_ma)-9)
     def crawler_reactions_nums(self,url):
         content = self.asynchronous_request(url)
         return self.__reactions_handler(content)
@@ -126,6 +117,7 @@ class FaceBook(Base):
 
     def fetch_user_tweets(self,id=None,deadline='2017-09-21',urls=[]):
         flag=True
+        back=0
         while True:
             try:
                 content = self.asynchronous_request(urls)
@@ -151,6 +143,7 @@ class FaceBook(Base):
                 _ = pq(origin_html)
                 tweets = list(_('div._4-u2._4-u8').map(scrape))
                 if(len(tweets)==0):
+                    print('没有数据tweets为0')
                     break;
                 # print(tweets)
                 tweet3 = []
@@ -180,7 +173,9 @@ class FaceBook(Base):
                             yield item
                             seen.add(val)
                 tweet3 = list(dedupe(tweet3, key=lambda d: (d['name'], d['create_at'],d['last_untime'],d['permalink_url'],d['message'])))
-                urls=self.make_next_page_url(urls,id,tweet3[-1]['last_untime'])
+                if len(tweet3)<=1:
+                    back=back+1
+                urls=self.make_next_page_url(urls,id,tweet3[-1]['last_untime'],back_end=back)
                 # reactions_urls = map(lambda x:'https://www.facebook.com%s' % x['permalink_url'],tweet3)
                 # reactions = self.crawler_reactions_nums(reactions_urls)
                 crawler_reactions_list = []
@@ -189,9 +184,7 @@ class FaceBook(Base):
                     item['site']='facebook'
                     item['latest']='true'
                     item['update_status'] = False
-                    # item['share_num'] = None  # reactions[0]['reactions']['share_count'] if reactions else 0
-                    # item['likes_num'] = None  # reactions[0]['reactions']['likes_count'] if reactions else 0
-                    # item['comment_num'] = None  # reactions[0]['reactions']['comment_count'] if reactions else 0
+                    item['update_time'] = datetime.today()
                     item['user_id'] = id
                     print(item['create_at'])
                     if deadline and tweet3.index(item)!= 0:
@@ -208,12 +201,15 @@ class FaceBook(Base):
                     crawler_reactions_list.append({'url':'https://facebook.com%s' % item['permalink_url'],'id':str(object_id)})
                     print('save %s ==>successfuly' % object_id)
                 self.crawler_reactions_queue.put(crawler_reactions_list)
-                if not flag or len(tweet3)<=1:
+                print('获取的文档长度:%s' % len(tweet3))
+                if not flag :
                     print('此用户的文章爬取完成')
+                    back=0
                     break;
             except Exception as e:
-                print(e)
-                continue;
+                print('<发生错误，%s重新加载到文章队列>' % id)
+                self.crawler_tweets_queue.put(id)
+                raise e
 
     def searchUserInfo(self,keyword=[],typeIndex=1):
         print(keyword[typeIndex])

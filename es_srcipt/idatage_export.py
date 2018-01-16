@@ -262,7 +262,8 @@ class Espusher(object):
         # client = MongoClient()
         dbs = self.client['FaceBook']
         userSet = dbs['facebook']
-        user = userSet.find_one({"id": item['user_id']})
+        # print(item)
+        user = userSet.find_one({"id": str(item['user_id'])})
         item['create_at'] = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M').strftime(
             '%Y-%m-%dT%H:%M:%S.000Z')
         item['index_name'] = 'rowlet_facebook_articles'
