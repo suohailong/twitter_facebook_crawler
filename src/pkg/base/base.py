@@ -39,8 +39,8 @@ class Base(object):
                                     "content": response
                                 }
                         except Exception as e:
-                            print('发生了错误')
-                            raise Exception(e)
+                            # print('发生了错误')
+                            raise Exception('Network_Error')
                 else:
                     print('request ===>: %s ' % url)
                     async with ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
@@ -55,8 +55,8 @@ class Base(object):
                                     "content": response
                                 }
                         except Exception as e:
-                            print('发生了错误')
-                            raise Exception(e)
+                            # print('发生了错误')
+                            raise Exception('Network_Error')
 
             asyncio.set_event_loop(asyncio.new_event_loop())
             loop = asyncio.get_event_loop()
