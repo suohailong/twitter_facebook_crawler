@@ -259,8 +259,8 @@ class Espusher(object):
 
 
     def facebook_pusher(self,item):
-        client = MongoClient()
-        dbs = client['FaceBook']
+        # client = MongoClient()
+        dbs = self.client['FaceBook']
         userSet = dbs['facebook']
         user = userSet.find_one({"id": item['user_id']})
         item['create_at'] = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M').strftime(
