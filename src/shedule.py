@@ -238,6 +238,7 @@ class Shedule(object):
                 # else:
                 content = crawler.crawler_replay_num(urls)
                 for item in content:
+                    # print(item)
                     # print(item['url'].split('/')[-1])
                     if history:
                         update_doc = db.update_many({"id_str": item['url'].split('/')[-1],'site':'twitter'}, {
@@ -247,16 +248,17 @@ class Shedule(object):
                         print('更新了%s个' % (
                         update_doc.modified_count))
                     else:
+                        # print(item)
                         data = db.find_one_and_delete({"id_str": item['url'].split('/')[-1],'site':'twitter'})
                         data['replay_count'] = item['reply_count']
                         data['favorite_count'] = item['favorite_count']
                         data['retweet_count'] = item['retweet_count']
-                        es.facebook_pusher(data)
+                        es.twitter_pusher(data)
                 weipa_count=1;
 
             except Exception as e:
-                print(e)
-                continue
+                raise e
+                # continue
 
 
     def crawler_tweets_replay(self):#推文表中的replay_count字段  用celery做

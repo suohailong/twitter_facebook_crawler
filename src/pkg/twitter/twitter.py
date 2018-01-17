@@ -130,7 +130,7 @@ class TWitter(Base,twython.Twython):
             result_list = []
             if response:
                 for item in response:
-                # print(item)
+                    # print(item)
                     try:
                         _ = pq(item['content'])
                         # bs = bs4.BeautifulSoup(item['content'], 'html.parser')
@@ -160,6 +160,7 @@ class TWitter(Base,twython.Twython):
                             "retweet_count":retweet if retweet else 0,
                             "favorite_count":like if like else 0
                         })
+
                     except Exception as e:
                         print(e)
                         result_list.append({
