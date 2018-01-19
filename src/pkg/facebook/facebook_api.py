@@ -85,13 +85,16 @@ class FaceBook(Base):
         if back_end==1:
             return "https://www.facebook.com/pages_reaction_units/more/?page_id={0}&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A0000000000{1}%3A04611686018427387904%3A{2}%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%22profile_id%22%3A{3}%2C%22start%22%3A0%2C%22end%22%3A1517471999%2C%22query_type%22%3A36%2C%22filter%22%3A1%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843".format(page_id,next_time,int(default_next_page_ma)-9,page_id)
         elif back_end==2:
-            return "https://www.facebook.com/pages_reaction_units/more/?page_id={0}&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A0000000000{1}%3A04611686018427387904%3A{2}%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%22profile_id%22%3A6{3}%2C%22start%22%3A1483257600%2C%22end%22%3A1514793599%2C%22query_type%22%3A8%2C%22filter%22%3A1%2C%22filter_after_timestamp%22%3A1489029481%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843".format(
+            return "https://www.facebook.com/pages_reaction_units/more/?page_id={0}&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A0000000000{1}%3A04611686018427387904%3A{2}%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%22profile_id%22%3A{3}%2C%22start%22%3A1483257600%2C%22end%22%3A1514793599%2C%22query_type%22%3A8%2C%22filter%22%3A1%2C%22filter_after_timestamp%22%3A1487694945%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=8&dpr=2&__user=0&__a=1&__dyn=5V8WXBzamaUmgDxKS5o9FE9XGiWGey8jrWo466ES2N6xucxu13wFG2LzEjyR88xK5WAAzoOuVWxeUPwExnBg4bzojDx6aCyVeFFUkgmxGUO2S1iyECQ3e4oqyU9ooxqqVEgyk3GEtgWrwJxqawLh42ui2G262iu4rGUpCx65aBy9EixO12y9E9oKfzUy5uazrDwFxCibUK8Lz-icK8Cx6789E-8HgoUhwKl4ykby8cUSmh2osBK&__req=22&__be=-1&__pc=EXP1%3Ahome_page_pkg&__rev=3576820".format(
                 page_id, next_time, int(default_next_page_ma) - 9,page_id)
         elif back_end==0:
             return "https://www.facebook.com/pages_reaction_units/more/?page_id={0}&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A0000000000{1}%3A04611686018427387904%3A{2}%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843".format(page_id,next_time,int(default_next_page_ma)-9)
     def crawler_reactions_nums(self,url):
-        content = self.asynchronous_request(url)
-        return self.__reactions_handler(content)
+        try:
+            content = self.asynchronous_request(url)
+            return self.__reactions_handler(content)
+        except Exception as e:
+           raise e;
 
     def crawler_user_likes(self,url):
 
@@ -100,22 +103,48 @@ class FaceBook(Base):
         for item in content:
             # print(item['content'])
             user_community = pq(item['content'])('._3xom').text()
-            likes_count,fan_count, = tuple(user_community.split(' '))
+            print(user_community)
+            if user_community == '0':
+                return_list.append({
+                    "url": item['url'],
+                    "like_count": user_community,
+                    "fan_count": user_community
+                })
+            elif user_community == '':
+                return_list.append({
+                    "url": item['url'],
+                    "isLoginStatus":True,
+                    "like_count": '0',
+                    "fan_count": '0'
+                })
+            else:
+                if(len(user_community))>1:
+                    likes_count, fan_count, = tuple(user_community.split(' '))
+                    return_list.append({
+                        "url": item['url'],
+                        "isLoginStatus": True,
+                        "like_count": likes_count,
+                        "fan_count": fan_count
+                    })
+                else:
+                    # likes_count, fan_count, = tuple(user_community.split(' '))
+                    return_list.append({
+                        "url": item['url'],
+                        "isLoginStatus": True,
+                        "like_count": user_community,
+                        "fan_count": 0
+                    })
             # if likes_count:
             #     people_likes_num = re.search(r'\d+,\d+,\d+',likes_count) if re.search(r'\d+,\d+,\d+',likes_count) else 0
             # else:
             #     people_likes_num=0;
             # print(people_likes_num)
             # print(likes_count)
-            return_list.append({
-                "url":item['url'],
-                "like_count":likes_count if likes_count!=None else 0,
-                "fan_count":fan_count if fan_count != None else 0
-            })
+
         return return_list;
 
 
-    def fetch_user_tweets(self,id=None,deadline='2017-09-21',urls=[]):
+    def fetch_user_tweets(self,id=None,deadline='2017-01-01',urls=[]):
         flag=True
         back=0
         while True:
@@ -162,7 +191,7 @@ class FaceBook(Base):
                     if 'Surday' in thisTime:
                         thisTime = thisTime.replace('Surday', 'Saturday')
                     x['create_at'] = datetime.strptime(thisTime, '%A %B %d %Y  %H:%M %p').strftime('%Y-%m-%d %H:%M')
-                    #x['create_at'] = datetime.strptime(x['create_at'], '%Y %m  %d    %H:%M').strftime('%Y-%m-%d %H:%M') #在本地跑数据
+                    # x['create_at'] = datetime.strptime(x['create_at'], '%Y %m  %d    %H:%M').strftime('%Y-%m-%d %H:%M') #在本地跑数据
                     tweet3.append(x)
 
                 def dedupe(items, key=None):
@@ -207,9 +236,13 @@ class FaceBook(Base):
                     back=0
                     break;
             except Exception as e:
-                print('<发生错误，%s重新加载到文章队列>' % id)
-                self.crawler_tweets_queue.put(id)
-                raise e
+                print('<%s重新加载到文章队列>' % id)
+                self.crawler_tweets_queue.lput(id)
+                posts = self.get_mongod_client()
+                deleteObj = posts.delete_many({'user_id':id})
+                print('<清除%s用户的所有文章,文章数为:%s>' % (id,deleteObj.deleted_count))
+                break;
+                # raise e
 
     def searchUserInfo(self,keyword=[],typeIndex=1):
         print(keyword[typeIndex])
@@ -289,7 +322,6 @@ class FaceBook(Base):
 if __name__ == '__main__':
     facebook = FaceBook()
     # facebook.crawler_reactions_nums('https://facebook.com/permalink.php?story_fbid=10155796394206704&id=101464786703')
-    result = facebook.crawler_user_likes('https://www.facebook.com/pg/DonaldTrump/community/')
-    print(result)
-    # facebook.fetch_user_tweets(id='295644160460352',urls='https://www.facebook.com/pages_reaction_units/more/?page_id=153080620724&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001509137254%3A04611686018427387904%3A9223372036854775768%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=20&dpr=2&__user=0&__a=1')
-
+    # result = facebook.crawler_user_likes('https://www.facebook.com/pg/DonaldTrump/community/')
+    # print(result)
+    facebook.fetch_user_tweets(id='397176447066236',urls='https://www.facebook.com/pages_reaction_units/more/?page_id=397176447066236&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001498921800%3A04611686018427387904%3A9223372036854775779%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%22profile_id%22%3A397176447066236%2C%22start%22%3A0%2C%22end%22%3A1517471999%2C%22query_type%22%3A36%2C%22filter%22%3A1%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843')

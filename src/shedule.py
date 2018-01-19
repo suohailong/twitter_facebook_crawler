@@ -115,6 +115,7 @@ class Shedule(object):
         db = self.create_mongo_conn()
         crawler_reactions_queue = RedisQueue(name='facebook_reactions',redis_config=self.app_config['redis_config'])
         weipa_count = 1;
+        err_count = 1;
         if not history:
             es = Espusher()
         while True:
@@ -141,7 +142,7 @@ class Shedule(object):
                 for item in content:
                     # print(item)
                     print(item['reactions'])
-                    print(item['url'])
+                    # print(item['url'])
                     # print(url)
                     if not item['reactions']:
                         print(item)
@@ -155,7 +156,8 @@ class Shedule(object):
                                          "update_status": True
                                          }
                             },return_document=ReturnDocument.AFTER)
-                            print('更新了%s个' % update_doc['_id'])
+                            if update_doc != None:
+                                print('更新了%s个' % update_doc['_id'])
                         else:
                             data = db.find_one_and_delete({'_id':objectid.ObjectId(item['url']['id'])})
                             data['comment_num'] = item['reactions']['comment_count']
@@ -163,14 +165,16 @@ class Shedule(object):
                             data['share_count'] = item['reactions']["share_count"]
                             es.facebook_pusher(data)
                 weipa_count = 1;
+                err_count = 1;
             except Exception as e:
-                print(e.with_traceback(0))
+                print(e)
+                continue;
 
     def update_facebook_users_count(self,crawler):#facebook 用户账户的like_num字段
         db = self.create_mongo_conn(db='FaceBook', collection='facebook')
         while True:
-            tweets = list(db.find({"likes_num":None}).limit(20))
-            print(db.count({"likes_num":None}))
+            tweets = list(db.find({"likes_num":'0',"update_status":{"$exists":False}}).limit(20))
+            print(db.count({"likes_num":'0',"update_status":{"$exists":False}}))
             if(len(tweets)==0):
                 break;
             urls = map(lambda x:x['link']+'community/',tweets)
@@ -180,10 +184,25 @@ class Shedule(object):
                 url = item['url'].replace('community/','')
                 # print(url)
                 print(item)
-                update_doc = db.update_many({"link": url}, {
-                    '$set': {'likes_num': item['like_count'],'fan_count':item['fan_count']}
-                })
-                print('更新了%s个' % update_doc.modified_count)
+                if "isLoginStatus" in item:
+                    update_doc = db.update_many({"link": url}, {
+                        '$set': {
+                            'likes_num': item['like_count'],
+                            'fan_count': item['fan_count'],
+                            "update_status": True,
+                            "isLoginStatus":item["isLoginStatus"]
+                        }
+                    })
+                    print('更新了%s个' % update_doc.modified_count)
+                else:
+                    update_doc = db.update_many({"link": url}, {
+                        '$set': {
+                            'likes_num': item['like_count'],
+                            'fan_count':item['fan_count'],
+                            "update_status":True
+                        }
+                    })
+                    print('更新了%s个' % update_doc.modified_count)
 
     #lldlddl
     def crawler_tweets_replay_count(self,crawler,history=False):#推文表中的replay_count字段
@@ -191,6 +210,7 @@ class Shedule(object):
         db = self.create_mongo_conn()
         crawler_tweet_replay_queue = RedisQueue(name='twitter_replay',redis_config=self.app_config['redis_config'])
         weipa_count = 1;
+        err_count = 1;
         if not history:
             es = Espusher()
         while True:
@@ -248,6 +268,7 @@ class Shedule(object):
                         print('更新了%s个' % (
                         update_doc.modified_count))
                     else:
+                        print('push item to es')
                         # print(item)
                         data = db.find_one_and_delete({"id_str": item['url'].split('/')[-1],'site':'twitter'})
                         data['replay_count'] = item['reply_count']
@@ -255,10 +276,10 @@ class Shedule(object):
                         data['retweet_count'] = item['retweet_count']
                         es.twitter_pusher(data)
                 weipa_count=1;
-
+                err_count = 1;
             except Exception as e:
-                raise e
-                # continue
+              print(e)
+              continue
 
 
     def crawler_tweets_replay(self):#推文表中的replay_count字段  用celery做
@@ -270,34 +291,9 @@ class Shedule(object):
         while True:
             try:
                 print(db.count({"replay_count":None,'site':"twitter"}))
-                tweets = list(db.find({"replay_count":None,'site':"twitter"}).limit(100))
+                tweets = list(db.find({"replay_count":None,'site':"twitter"}).limit(20))
                 if (len(tweets) == 0):
                     break;
-                # print('[===未抓取的个数为:%s===]' % crawler_tweet_replay_queue.qsize())
-                # if crawler_tweet_replay_queue.empty():
-                #     if weipa_count >= 3:
-                #         print('<-----twitter_replay抓取完成----->')
-                #         break
-                #     else:
-                #         weipa_count += 1
-                #         print('[==Retry:%s==]' % (weipa_count - 1))
-                #         time.sleep(5)
-                #         continue
-                # print(weipa_count)
-                # urls = crawler_tweet_replay_queue.get()
-
-                # if len(urls)>100:
-                #     for url_s in [urls[i:i+20] for i in range(0,len(urls),20)]:
-                #         # urls = map(lambda x: "https://twitter.com/%s/status/%s" % (x['user']['screen_name'], x['id_str']), tweets)
-                #         content = crawler.crawler_replay_num(url_s)
-                #         # print(content)
-                #         for item in content:
-                #             # print(item['url'].split('/')[-1])
-                #             update_doc = db.update_many({"id_str": item['url'].split('/')[-1]}, {
-                #                 '$set': {'replay_count': item['reply_count'],'retweet_count':item['retweet_count'],'favorite_count':item['favorite_count'],"update_status":True}
-                #             })
-                #             print('更新了%s个' % (update_doc.modified_count))
-                # else:
                 urls = list(map(lambda tweet:"https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id_str']),tweets))
                 content = crawler.crawler_replay_num(urls)
                 for item in content:
@@ -313,3 +309,38 @@ class Shedule(object):
             except Exception as e:
                 print(e)
                 continue
+    def crawler_posts_reactions(self):
+        print('<=====启动facebook_reactions抓取====>')
+        crawler = FaceBook()
+        db = self.create_mongo_conn()
+        while True:
+            try:
+                print(db.count({"site": "facebook","update_status":False}))
+                tweets = list(db.find({"site": "facebook","update_status":False}).limit(20))
+                if (len(tweets) == 0):
+                    print('全部爬取完成')
+                    break;
+                urls = map(lambda x:{'url':'https://facebook.com%s' % x['permalink_url'],'id':str(x['_id'])},tweets)
+                content = crawler.crawler_reactions_nums(urls)
+                # print(content)
+                if not content: continue
+                for item in content:
+                    # print(item)
+                    print(item['reactions'])
+                    # print(item['url'])
+                    # print(url)
+                    if not item['reactions']:
+                        print(item)
+
+                    print(objectid.ObjectId(item['url']['id']))
+                    update_doc = db.find_one_and_update({"_id": objectid.ObjectId(item['url']['id'])}, {
+                        '$set': {'comment_num': item['reactions']['comment_count'],
+                                 'likes_num': item['reactions']['likes_count'],
+                                 'share_count': item['reactions']["share_count"],
+                                 "update_status": True
+                                 }
+                    }, return_document=ReturnDocument.AFTER)
+                    print('更新了%s个' % update_doc['_id'])
+
+            except Exception as e:
+                raise e

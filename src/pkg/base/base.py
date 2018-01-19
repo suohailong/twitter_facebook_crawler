@@ -31,7 +31,8 @@ class Base(object):
                         # session.keep_alive=False
                         try:
                             async with session.get(url['url'], #proxy="http://127.0.0.1:51545",
-                                                   headers={'CONNECTION': 'close'}) as response:
+                                                   headers={'CONNECTION': 'close',
+                                                            'USER-AGENT': "Mozilla/5.0 (Macintosh;Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/63.0.3239.132 Safari/537.36"}) as response:
                                 response = await response.read()
                                 # print(response.headers)
                                 return {
@@ -40,14 +41,17 @@ class Base(object):
                                 }
                         except Exception as e:
                             # print('发生了错误')
-                            raise Exception('Network_Error')
+                            raise e
                 else:
                     print('request ===>: %s ' % url)
                     async with ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
                         # session.keep_alive=False
                         try:
                             async with session.get(url, #proxy="http://127.0.0.1:51545",
-                                                   headers={'CONNECTION': 'close'}) as response:
+                                                   headers={
+                                                       'CONNECTION': 'close',
+                                                       'USER-AGENT': "Mozilla/5.0 (Macintosh;Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+                                                            }) as response:
                                 response = await response.read()
                                 # print(response.headers)
                                 return {
@@ -56,7 +60,7 @@ class Base(object):
                                 }
                         except Exception as e:
                             # print('发生了错误')
-                            raise Exception('Network_Error')
+                            raise e
 
             asyncio.set_event_loop(asyncio.new_event_loop())
             loop = asyncio.get_event_loop()
@@ -69,6 +73,7 @@ class Base(object):
         except Exception as e:
             if(len(urls)==0):
                 print('crawler url is empty')
+            raise e
 
     def save(self,doc):
         db = self.__client['%s' % self.__dbName]
@@ -85,6 +90,10 @@ class Base(object):
             print('开始存储excel')
             df2 = pd.DataFrame(self.saveList)
         df2.to_excel('./export/%s/%s.xlsx' % (dir,fileName), sheet_name='Sheet1')
+    def get_mongod_client(self):
+        db = self.__client['%s' % self.__dbName]
+        collection = db['%s' % self.__collectionName]
+        return collection
     def run(self,keywords=[]):
         pass
     def saveBefore(self,doc):

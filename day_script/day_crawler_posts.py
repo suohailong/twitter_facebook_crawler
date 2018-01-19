@@ -19,7 +19,7 @@ def read_config():
         app_config = json.load(f)
     return app_config
 
-def facebook_every_day_job(dateline='2017-1-1'):
+def facebook_every_day_job(dateline=None):
     s = Shedule()
     print("crawler facebook posts working...")
     crawler_init(name='facebook')
@@ -35,11 +35,11 @@ def facebook_every_day_job(dateline='2017-1-1'):
 schedule.every(3).hours.do(facebook_every_day_job)
 
 if __name__ == '__main__':
-    config = read_config()
-    facebook_every_day_job()
-    # print('<-----posts定时任务启动----->')
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(1)
+    # config = read_config()
+    # facebook_every_day_job()
+    print('<-----posts定时任务启动----->')
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 

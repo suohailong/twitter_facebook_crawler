@@ -18,16 +18,20 @@ with open(os.path.abspath('config.json'), 'r') as f:
 def facebook_every_day_update_count_job():
     s = Shedule()
     print("crawler facebook reactions  working...")
-    s.crawler_reactions(FaceBook(),history=True)
+    s.crawler_reactions(FaceBook())
     print('crawler facebook reactions finished')
 
 def check_queue_isEmpty():
-    queue = RedisQueue(name='facebook_reactions', redis_config=app_config['redis_config'])
-    if queue.qsize()>0:
-        facebook_every_day_update_count_job()
-    else:
-        print('[没有任务！！]')
-    return
+    try:
+        queue = RedisQueue(name='facebook_reactions', redis_config=app_config['redis_config'])
+        if queue.qsize()>0:
+            facebook_every_day_update_count_job()
+        else:
+            print('[没有任务！！]')
+        return
+    except Exception as e:
+        print(e)
+        return
 
 
 

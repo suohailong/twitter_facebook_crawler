@@ -67,7 +67,9 @@ class TWitter(Base,twython.Twython):
                     # print(tweet)
                     if deadline:
                         date = datetime.datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S %z %Y')
+                        print(date)
                         deadline_panduan = datetime.datetime.strptime('%s +0000' % deadline,'%Y-%m-%d %z')
+                        # print(deadline_panduan)
                         if (date-deadline_panduan).days<=0:
                             break;
                         # list = self.crawler_list_count(tweet['user']['screen_name'])
@@ -91,9 +93,12 @@ class TWitter(Base,twython.Twython):
                     break;
 
             except Exception as e:
-                print('<发生错误，%s重新加载到文章队列>' % user_id)
-                self.crawler_tweets_queue.put(user_id)
-                continue;
+                print('<%s重新加载到文章队列>' % user_id)
+                self.crawler_tweets_queue.lput(user_id)
+                posts = self.get_mongod_client()
+                deleteObj = posts.delete_many({'user_id': user_id})
+                print('<清除%s用户的所有文章,文章数为:%s>' % (user_id, deleteObj.deleted_count))
+                break;
                 # print(e)
 
     def crawler_list_count(self,user_sreen_name=None):
@@ -171,8 +176,7 @@ class TWitter(Base,twython.Twython):
                         })
             return result_list
         except Exception as e:
-            print(e)
-            return 0;
+            raise e
         # tweet['reply_count'] = reply_count
         # print(tweet['created_at'])
     def search_users(self, keyword=[],typeIndex=1):

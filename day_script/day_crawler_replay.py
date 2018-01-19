@@ -24,12 +24,16 @@ def twitter_every_day_update_count_job():
 
 
 def check_queue_isEmpty():
-    queue = RedisQueue(name='twitter_replay', redis_config=app_config['redis_config'])
-    if queue.qsize()>0:
-        twitter_every_day_update_count_job()
-    else:
-        print('[没有任务！！]')
-    return
+    try:
+        queue = RedisQueue(name='twitter_replay', redis_config=app_config['redis_config'])
+        if queue.qsize()>0:
+            twitter_every_day_update_count_job()
+        else:
+            print('[没有任务！！]')
+        return
+    except Exception as e:
+        print(e)
+        return;
 schedule.every(3).minutes.do(check_queue_isEmpty)
 
 

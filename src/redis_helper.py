@@ -51,7 +51,10 @@ class RedisQueue(RedisBase):
     def empty(self):
         """Return True if the queue is empty, False otherwise."""
         return self.qsize() == 0
-
+    def lput(self,item):
+        """Put item into the queue."""
+        # print(json.dumps(item))
+        self.conn().lpush(self.key, json.dumps(item))
     def put(self, item):
         """Put item into the queue."""
         # print(json.dumps(item))

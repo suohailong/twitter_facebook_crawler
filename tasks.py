@@ -47,7 +47,7 @@ def crawler_tweet_replay(*tweets):
 
 if __name__ == '__main__':
     shedule = Shedule()
-    shedule.crawler_tweets_replay()
+    shedule.crawler_posts_reactions()
 
 # @app.task(bind=True)
 # def test_mes(self):
