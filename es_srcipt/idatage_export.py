@@ -146,7 +146,7 @@ class Espusher(object):
             #     {"site": "facebook", "name": {"$regex": user["keywords"]},'update_status':True,'es_pushed':False}
             # ]
         })
-        # docs = self.dbs.Tuser_post.find({'site':'facebook','permalink_url':"/justinamash/posts/1618623204843746"})
+        # docs = self.dbs.Tuser_post.find({'site':'facebook','permalink_url':"/LeeMZeldin/videos/10155510361192701/"})
         for item in docs:
             try:
                 user = userSet.find_one({"id": item['user_id']})
@@ -176,7 +176,7 @@ class Espusher(object):
                     'id':self.makeId(item['permalink_url']),
                     'create_at':item['create_at'],
                     'user':item['user'],
-                    'text':item['message'],
+                    'text':re.sub(r"[\u4E00-\u9FA5]|[\u3040-\u30FF\u31F0-\u31FF]|[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]|[\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]",'',item['message']),
                     'comment_num':item['comment_num'],
                     'likes_num':item['likes_num'],
                     'share_count':item['share_count'],
@@ -292,14 +292,17 @@ class Espusher(object):
             'id': self.makeId(item['permalink_url']),
             'create_at': item['create_at'],
             'user': item['user'],
-            'text': item['message'],
+            'text': re.sub(
+                r"[\u4E00-\u9FA5]|[\u3040-\u30FF\u31F0-\u31FF]|[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]|[\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]",
+                '', item['message']),
             'comment_num': item['comment_num'],
             'likes_num': item['likes_num'],
             'share_count': item['share_count'],
             'last_untime': item['last_untime'],
+            'permalink_url': 'https://facebook.com%s' % item['permalink_url'],
             'topick': list(map(lambda x: re.sub(
-                r"[\u4E00-\u9FA5]|[\u3040-\u30FF\u31F0-\u31FF]|[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]", '', x),
-                               topick))
+                r"[\u4E00-\u9FA5]|[\u3040-\u30FF\u31F0-\u31FF]|[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]|\s|[-,.?:;\'\"!`]|(-{2})|(\.{3})|(\(\))|(\[\])|({}) ",
+                '', x), topick))
 
         }
         # print(facebook_es_data)

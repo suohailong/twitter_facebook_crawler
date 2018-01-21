@@ -1241,42 +1241,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="186" column="40" lean-forward="true" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
+            <state relative-caret-position="335">
+              <caret line="193" column="23" lean-forward="true" selection-start-line="184" selection-start-column="20" selection-end-line="193" selection-end-column="23" />
               <folding>
-                <element signature="e#1633#3618#0" expanded="false" />
-                <element signature="e#3700#5730#0" expanded="false" />
-                <element signature="e#5991#7762#0" expanded="false" />
-                <element signature="e#13027#14186#0" expanded="false" />
-                <element signature="e#14216#14792#0" expanded="false" />
-                <element signature="e#14825#16163#0" expanded="false" />
-                <element signature="e#16267#16654#0" expanded="false" />
+                <element signature="e#3699#5729#0" expanded="false" />
+                <element signature="e#5990#7761#0" expanded="false" />
+                <element signature="e#13215#14374#0" expanded="false" />
+                <element signature="e#14404#14980#0" expanded="false" />
+                <element signature="e#15013#16351#0" expanded="false" />
+                <element signature="e#16455#16842#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="supervisord.conf" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/supervisord.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1284,14 +1261,91 @@
       <file leaf-file-name="idatage_export.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/es_srcipt/idatage_export.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1483">
-              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="-519">
+              <caret line="183" column="84" lean-forward="false" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="84" />
               <folding>
                 <element signature="e#1115#2201#0" expanded="false" />
                 <element signature="e#2350#2487#0" expanded="false" />
-                <element signature="e#11692#14974#0" expanded="false" />
-                <element signature="e#15021#17056#0" expanded="false" />
+                <element signature="e#11870#15152#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1313">
+              <caret line="94" column="41" lean-forward="false" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shedule.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shedule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="333" column="0" lean-forward="true" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
+              <folding>
+                <element signature="e#943#1403#0" expanded="false" />
+                <element signature="e#1481#2429#0" expanded="false" />
+                <element signature="e#2495#2796#0" expanded="false" />
+                <element signature="e#2880#4639#0" expanded="false" />
+                <element signature="e#7842#9332#0" expanded="false" />
+                <element signature="e#9434#13328#0" expanded="false" />
+                <element signature="e#13406#14759#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="42" column="11" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="42" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day_crawler_reactions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day_script/day_crawler_reactions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="45" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day_crawler_replay.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day_script/day_crawler_replay.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day_crawler_tweets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day_script/day_crawler_tweets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1365,7 +1419,6 @@
         <option value="$PROJECT_DIR$/client.py" />
         <option value="$PROJECT_DIR$/../tweetf0rm/export_script/export_topic_rank.py" />
         <option value="$PROJECT_DIR$/../tweetf0rm/data/aa" />
-        <option value="$PROJECT_DIR$/../tweetf0rm/scripts/makeUserid.py" />
         <option value="$PROJECT_DIR$/../tweetf0rm/tests/down_textblob.download_corpora.py" />
         <option value="$PROJECT_DIR$/test/test_redis.py" />
         <option value="$PROJECT_DIR$/test/test_redis_consumer.py" />
@@ -1397,15 +1450,16 @@
         <option value="$PROJECT_DIR$/src/pkg/twitter/twitter.py" />
         <option value="$PROJECT_DIR$/../tweetf0rm/twitter_weipa.json" />
         <option value="$PROJECT_DIR$/facebook_user_ids.json" />
-        <option value="$PROJECT_DIR$/src/shedule.py" />
-        <option value="$PROJECT_DIR$/es_srcipt/idatage_export.py" />
-        <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_reactions.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_replay.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_tweets.py" />
-        <option value="$PROJECT_DIR$/src/pkg/facebook/facebook_api.py" />
-        <option value="$PROJECT_DIR$/src/pkg/base/base.py" />
         <option value="$PROJECT_DIR$/supervisord.conf" />
+        <option value="$PROJECT_DIR$/src/shedule.py" />
+        <option value="$PROJECT_DIR$/es_srcipt/idatage_export.py" />
+        <option value="$PROJECT_DIR$/../tweetf0rm/scripts/makeUserid.py" />
+        <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
+        <option value="$PROJECT_DIR$/src/pkg/base/base.py" />
+        <option value="$PROJECT_DIR$/src/pkg/facebook/facebook_api.py" />
       </list>
     </option>
   </component>
@@ -1498,6 +1552,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pkg" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="facebook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
@@ -1657,7 +1718,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23424879" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2374798" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1715,15 +1776,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.log" />
-    <entry file="file://$PROJECT_DIR$/start_reactions.sh" />
     <entry file="file://$PROJECT_DIR$/geckodriver.log" />
     <entry file="file://$PROJECT_DIR$/start_facebook_tweet.sh" />
     <entry file="file://$PROJECT_DIR$/start_twitter_tweet.sh" />
@@ -1736,7 +1788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1810,13 +1861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_user_ids.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_redis_consumer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1874,7 +1918,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../tweetf0rm/facebook_user_ids.json">
+    <entry file="file://$PROJECT_DIR$/../tweetf0rm/facebook_user_ids1.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="747" selection-end-column="20" />
@@ -1918,7 +1962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="25" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="5" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1926,7 +1969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="85" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1934,21 +1976,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-237">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook_user_ids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7220">
+          <caret line="212" column="27" lean-forward="false" selection-start-line="212" selection-start-column="27" selection-end-line="212" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_user_ids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11218">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="545">
+          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supervisord.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweetf0rm/twitter_user_ids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweetf0rm/facebook_user_ids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweetf0rm/scripts/makeUserid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="1313">
           <caret line="94" column="41" lean-forward="false" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="41" />
           <folding />
         </state>
@@ -1956,8 +2043,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="345" column="23" lean-forward="false" selection-start-line="345" selection-start-column="23" selection-end-line="345" selection-end-column="23" />
+        <state relative-caret-position="445">
+          <caret line="333" column="0" lean-forward="true" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
           <folding>
             <element signature="e#943#1403#0" expanded="false" />
             <element signature="e#1481#2429#0" expanded="false" />
@@ -1970,26 +2057,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebook_user_ids.json">
+    <entry file="file://$PROJECT_DIR$/es_srcipt/idatage_export.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2536">
-          <caret line="212" column="27" lean-forward="false" selection-start-line="212" selection-start-column="27" selection-end-line="212" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_tweets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="-519">
+          <caret line="183" column="84" lean-forward="false" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="84" />
+          <folding>
+            <element signature="e#1115#2201#0" expanded="false" />
+            <element signature="e#2350#2487#0" expanded="false" />
+            <element signature="e#11870#15152#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="528">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="42" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -2010,50 +2093,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
+    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_tweets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="186" column="40" lean-forward="true" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
-          <folding>
-            <element signature="e#1633#3618#0" expanded="false" />
-            <element signature="e#3700#5730#0" expanded="false" />
-            <element signature="e#5991#7762#0" expanded="false" />
-            <element signature="e#13027#14186#0" expanded="false" />
-            <element signature="e#14216#14792#0" expanded="false" />
-            <element signature="e#14825#16163#0" expanded="false" />
-            <element signature="e#16267#16654#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/es_srcipt/idatage_export.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1483">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding>
-            <element signature="e#1115#2201#0" expanded="false" />
-            <element signature="e#2350#2487#0" expanded="false" />
-            <element signature="e#11692#14974#0" expanded="false" />
-            <element signature="e#15021#17056#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="335">
+          <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supervisord.conf">
+    <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="335">
+          <caret line="193" column="23" lean-forward="true" selection-start-line="184" selection-start-column="20" selection-end-line="193" selection-end-column="23" />
+          <folding>
+            <element signature="e#3699#5729#0" expanded="false" />
+            <element signature="e#5990#7761#0" expanded="false" />
+            <element signature="e#13215#14374#0" expanded="false" />
+            <element signature="e#14404#14980#0" expanded="false" />
+            <element signature="e#15013#16351#0" expanded="false" />
+            <element signature="e#16455#16842#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -60,10 +60,11 @@ class FaceBook(Base):
                 str1 = re.search(r'comments:{"\S{1,100}', str(html)).group() if re.search(r'comments:{"\S{1,100}',
                                                                                           str(html)) else 'count:0'
                 comment = re.search(r'count:\d{1,}', str1).group()
-                # print(share,likes,str1)
+                print(share,likes,str1)
                 share_count = re.search(r'\d{1,}', share).group() if re.search(r'\d{1,}', share) else 0
                 likes_count = re.search(r'\d{1,}', likes).group() if re.search(r'\d{1,}', likes) else 0
                 comment_count = re.search(r'\d{1,}', comment).group() if re.search(r'\d{1,}', comment) else 0
+
                 result_list.append({
                     "url": item["url"],
                     "reactions": {
@@ -167,7 +168,7 @@ class FaceBook(Base):
                         "last_untime": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr(
                             'data-utime'),
                         "permalink_url": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a').attr('href'),
-                        "message": pq(e)('div.userContent').text() + pq(e)('div.mtm').text()
+                        "message": pq(e)('div.userContent p').text() + pq(e)('div.mtm div.mbs>a').text()
                     }
                 _ = pq(origin_html)
                 tweets = list(_('div._4-u2._4-u8').map(scrape))
@@ -215,17 +216,18 @@ class FaceBook(Base):
                     item['update_status'] = False
                     item['update_time'] = datetime.today()
                     item['user_id'] = id
-                    print(item['create_at'])
+                    item['permalink_url'] = 'https://facebook.com%s' % item['permalink_url']
+                    # print(item)
                     if deadline and tweet3.index(item)!= 0:
-
                         date = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
-                        #print(date)
+                        # print(date)
                         deadline_panduan = datetime.strptime('%s' % deadline, '%Y-%m-%d')
                         print((date - deadline_panduan).days)
                         if (date - deadline_panduan).days <= 0:
                             flag=False;
                             break;
                     # print(item['name'])
+                    item['create_at'] = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
                     object_id = self.save(item)
                     crawler_reactions_list.append({'url':'https://facebook.com%s' % item['permalink_url'],'id':str(object_id)})
                     print('save %s ==>successfuly' % object_id)
@@ -321,7 +323,7 @@ class FaceBook(Base):
 
 if __name__ == '__main__':
     facebook = FaceBook()
-    # facebook.crawler_reactions_nums('https://facebook.com/permalink.php?story_fbid=10155796394206704&id=101464786703')
+    facebook.crawler_reactions_nums('https://www.facebook.com/MakeAmericaProud/posts/1884405568288166')
     # result = facebook.crawler_user_likes('https://www.facebook.com/pg/DonaldTrump/community/')
     # print(result)
-    facebook.fetch_user_tweets(id='397176447066236',urls='https://www.facebook.com/pages_reaction_units/more/?page_id=397176447066236&cursor=%7B%22timeline_cursor%22%3A%22timeline_unit%3A1%3A00000000001498921800%3A04611686018427387904%3A9223372036854775779%3A04611686018427387904%22%2C%22timeline_section_cursor%22%3A%7B%22profile_id%22%3A397176447066236%2C%22start%22%3A0%2C%22end%22%3A1517471999%2C%22query_type%22%3A36%2C%22filter%22%3A1%7D%2C%22has_next_page%22%3Atrue%7D&surface=www_pages_posts&unit_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843')
+    # facebook.fetch_user_tweets(id='907931509251615',urls='https://www.facebook.com/pg/larryhogan/posts/')
