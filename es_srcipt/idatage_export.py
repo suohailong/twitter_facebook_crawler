@@ -305,7 +305,7 @@ class Espusher(object):
         if 'likes_num' in user:
             if type(user['likes_num']) == str:
                 user['likes_count'] = int(user['likes_num'].replace(',', '')) if not user['likes_num'].endswith(
-                    '万') else int(user['likes_num'].replace('万', '0000'))
+                    '万') else int(re.sub("\D",'',user['likes_num'].replace('万', '0000')))
             else:
                 user['likes_count'] = user['likes_num']
             del user['likes_num']

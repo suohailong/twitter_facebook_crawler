@@ -393,6 +393,6 @@ class Shedule(object):
                             es.facebook_pusher(data)
 
             except Exception as e:
-                raise e;
-                # print(e)
-                # continue
+                # raise e;
+                print(e)
+                continue
