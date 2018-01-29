@@ -12,13 +12,15 @@ from src.pkg.twitter.twitter import TWitter
 from src.pkg.facebook.facebook_api import FaceBook
 from src.redis_helper import RedisQueue
 
+
+
 with open(os.path.abspath('config.json'), 'r') as f:
     app_config = json.load(f)
 
 def facebook_every_day_update_count_job():
     s = Shedule()
     print("crawler facebook reactions  working...")
-    s.crawler_reactions(FaceBook())
+    s.crawler_posts_reactions()
     print('crawler facebook reactions finished')
 
 def check_queue_isEmpty():
@@ -35,7 +37,8 @@ def check_queue_isEmpty():
 
 
 
-schedule.every(3).minutes.do(check_queue_isEmpty)
+
+schedule.every(3).minutes.do(facebook_every_day_update_count_job)
 
 if __name__ == '__main__':
     print('<-----reactions定时任务启动----->')

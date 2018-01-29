@@ -24,7 +24,7 @@ def facebook_every_day_job(dateline=None):
     print("crawler facebook posts working...")
     crawler_init(name='facebook')
     if not dateline:
-        dateline = datetime.datetime.strftime(datetime.date.today() - datetime.timedelta(days=3), '%Y-%m-%d')
+        dateline = datetime.datetime.strftime(datetime.date.today() - datetime.timedelta(days=5), '%Y-%m-%d')
         datetimeline = copy.deepcopy(dateline)
         s.crawler_tweets(FaceBook(), site='facebook', deadtime=datetimeline)
     else:
@@ -35,11 +35,11 @@ def facebook_every_day_job(dateline=None):
 schedule.every(3).hours.do(facebook_every_day_job)
 
 if __name__ == '__main__':
-    # config = read_config()
-    # facebook_every_day_job()
-    print('<-----posts定时任务启动----->')
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    config = read_config()
+    facebook_every_day_job()
+    # print('<-----posts定时任务启动----->')
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
 
 

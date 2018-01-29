@@ -24,8 +24,9 @@ class Base(object):
         # print(urls)
         try:
             async def request(url):
-
-                if('url' in url):
+                if type(url)==dict and 'url' in url:
+                    # print('我是url')
+                    # print(url)
                     print('request ===>: %s ' % url['url'])
                     async with ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
                         # session.keep_alive=False
@@ -71,6 +72,8 @@ class Base(object):
             return [task.result() for task in tasks]
         # loop.close()
         except Exception as e:
+            # print('错误')
+            # print(urls)
             if(len(urls)==0):
                 print('crawler url is empty')
             raise e

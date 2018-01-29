@@ -41,15 +41,17 @@ class TWitter(Base,twython.Twython):
         self.api = tweepy.API(auth)
         self.args = args
         # self.crawler_list_queue = RedisQueue(name='twitter_list',redis_config=redis_config)
+        self.crawler_tweets_err_queue = RedisQueue(name='twitter_error', redis_config=self.app_config['redis_config'])
         self.crawler_replay_queue = RedisQueue(name='twitter_replay', redis_config=self.app_config['redis_config'])
         self.crawler_tweets_queue = RedisQueue(name='twitter',redis_config=self.app_config['redis_config'])
 
-    def fetch_user_tweets(self, user_id=None,deadline=None, bucket="timelines"):
+    def fetch_user_tweets(self, user_id=None,deadline=None,current_max_id=None, bucket="timelines"):
 
         if not user_id:
             raise Exception("user_timeline: user_id cannot be None")
         prev_max_id = -1
-        current_max_id = 0
+        if not current_max_id:
+            current_max_id = 0
         last_lowest_id = current_max_id  # used to workaround users who has less than 200 tweets, 1 loop is enough...
         cnt = 0
         retry_cnt = 5
@@ -57,12 +59,12 @@ class TWitter(Base,twython.Twython):
         while current_max_id != prev_max_id and retry_cnt > 1:
             try:
                 if current_max_id > 0:
-                    tweets = self.get_user_timeline(user_id=user_id, max_id=current_max_id - 1, count=200)
+                    tweets = self.get_user_timeline(user_id=user_id, max_id=current_max_id - 1, count=20)
                 else:
-                    tweets = self.get_user_timeline(user_id=user_id, count=200)
+                    tweets = self.get_user_timeline(user_id=user_id, count=20)
 
                 prev_max_id = current_max_id  # if no new tweets are found, the prev_max_id will be the same as current_max_id
-                crawler_replay_list= []
+                # crawler_replay_list= []
                 for tweet in tweets:
                     # print(tweet)
                     if deadline:
@@ -80,12 +82,16 @@ class TWitter(Base,twython.Twython):
                         tweet['update_time'] = datetime.datetime.today()
                         # print('存入mongo')
                         object_id = self.save(tweet)
-                        crawler_replay_list.append("https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id_str']))
+                        # crawler_replay_list.append("https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id_str']))
                         print('save %s ==>successfuly' % object_id)
                     time_line = re.search(r'\w{3}\sOct\s\d{2}\s\d{2}:\d{2}:\d{2}\s\+\d{4}\s2017',tweet['created_at'])
                     if current_max_id == 0 or current_max_id > int(tweet['id']):
                         current_max_id = int(tweet['id'])
-                self.crawler_replay_queue.put(crawler_replay_list)
+                # if len(crawler_replay_list)>0:
+                    # print(crawler_replay_list)
+                    # self.crawler_replay_queue.put(crawler_replay_list)
+                    # print("推入成功%s个" % len(crawler_replay_list))
+
                 time.sleep(1)
                 # no new tweets found
                 if (prev_max_id == current_max_id):
@@ -94,10 +100,10 @@ class TWitter(Base,twython.Twython):
 
             except Exception as e:
                 print('<%s重新加载到文章队列>' % user_id)
-                self.crawler_tweets_queue.lput(user_id)
-                posts = self.get_mongod_client()
-                deleteObj = posts.delete_many({'user_id': user_id})
-                print('<清除%s用户的所有文章,文章数为:%s>' % (user_id, deleteObj.deleted_count))
+                self.crawler_tweets_err_queue.lput({"user_id":user_id,"current_max_id":current_max_id})
+                # posts = self.get_mongod_client()
+                # deleteObj = posts.delete_many({'id_str': user_id})
+                # print('<清除%s用户的所有文章,文章数为:%s>' % (user_id, deleteObj.deleted_count))
                 break;
                 # print(e)
 
@@ -120,6 +126,10 @@ class TWitter(Base,twython.Twython):
 
             list_count =list_count if list_count else 0
             moment_count = moment_count if moment_count else 0
+            flowing_count = flowing_count if flowing_count else 0
+            tweet_count = tweet_count if tweet_count else 0
+            favorites_count = favorites_count if favorites_count else 0
+            followers_count = followers_count if followers_count else 0
             # print(list_count)
             return (tweet_count,flowing_count,followers_count,favorites_count,list_count,moment_count)
         except Exception as e:
@@ -128,37 +138,16 @@ class TWitter(Base,twython.Twython):
     def crawler_replay_num(self,urls):
         try:
             response = self.asynchronous_request(urls)
-            # s = requests.Session()
-            # response = requests.get(
-            #     "https://twitter.com/%s/status/%s" % (tweet['user']['screen_name'], tweet['id']))
-            # # print(response.text)
             result_list = []
             if response:
                 for item in response:
                     # print(item)
                     try:
                         _ = pq(item['content'])
-                        # bs = bs4.BeautifulSoup(item['content'], 'html.parser')
-                        # html = bs.select(
-                        # print('你是个什么东西')
-                        # print(_('div.inline-reply-tweetbox-container').html())
                         replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--reply.u-hiddenVisually>span').attr('data-tweet-stat-count')
                         retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--retweet.u-hiddenVisually>span').attr('data-tweet-stat-count')
                         like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--favorite.u-hiddenVisually>span').attr('data-tweet-stat-count')
 
-                        # replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--reply').text()
-                        # retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--retweet.js-toggleState.js-toggleRt').text()
-                        # like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-action.ProfileTweet-action--favorite.js-toggleState').text()
-
-                        # replay_re = re.search(r'(\d+,\d+)|\d+',replay)
-                        # retweet_re = re.search(r'(\d+,\d+)|\d+',retweet)
-                        # like_re = re.search(r'(\d+,\d+)|\d+',like)
-
-                        # print(item['url'].split('/')[-1])
-                        # replay2 = _('div.PermalinkOverlay-content > div > div > div.permalink.light-inline-actions.stream-uncapped.has-replies.original-permalink-page > div.permalink-inner.permalink-tweet-container.ThreadedConversation.ThreadedConversation--permalinkTweetWithAncestors > div > div.stream-item-footer > div.ProfileTweet-actionList.js-actions > div.ProfileTweet-action.ProfileTweet-action--reply > button > span > span').text()
-
-
-                        # reply_count = replay if replay.isalnum() and not replay.isspace() else 0#html.text
                         result_list.append({
                             "url":item['url'],
                             "reply_count":replay if replay else 0,

@@ -18,7 +18,7 @@ with open(os.path.abspath('config.json'), 'r') as f:
 def twitter_every_day_update_count_job():
     s = Shedule()
     print("crawler twitter replay working...")
-    s.crawler_tweets_replay_count(TWitter())
+    s.crawler_tweets_replay()
     print('crawler twitter replay finished')
 
 
@@ -34,7 +34,7 @@ def check_queue_isEmpty():
     except Exception as e:
         print(e)
         return;
-schedule.every(3).minutes.do(check_queue_isEmpty)
+schedule.every(3).minutes.do(twitter_every_day_update_count_job)
 
 
 if __name__ == '__main__':

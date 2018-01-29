@@ -7,6 +7,7 @@
     <orderEntry type="module" module-name="500lines-python" />
     <orderEntry type="module" module-name="tweetf0rm" />
     <orderEntry type="module" module-name="distributed_crawler" />
+    <orderEntry type="module" module-name="tutorial" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

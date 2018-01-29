@@ -38,6 +38,7 @@ class FaceBook(Base):
         self.__access_token = "EAACEdEose0cBAAkdhoyXkFejburMPqbr7b773AxZCs7b1BORK7V2gUxVlmKkYydZCZBuyy4UcZA0QxThf7ii0tbDnsiCSzwFJ9DZAeGTcUCsGHQPTk7hPamWAZA2mN6IBjNXDsDQwwzrwet4h1piWTP5fuBnKjZCGm8ZCyXjCEWS7apZCoo1ZAuO5OBfoc9IDCgjSDfvc3pWKWGEPcICelHO456OUnZAxeDpLUZD"
         self.__flag = 'facebook'
         self.args = args
+        self.crawler_tweets_err_queue = RedisQueue(name='facebook_error', redis_config=self.app_config['redis_config'])
         self.crawler_reactions_queue = RedisQueue(name='facebook_reactions',redis_config=self.app_config['redis_config'])
         self.crawler_tweets_queue = RedisQueue(name='facebook',redis_config=self.app_config['redis_config'])
 
@@ -57,10 +58,11 @@ class FaceBook(Base):
                                                                                         str(html)) else "sharecount:0"
                 likes = re.search(r'likecount:\d{1,}', str(html)).group() if re.search(r'likecount:\d{1,}',
                                                                                        str(html)) else "likecount:0"
-                str1 = re.search(r'comments:{"\S{1,100}', str(html)).group() if re.search(r'comments:{"\S{1,100}',
-                                                                                          str(html)) else 'count:0'
-                comment = re.search(r'count:\d{1,}', str1).group()
-                print(share,likes,str1)
+                comment = re.search(r'commentcount:\d{1,}', str(html)).group() if re.search(r'commentcount:\d{1,}',
+                                                                                       str(html)) else "commentcount:0"
+                # print(str1)
+                # comment = re.search(r'count:\d{1,}', str1).group()
+                # print(share,likes,comment)
                 share_count = re.search(r'\d{1,}', share).group() if re.search(r'\d{1,}', share) else 0
                 likes_count = re.search(r'\d{1,}', likes).group() if re.search(r'\d{1,}', likes) else 0
                 comment_count = re.search(r'\d{1,}', comment).group() if re.search(r'\d{1,}', comment) else 0
@@ -74,6 +76,7 @@ class FaceBook(Base):
                     }
                 })
             except Exception as e:
+                # raise e
                 result_list.append({
                     "url":item['url'],
                     "reactions":[]
@@ -143,33 +146,28 @@ class FaceBook(Base):
             # print(likes_count)
 
         return return_list;
-
-
     def fetch_user_tweets(self,id=None,deadline='2017-01-01',urls=[]):
         flag=True
         back=0
         while True:
             try:
                 content = self.asynchronous_request(urls)
-                # print(content)
                 if re.search(r'(/posts)',urls):
-                    # print(content)
                     origin_html = content[0]['content']
                 else:
                     origin = json.loads(content[0]['content'].decode()[9:])['domops']
                     origin_html = list(filter(lambda x: type(x) == dict, origin[0]))
-                    # print(origin_html)
                     origin_html = origin_html[0]['__html']
-                # print(origin_html)
                 def scrape(i, e):
                     return {
-                        "name": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5 a').text(),
-                        "create_at": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr('title'),
-                        "last_untime": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr(
+                        "name": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5 a').text(),
+                        "create_at": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr('title'),
+                        "last_untime": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr(
                             'data-utime'),
-                        "permalink_url": pq(e)('div.l_c3pyo2v0u div._6a._5u5j._6b>h5+div>span:nth-child(3) a').attr('href'),
+                        "permalink_url": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5+div>span:nth-child(3) a').attr('href'),
                         "message": pq(e)('div.userContent p').text() + pq(e)('div.mtm div.mbs>a').text()
                     }
+
                 _ = pq(origin_html)
                 tweets = list(_('div._4-u2._4-u8').map(scrape))
                 if(len(tweets)==0):
@@ -177,11 +175,8 @@ class FaceBook(Base):
                     break;
                 # print(tweets)
                 tweet3 = []
-
                 for x in filter(lambda x:x['create_at'],tweets):
-                    # print(re.search(r'[年月日]',x['create_at']).group())
                     x['create_at']=re.sub(r'[年月日\(\)金木水火土]', ' ', x['create_at'])
-
                     thisTime = x['create_at']
                     thisTime = thisTime.replace(',', '')
                     thisTime = thisTime.replace('at', '')
@@ -206,9 +201,7 @@ class FaceBook(Base):
                 if len(tweet3)<=1:
                     back=back+1
                 urls=self.make_next_page_url(urls,id,tweet3[-1]['last_untime'],back_end=back)
-                # reactions_urls = map(lambda x:'https://www.facebook.com%s' % x['permalink_url'],tweet3)
-                # reactions = self.crawler_reactions_nums(reactions_urls)
-                crawler_reactions_list = []
+                # crawler_reactions_list = []
                 for item in tweet3:
                     # print(item)
                     item['site']='facebook'
@@ -217,21 +210,19 @@ class FaceBook(Base):
                     item['update_time'] = datetime.today()
                     item['user_id'] = id
                     item['permalink_url'] = 'https://facebook.com%s' % item['permalink_url']
-                    # print(item)
                     if deadline and tweet3.index(item)!= 0:
                         date = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
-                        # print(date)
+                        print(date)
                         deadline_panduan = datetime.strptime('%s' % deadline, '%Y-%m-%d')
                         print((date - deadline_panduan).days)
                         if (date - deadline_panduan).days <= 0:
                             flag=False;
                             break;
-                    # print(item['name'])
                     item['create_at'] = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
                     object_id = self.save(item)
-                    crawler_reactions_list.append({'url':'https://facebook.com%s' % item['permalink_url'],'id':str(object_id)})
+                    # crawler_reactions_list.append({'url':item['permalink_url'],'id':str(object_id)})
                     print('save %s ==>successfuly' % object_id)
-                self.crawler_reactions_queue.put(crawler_reactions_list)
+                # self.crawler_reactions_queue.put(crawler_reactions_list)
                 print('获取的文档长度:%s' % len(tweet3))
                 if not flag :
                     print('此用户的文章爬取完成')
@@ -239,10 +230,10 @@ class FaceBook(Base):
                     break;
             except Exception as e:
                 print('<%s重新加载到文章队列>' % id)
-                self.crawler_tweets_queue.lput(id)
-                posts = self.get_mongod_client()
-                deleteObj = posts.delete_many({'user_id':id})
-                print('<清除%s用户的所有文章,文章数为:%s>' % (id,deleteObj.deleted_count))
+                self.crawler_tweets_err_queue.lput({'id':id,'url':urls})
+                # posts = self.get_mongod_client()
+                # deleteObj = posts.delete_many({'user_id':id})
+                # print('<清除%s用户的所有文章,文章数为:%s>' % (id,deleteObj.deleted_count))
                 break;
                 # raise e
 
@@ -323,7 +314,7 @@ class FaceBook(Base):
 
 if __name__ == '__main__':
     facebook = FaceBook()
-    facebook.crawler_reactions_nums('https://www.facebook.com/MakeAmericaProud/posts/1884405568288166')
-    # result = facebook.crawler_user_likes('https://www.facebook.com/pg/DonaldTrump/community/')
+    # facebook.crawler_reactions_nums('https://www.facebook.com/MakeAmericaProud/posts/1884405568288166')
+    result = facebook.crawler_user_likes('https://www.facebook.com/CongressmanBuchanan/')
     # print(result)
-    # facebook.fetch_user_tweets(id='907931509251615',urls='https://www.facebook.com/pg/larryhogan/posts/')
+    # facebook.fetch_user_tweets(id='397176447066236',urls='it_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843')
