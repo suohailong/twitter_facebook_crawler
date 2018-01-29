@@ -1286,18 +1286,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day_crawler_facebook_user.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day_script/day_crawler_facebook_user.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-              <folding>
-                <element signature="e#295#310#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="day_crawler_twitter_user.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day_script/day_crawler_twitter_user.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -1310,15 +1298,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="139" column="56" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="56" />
+            <state relative-caret-position="-251">
+              <caret line="104" column="50" lean-forward="false" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
               <folding>
                 <element signature="e#1884#3936#0" expanded="false" />
                 <element signature="e#4018#6048#0" expanded="false" />
-                <element signature="e#8515#13380#0" expanded="false" />
+                <element signature="e#6321#8434#0" expanded="false" />
                 <element signature="e#13443#14602#0" expanded="false" />
                 <element signature="e#14632#15208#0" expanded="false" />
                 <element signature="e#15241#16579#0" expanded="false" />
@@ -1362,12 +1350,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
               <caret line="38" column="4" lean-forward="false" selection-start-line="37" selection-start-column="3" selection-end-line="38" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="50" column="57" lean-forward="false" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1473,7 +1473,6 @@
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_spider.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_tweets.py" />
         <option value="$PROJECT_DIR$/supervisord.conf" />
-        <option value="$PROJECT_DIR$/src/pkg/base/base.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_facebook_user.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_twitter_user.py" />
         <option value="$PROJECT_DIR$/log.txt" />
@@ -1482,6 +1481,7 @@
         <option value="$PROJECT_DIR$/src/shedule.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_reactions.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
+        <option value="$PROJECT_DIR$/src/pkg/base/base.py" />
       </list>
     </option>
   </component>
@@ -1571,6 +1571,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pkg" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="facebook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
@@ -2128,14 +2135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-655">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day_script/day_crawler_twitter_user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
@@ -2162,22 +2161,6 @@
             <element signature="e#1994#5143#0" expanded="false" />
             <element signature="e#7353#9174#0" expanded="false" />
             <element signature="e#9235#10256#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="139" column="56" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="56" />
-          <folding>
-            <element signature="e#1884#3936#0" expanded="false" />
-            <element signature="e#4018#6048#0" expanded="false" />
-            <element signature="e#8515#13380#0" expanded="false" />
-            <element signature="e#13443#14602#0" expanded="false" />
-            <element signature="e#14632#15208#0" expanded="false" />
-            <element signature="e#15241#16579#0" expanded="false" />
-            <element signature="e#16683#17070#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2225,6 +2208,32 @@
         <state relative-caret-position="468">
           <caret line="38" column="4" lean-forward="false" selection-start-line="37" selection-start-column="3" selection-end-line="38" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="50" column="57" lean-forward="false" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="104" column="50" lean-forward="false" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
+          <folding>
+            <element signature="e#1884#3936#0" expanded="false" />
+            <element signature="e#4018#6048#0" expanded="false" />
+            <element signature="e#6321#8434#0" expanded="false" />
+            <element signature="e#13443#14602#0" expanded="false" />
+            <element signature="e#14632#15208#0" expanded="false" />
+            <element signature="e#15241#16579#0" expanded="false" />
+            <element signature="e#16683#17070#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
