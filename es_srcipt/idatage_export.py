@@ -13,7 +13,7 @@ import asyncio,os,json,re
 from aiohttp import ClientSession
 import aiohttp
 import hashlib
-
+from bson import json_util
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -332,8 +332,8 @@ class Espusher(object):
                 '', x), topick))
 
         }
-        print(facebook_es_data['create_at'])
-        data = json.dumps([facebook_es_data], indent=4)
+        # print(facebook_es_data['create_at'])
+        data = json.dumps([facebook_es_data], indent=4, default=json_util.default)
         # print(data)
         print(facebook_es_data['comment_num'], facebook_es_data['likes_num'], facebook_es_data['share_count'])
         result = self.asynchronous_request_facebook_api([{
