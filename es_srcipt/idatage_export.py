@@ -310,6 +310,8 @@ class Espusher(object):
                 user['likes_count'] = user['likes_num']
             del user['likes_num']
         user['_id'] = str(user['_id'])
+        user['update_time'] = user['update_time'].strftime(
+                '%Y-%m-%dT%H:%M:%S.000Z')
         item['user'] = user
         topick = list(map(lambda x: x.replace('#', ''), re.findall(r'#\s\S+|#\S+', item['message'])))
         # print(item['permalink_url'].replace('https://facebook.com',''))
@@ -333,8 +335,8 @@ class Espusher(object):
 
         }
         # print(facebook_es_data['create_at'])
-        data = json.dumps([facebook_es_data], indent=4, default=json_util.default)
-        print(data)
+        data = json.dumps([facebook_es_data], indent=4)
+        # print(data)
         print(facebook_es_data['comment_num'], facebook_es_data['likes_num'], facebook_es_data['share_count'])
         result = self.asynchronous_request_facebook_api([{
             'url': 'http://59.110.52.213/stq/api/v1/pa/topicRowletFacebook/add',
