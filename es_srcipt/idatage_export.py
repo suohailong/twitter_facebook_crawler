@@ -332,7 +332,7 @@ class Espusher(object):
                 '', x), topick))
 
         }
-        # print(facebook_es_data)
+        print(type(facebook_es_data['create_at']))
         data = json.dumps([facebook_es_data], indent=4)
         # print(data)
         print(facebook_es_data['comment_num'], facebook_es_data['likes_num'], facebook_es_data['share_count'])
