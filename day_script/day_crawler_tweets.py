@@ -17,7 +17,7 @@ def read_config():
         app_config = json.load(f)
     return app_config
 
-def twitter_ervery_day_job(dateline='2016-12-31'):
+def twitter_ervery_day_job(dateline=None):
     s = Shedule()
     print("crawler twitter tweets  working...")
     crawler_init(name='twitter')
