@@ -28,15 +28,15 @@ def twitter_ervery_day_job(dateline=None):
         s.crawler_tweets(TWitter(), 'twitter', dateline)
     print('crawler twitter tweets finished')
 
-schedule.every(3).hours.do(twitter_ervery_day_job)
+schedule.every(2).hours.do(twitter_ervery_day_job)
 
 
 if __name__ == '__main__':
     print('<-----tweets定时任务启动----->')
-    config = read_config()
-    twitter_ervery_day_job()
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(1)
+    # config = read_config()
+    # twitter_ervery_day_job()
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 
