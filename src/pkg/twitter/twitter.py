@@ -19,6 +19,7 @@ import re
 import datetime
 from pyquery import PyQuery as pq
 from src.redis_helper import RedisQueue
+import aiohttp
 
 class TWitter(Base,twython.Twython):
     """
@@ -44,6 +45,7 @@ class TWitter(Base,twython.Twython):
         self.crawler_tweets_err_queue = RedisQueue(name='twitter_error', redis_config=self.app_config['redis_config'])
         self.crawler_replay_queue = RedisQueue(name='twitter_replay', redis_config=self.app_config['redis_config'])
         self.crawler_tweets_queue = RedisQueue(name='twitter',redis_config=self.app_config['redis_config'])
+        self.twitter_users_queue = RedisQueue(name='twitter_users', redis_config=self.app_config['redis_config'])
 
     def fetch_user_tweets(self, user_id=None,deadline=None,current_max_id=None, bucket="timelines"):
 
@@ -107,7 +109,7 @@ class TWitter(Base,twython.Twython):
                 break;
                 # print(e)
 
-    def crawler_list_count(self,user_sreen_name=None):
+    def crawler_list_count(self,user_sreen_name=None,user_id=None):
         try:
             reponse=self.asynchronous_request(
                 "https://twitter.com/%s" % user_sreen_name)
@@ -119,10 +121,8 @@ class TWitter(Base,twython.Twython):
             favorites_count = _('ul.ProfileNav-list>li.ProfileNav-item--favorites span.ProfileNav-value').attr('data-count')
             list_count = _('ul.ProfileNav-list>li.ProfileNav-item--lists span.ProfileNav-value').text()
             moment_count = _('ul.ProfileNav-list>li.ProfileNav-item--moments span.ProfileNav-value').text()
-            # bs = bs4.BeautifulSoup(reponse[0]['content'], 'html.parser')
-            # list_html = bs.select(
-            #     '#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--lists > a > span.ProfileNav-value')
-            # moment_html = bs.select('#page-container > div.ProfileCanopy.ProfileCanopy--withNav.ProfileCanopy--large.js-variableHeightTopBar > div > div.ProfileCanopy-navBar.u-boxShadow > div > div > div.Grid-cell.u-size2of3.u-lg-size3of4 > div > div > ul > li.ProfileNav-item.ProfileNav-item--moments > a > span.ProfileNav-value')
+
+            # print((tweet_count,flowing_count,followers_count,favorites_count,list_count,moment_count))
 
             list_count =list_count if list_count else 0
             moment_count = moment_count if moment_count else 0
@@ -131,10 +131,20 @@ class TWitter(Base,twython.Twython):
             favorites_count = favorites_count if favorites_count else 0
             followers_count = followers_count if followers_count else 0
             # print(list_count)
+            if (tweet_count,followers_count,flowing_count,favorites_count,list_count,moment_count) == (0,0,0,0,0,0):
+                if _('.errorpage-body-content>h1').text():
+                    print('此页面错误，无法抓取')
+                    return (0, 0, 0, 0, 0, 0)
+                print('重新加入队列')
+                self.twitter_users_queue.lput(user_id)
             return (tweet_count,flowing_count,followers_count,favorites_count,list_count,moment_count)
-        except Exception as e:
-            print(e)
-            return None,None
+        except aiohttp.ClientError as e:
+            print('重新加入队列')
+            self.twitter_users_queue.lput(user_id)
+            return (None,None,None,None,None,None)
+            # raise e
+            # print(e)
+            # return None,None
     def crawler_replay_num(self,urls):
         try:
             response = self.asynchronous_request(urls)
@@ -204,7 +214,7 @@ if __name__ == '__main__':
     # twitter
     # doc = twitter.fetch_user_tweets(user_id='15949499',deadline='2017-12-10')
     # print(twitter.crawler_list_count(user_sreen_name='RepDianaDeGette'))
-    repaly = twitter.crawler_list_count('RepSpeier')
+    repaly = twitter.crawler_list_count('WalterJones2016')
     print(repaly)
 
 

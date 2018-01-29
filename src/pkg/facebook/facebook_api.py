@@ -24,6 +24,7 @@ import sys, time, argparse, json, os, pprint
 sys.path.append(".")
 from src.pkg.base.base import Base
 from src.redis_helper import RedisQueue
+import aiohttp
 
 class FaceBook(Base):
     """
@@ -41,6 +42,7 @@ class FaceBook(Base):
         self.crawler_tweets_err_queue = RedisQueue(name='facebook_error', redis_config=self.app_config['redis_config'])
         self.crawler_reactions_queue = RedisQueue(name='facebook_reactions',redis_config=self.app_config['redis_config'])
         self.crawler_tweets_queue = RedisQueue(name='facebook',redis_config=self.app_config['redis_config'])
+        self.facebook_users_queue = RedisQueue(name='facebook_users', redis_config=self.app_config['redis_config'])
 
     def __reactions_handler(self,responseText=[]):
         # print(responseText)
@@ -100,52 +102,57 @@ class FaceBook(Base):
         except Exception as e:
            raise e;
 
-    def crawler_user_likes(self,url):
-
-        content = self.asynchronous_request(url)
-        return_list = []
-        for item in content:
-            # print(item['content'])
-            user_community = pq(item['content'])('._3xom').text()
-            print(user_community)
-            if user_community == '0':
-                return_list.append({
-                    "url": item['url'],
-                    "like_count": user_community,
-                    "fan_count": user_community
-                })
-            elif user_community == '':
-                return_list.append({
-                    "url": item['url'],
-                    "isLoginStatus":True,
-                    "like_count": '0',
-                    "fan_count": '0'
-                })
-            else:
-                if(len(user_community))>1:
-                    likes_count, fan_count, = tuple(user_community.split(' '))
+    def crawler_user_likes(self,url,user_id=None):
+        try:
+            content = self.asynchronous_request(url)
+            return_list = []
+            for item in content:
+                # print(item['content'])
+                user_community = pq(item['content'])('._3xom').text()
+                print(user_community)
+                if user_community == '0':
                     return_list.append({
                         "url": item['url'],
-                        "isLoginStatus": True,
-                        "like_count": likes_count,
-                        "fan_count": fan_count
+                        "like_count": user_community,
+                        "fan_count": user_community
+                    })
+                elif user_community == '':
+                    return_list.append({
+                        "url": item['url'],
+                        "isLoginStatus":True,
+                        "like_count": '0',
+                        "fan_count": '0'
                     })
                 else:
-                    # likes_count, fan_count, = tuple(user_community.split(' '))
-                    return_list.append({
-                        "url": item['url'],
-                        "isLoginStatus": True,
-                        "like_count": user_community,
-                        "fan_count": 0
-                    })
+                    if(len(user_community))>1:
+                        likes_count, fan_count, = tuple(user_community.split(' '))
+                        return_list.append({
+                            "url": item['url'],
+                            "isLoginStatus": True,
+                            "like_count": likes_count,
+                            "fan_count": fan_count
+                        })
+                    else:
+                        # likes_count, fan_count, = tuple(user_community.split(' '))
+                        return_list.append({
+                            "url": item['url'],
+                            "isLoginStatus": True,
+                            "like_count": user_community,
+                            "fan_count": 0
+                        })
+            return return_list;
+        except aiohttp.ClientError as e:
+            print('重新加入队列')
+            self.facebook_users_queue.lput(user_id)
+            return_list = []
             # if likes_count:
             #     people_likes_num = re.search(r'\d+,\d+,\d+',likes_count) if re.search(r'\d+,\d+,\d+',likes_count) else 0
             # else:
             #     people_likes_num=0;
             # print(people_likes_num)
             # print(likes_count)
+            return return_list;
 
-        return return_list;
     def fetch_user_tweets(self,id=None,deadline='2017-01-01',urls=[]):
         flag=True
         back=0

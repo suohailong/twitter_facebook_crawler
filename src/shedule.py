@@ -44,34 +44,44 @@ class Shedule(object):
         # with open(os.path.abspath('twitter_user_ids.json'), 'r') as f:
         #     user_ids = json.load(f)
         # count=1;
+        print('【爬取twitter usersInfos】')
         db = self.create_mongo_conn(db='Twitter', collection='twitter')
+        weipa_count=1
         while True:
             try:
-                tweets = list(db.find({"list_num": None, "update_list":{'$exists':False}}).limit(50))
-                print(db.count({"list_num": None,"update_list":{'$exists':False}}))
-                if (len(tweets) == 0):
-                    break;
-                for item in tweets:
-                    # print(count)
-                    # db=self.create_mongo_conn(db='Twitter',collection='twitter')
-                    # doc = db.find_one({"id_str":id})
-                    tweet_count, flowing_count, followers_count, favorites_count, list_count, moment_count = crawler.crawler_list_count(item["screen_name"])
-                    print(tweet_count,flowing_count,followers_count,favorites_count,list_count,moment_count)
-                    after_doc = db.find_one_and_update({"id_str":item['id_str']},{"$set":{
-                        "list_num":list_count,
-                        "moment_num":moment_count,
-                        # "followers_count":followers_count,
-                        # "friends_count":flowing_count,
-                        # "statuses_count":tweet_count,
-                        # "favourites_count":favorites_count
-                        "update_list":True
-                    }},return_document=ReturnDocument.AFTER)
-                    print('更新%s成功' % after_doc['_id'])
+                twitter_users_queue = RedisQueue(name='twitter_users', redis_config=self.app_config['redis_config'])
+                print('[===未抓取的的id个数为:%s===]' % twitter_users_queue.qsize())
+                if twitter_users_queue.empty():
+                    if weipa_count >= 3:
+                        print('<-----用户抓取完成----->')
+                        break
+                    else:
+                        weipa_count += 1
+                        print('[==Retry:%s==]' % (weipa_count - 1))
+                        time.sleep(5)
+                        continue
+
+                id = twitter_users_queue.get()
+                tweet = db.find_one({"id_str": id})
+                tweet_count, flowing_count, followers_count, favorites_count, list_count, moment_count = crawler.crawler_list_count(tweet["screen_name"],user_id=id)
+                print(tweet_count,flowing_count,followers_count,favorites_count,list_count,moment_count)
+                after_doc = db.find_one_and_update({"id_str":tweet['id_str']},{"$set":{
+                    "list_num":list_count,
+                    "moment_num":moment_count,
+                    "followers_count":followers_count,
+                    "friends_count":flowing_count,
+                    "statuses_count":tweet_count,
+                    "favourites_count":favorites_count,
+                    "update_time": datetime.now(),
+                }},return_document=ReturnDocument.AFTER)
+                print('更新%s文档成功' % after_doc['_id'])
                     # count +=1;
+                weipa_count = 1
             except Exception as e:
-                print(e)
-                print(id)
-                continue
+                raise e
+                # print(e)
+                # print(id)
+                # continue
 
     def crawler_users(self,crawler, kwords, typeIndex):
         for kw in kwords:
@@ -201,50 +211,58 @@ class Shedule(object):
                 continue;
 
     def update_facebook_users_count(self,crawler):#facebook 用户账户的like_num字段
+        print('【爬取twitter usersInfos】')
         db = self.create_mongo_conn(db='FaceBook', collection='facebook')
+        weipa_count = 1
         while True:
             try:
-                tweets = list(db.find({"likes_num":0,"update_likes":{'$exists':False}}).limit(20))
-                print(db.count({"likes_num":0,"update_likes":{'$exists':False}}))
-                if(len(tweets)==0):
-                    break;
-                def makeUrl(x):
-                    s = x['link']
-                    if s.endswith('/'):
-                        return x['link']+'community/'
+                facebook_users_queue = RedisQueue(name='facebook_users', redis_config=self.app_config['redis_config'])
+                print('[===未抓取的的id个数为:%s===]' % facebook_users_queue.qsize())
+                if facebook_users_queue.empty():
+                    if weipa_count >= 3:
+                        print('<-----用户抓取完成----->')
+                        break
                     else:
-                        return x['link']+'/'+'community/'
-                urls = list(map(makeUrl,tweets))
-                content = crawler.crawler_user_likes(urls)
+                        weipa_count += 1
+                        print('[==Retry:%s==]' % (weipa_count - 1))
+                        time.sleep(5)
+                        continue
 
+                id = facebook_users_queue.get()
+                tweet = db.find_one({"id":id})
+                print(tweet)
+                if not tweet:
+                    continue
+                if tweet['link'].endswith('/'):
+                    url = tweet['link']+'community/'
+                else:
+                    url= tweet['link']+'/'+'community/'
+                content = crawler.crawler_user_likes(url)
                 for item in content:
-                    url = item['url'].replace('community/','') if not item['url'].endswith('/community/') else item['url'].replace('/community/','')
-                    # print(url)
-                    print(item)
+                    # print(item)
                     if "isLoginStatus" in item:
-                        update_doc = db.update_many({"link": url}, {
+                        update_doc = db.find_one_and_update({"id": id}, {
                             '$set': {
                                 'likes_num': item['like_count'],
-                                # 'fan_count': item['fan_count'],
-                                "update_likes": True,
-                                "update_status": True,
+                                'fan_count': item['fan_count'],
+                                "update_time": datetime.now(),
                                 "isLoginStatus":item["isLoginStatus"]
                             }
-                        })
-                        print('更新了%s个' % update_doc.modified_count)
+                        },return_document=ReturnDocument.AFTER)
+                        print('更新了%s文档成功' % update_doc['id'])
                     else:
-                        update_doc = db.update_many({"link": url}, {
+                        update_doc = db.find_one_and_update({"id": id}, {
                             '$set': {
                                 'likes_num': item['like_count'],
-                                # 'fan_count':item['fan_count'],
-                                "update_status":True,
-                                "update_likes": True
+                                'fan_count':item['fan_count'],
+                                "update_time":datetime.now(),
                             }
-                        })
-                        print('更新了%s个' % update_doc.modified_count)
+                        },return_document=ReturnDocument.AFTER)
+                        print('更新了%s文档成功' % update_doc['id'])
+                weipa_count = 1;
             except Exception as e:
                 raise e
-                continue
+                # continue
 
     #lldlddl
     def crawler_tweets_replay_count(self,crawler,history=False):#推文表中的replay_count字段

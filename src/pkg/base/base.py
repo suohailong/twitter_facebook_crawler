@@ -31,7 +31,7 @@ class Base(object):
                     async with ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
                         # session.keep_alive=False
                         try:
-                            async with session.get(url['url'], #proxy="http://127.0.0.1:51545",
+                            async with session.get(url['url'], proxy="http://127.0.0.1:51545",
                                                    headers={'CONNECTION': 'close',
                                                             'USER-AGENT': "Mozilla/5.0 (Macintosh;Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/63.0.3239.132 Safari/537.36"}) as response:
                                 response = await response.read()
@@ -48,7 +48,7 @@ class Base(object):
                     async with ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
                         # session.keep_alive=False
                         try:
-                            async with session.get(url, #proxy="http://127.0.0.1:51545",
+                            async with session.get(url, proxy="http://127.0.0.1:51545",
                                                    headers={
                                                        'CONNECTION': 'close',
                                                        'USER-AGENT': "Mozilla/5.0 (Macintosh;Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/63.0.3239.132 Safari/537.36"

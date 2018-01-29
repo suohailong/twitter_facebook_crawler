@@ -5,55 +5,53 @@
 # print(list(map(lambda x:x.replace('#',''),huati)))
 
 import schedule
-import datetime,time,sys,os
+import datetime,time,sys,os,json
 sys.path.append('.')
 from src.shedule import Shedule
-from src.pkg.twitter.twitter import TWitter
+# from src.pkg.twitter.twitter import TWitter
 from src.pkg.facebook.facebook_api import FaceBook
-from start_crawler_with_user_ids import crawler_init
+from src.redis_helper import RedisQueue
+# from history_data_back_scrpt.start_crawler_with_user_ids import crawler_init
 
-def twitter_ervery_day_job():
+def read_config():
+    with open(os.path.abspath('config.json'), 'r') as f:
+        app_config = json.load(f)
+    return app_config
+
+def crawler_facebook_init():
+    config = read_config()
+    print('<-----初始化程序----->')
+    facebook_crawler_queue = RedisQueue(name='facebook_users', redis_config=config['redis_config'])
+    if facebook_crawler_queue.qsize() > 0:
+        print('<-----有%s个任务还未完成---->' % facebook_crawler_queue.qsize())
+    if facebook_crawler_queue.empty():
+        with open(os.path.abspath('facebook_user_ids.json'), 'r') as f:
+            user_ids = json.load(f)
+            for id in user_ids['ids']:
+                facebook_crawler_queue.put(id)
+    print('<-----有%s个任务需要完成----->' % facebook_crawler_queue.qsize())
+    print('<-----facebook初始化完成----->')
+
+def facebook_user_infos():
     s = Shedule()
-    print("crawler twitter tweets  working...")
-    crawler_init(name='twitter')
-    dateline = datetime.datetime.strftime(datetime.date.today()-datetime.timedelta(days=3),'%Y-%m-%d')
-    s.crawler_tweets(TWitter(),'twitter',dateline)
-    print('crawler twitter tweets finished')
-
-
-def twitter_every_day_update_count_job():
-    s = Shedule()
-    print("crawler twitter replay working...")
-    s.crawler_tweets_replay_count(TWitter())
-    print('crawler twitter replay finished')
-
-
-def facebook_every_day_job():
-    s = Shedule()
-    print("crawler facebook posts working...")
-    # crawler_init(name='facebook')
-    dateline = datetime.datetime.strftime(datetime.date.today() - datetime.timedelta(days=3), '%Y-%m-%d')
-    s.crawler_tweets(FaceBook(), 'facebook',dateline)
-    print('crawler facebook posts finished')
-
-
-def facebook_every_day_update_count_job():
-    s = Shedule()
-    print("crawler facebook reactions  working...")
-    s.crawler_reactions(FaceBook())
-    print('crawler facebook reactions finished')
+    print("crawler facebook userInfo  working...")
+    crawler_facebook_init()
+    s.update_facebook_users_count(FaceBook())
+    print('crawler facebook userInfo  finished')
 
 
 
-# schedule.every().day.at("08:30").do(twitter_ervery_day_job)
+
+schedule.every().day.at("08:30").do(facebook_user_infos)
 # schedule.every().day.at("10:35").do(facebook_every_day_job)
 #schedule.every().days.at("08:29").do(twitter_every_day_update_count_job)
 #schedule.every().day.at("10:33").do(facebook_every_day_update_count_job)
 
 if __name__ == '__main__':
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    facebook_user_infos()
+    # print('------定时任务facebook_crawler_userInfos-------')
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
 
 
