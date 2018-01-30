@@ -279,7 +279,7 @@ class Espusher(object):
             'data': data
         }])
         print('Info:%s  更新了%s用户' % (datetime.now(), twitter_es_data['id']))
-        print('Info:%s %s', (datetime.now(), result))
+        print('Info:%s %s' % (datetime.now(), result))
         # if bool(result[0].get("success", False)):
         #     # item['es_pushed'] = True
         #     update_doc = self.dbs.Tuser_post.find_one_and_update({'_id': item['_id']}, {'$set': {'es_pushed': True}},
@@ -343,7 +343,7 @@ class Espusher(object):
             'data': data
         }])
         print('Info:%s  更新了%s用户' % (datetime.now(),facebook_es_data['id']))
-        print('Info:%s %s',(datetime.now(),result))
+        print('Info:%s %s' % (datetime.now(),result))
 
 
 if __name__ == '__main__':
