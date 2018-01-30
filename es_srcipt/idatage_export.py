@@ -278,8 +278,8 @@ class Espusher(object):
             'url': 'http://59.110.52.213/stq/api/v1/pa/topicRowletTwitter/add',
             'data': data
         }])
-        print('更新了%s用户' % twitter_es_data['id'])
-        print(result)
+        print('Info:%s  更新了%s用户' % (datetime.now(), twitter_es_data['id']))
+        print('Info:%s %s', (datetime.now(), result))
         # if bool(result[0].get("success", False)):
         #     # item['es_pushed'] = True
         #     update_doc = self.dbs.Tuser_post.find_one_and_update({'_id': item['_id']}, {'$set': {'es_pushed': True}},
@@ -342,8 +342,8 @@ class Espusher(object):
             'url': 'http://59.110.52.213/stq/api/v1/pa/topicRowletFacebook/add',
             'data': data
         }])
-        print('更新了%s用户' % facebook_es_data['id'])
-        print(result)
+        print('Info:%s  更新了%s用户' % (datetime.now(),facebook_es_data['id']))
+        print('Info:%s %s',(datetime.now(),result))
 
 
 if __name__ == '__main__':

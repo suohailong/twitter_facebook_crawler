@@ -106,7 +106,8 @@ class Shedule(object):
                     id = err_item['user_id']
                     crawler.fetch_user_tweets(user_id=id,current_max_id=current_max_id,deadline=deadtime)
                 else:
-                    print('[===未抓取的的id个数为:%s===]' % twitter_crawler_queue.qsize())
+                    print('\n')
+                    print('[===Info:%s 未抓取的的id个数为:%s===]' % (datetime.now(),twitter_crawler_queue.qsize()))
                     if twitter_crawler_queue.empty():
                         if weipa_count >= 3:
                             print('<-----文章抓取完成----->')
@@ -133,7 +134,8 @@ class Shedule(object):
                     if url:
                         crawler.fetch_user_tweets(id=id, urls=url, deadline=deadtime)
                 else:
-                    print('[===未抓取的的id个数为:%s===]' % facebook_crawler_queue.qsize())
+                    print('\n')
+                    print('[===Info:%s 未抓取的的id个数为:%s===]' % (datetime.now(),facebook_crawler_queue.qsize()))
                     if facebook_crawler_queue.empty():
                         if weipa_count >=3:
                             print('<-----文章抓取完成----->')
@@ -300,7 +302,7 @@ class Shedule(object):
                         print('更新了%s个' % (
                         update_doc.modified_count))
                     else:
-                        print('push item to es')
+                        # print('push item to es')
                         # print(item)
                         data = db.find_one_and_delete({"id_str": item['url'].split('/')[-1],'site':'twitter'})
                         data['replay_count'] = item['reply_count']
@@ -338,7 +340,7 @@ class Shedule(object):
                         print('更新了%s个' % (
                         update_doc.modified_count))
                     else:
-                        print('push item to es')
+                        # print('push item to es')
                         # print(item)
                         data = db.find_one_and_delete({"id_str": item['url'].split('/')[-1],'site':'twitter'})
                         data['replay_count'] = item['reply_count']
