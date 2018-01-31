@@ -361,7 +361,7 @@ class Shedule(object):
             try:
                 print(db.count({"site": "facebook","update_status":False}))
                 tweets = list(db.find({"site": "facebook","update_status":False}).limit(50))
-                print(tweets)
+                # print(tweets)
                 if (len(tweets) == 0):
                     print('全部爬取完成')
                     break;
@@ -390,7 +390,7 @@ class Shedule(object):
                             if update_doc != None:
                                 print('更新了%s个' % update_doc['_id'])
                         else:
-                            print(db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'}))
+                            # print(db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'}))
                             data = db.find_one_and_delete({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'})
                             print(item['url']['id'])
                             # print(data)
