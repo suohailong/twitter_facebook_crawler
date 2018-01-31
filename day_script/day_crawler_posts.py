@@ -36,10 +36,10 @@ schedule.every(2).hours.do(facebook_every_day_job)
 
 if __name__ == '__main__':
     config = read_config()
-    # facebook_every_day_job()
-    print('<-----posts定时任务启动----->')
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    facebook_every_day_job()
+    # print('<-----posts定时任务启动----->')
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
 
 
