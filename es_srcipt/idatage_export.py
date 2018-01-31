@@ -235,11 +235,7 @@ class Espusher(object):
                 '%Y-%m-%dT%H:%M:%S.000Z')
         item['user']['created_at'] = datetime.strptime(item['user']['created_at'], '%a %b %d %H:%M:%S %z %Y').strftime(
             '%Y-%m-%dT%H:%M:%S.000Z')
-        del item['user']['position']
-        del item['user']['party']
-        del item['user']['gender']
-        del item['user']['birth']
-        del item['user']['age']
+
         hashtags = item['entities']['hashtags'] if 'hashtags' in item['entities'] else []
         item['entities']['hashtags'] = list(map(lambda x: x['text'], hashtags)) if len(hashtags) != 0 else []
         # print(item['entities'])

@@ -42,9 +42,9 @@ schedule.every(3).minutes.do(facebook_every_day_update_count_job)
 
 if __name__ == '__main__':
     print('<-----reactions定时任务启动----->')
-    facebook_every_day_update_count_job()
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(1)
+    # facebook_every_day_update_count_job()
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 
