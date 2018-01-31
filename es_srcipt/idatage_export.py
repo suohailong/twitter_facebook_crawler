@@ -320,6 +320,8 @@ class Espusher(object):
                 user['fan_count'] = int(user['fan_count'].replace(',', '')) if not user['fan_count'].endswith(
                     '万') else int(re.sub("\D",'',user['fan_count'].replace('万', '0000')))
             # del user['fan_count']
+        print('用户数据')
+        print(user['fan_count'],user['likes_count'])
         user['_id'] = str(user['_id'])
         user['update_time'] = user['update_time'].strftime(
                 '%Y-%m-%dT%H:%M:%S.000Z')
