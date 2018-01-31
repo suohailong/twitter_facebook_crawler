@@ -349,11 +349,11 @@ class Espusher(object):
         # print(facebook_es_data['create_at'])
         data = json.dumps([facebook_es_data], indent=4)
         # print(data)
-        print(facebook_es_data['comment_num'], facebook_es_data['likes_num'], facebook_es_data['share_count'])
         result = self.asynchronous_request_facebook_api([{
             'url': 'http://59.110.52.213/stq/api/v1/pa/topicRowletFacebook/add',
             'data': data
         }])
+        print(facebook_es_data['comment_num'], facebook_es_data['likes_num'], facebook_es_data['share_count'])
         print('Info:%s  更新了%s用户' % (datetime.now(),facebook_es_data['id']))
         print('Info:%s  此文发表时间为%s' % (datetime.now(), facebook_es_data['create_at']))
         print('Info:%s %s' % (datetime.now(),result))
