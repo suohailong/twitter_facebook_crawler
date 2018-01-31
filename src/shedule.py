@@ -360,8 +360,8 @@ class Shedule(object):
         while True:
             try:
                 print(db.count({"site": "facebook","update_status":False}))
-                tweets = list(db.find({"site": "facebook","update_status":False}).limit(50))
-                # print(tweets)
+                tweets = list(db.find({"site": "facebook","update_status":False}).limit(5))
+                print(tweets['_id'],tweets['permalink_url'],tweets['create_at'])
                 if (len(tweets) == 0):
                     print('全部爬取完成')
                     break;
