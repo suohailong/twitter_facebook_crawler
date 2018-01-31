@@ -391,7 +391,7 @@ class Shedule(object):
                                 print('更新了%s个' % update_doc['_id'])
                         else:
                             # print(db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'}))
-                            data = db.find_one_and_delete({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'})
+                            data = db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'})
                             print(item['url']['url'])
                             print(item['url']['id'])
                             # print(data)
@@ -399,6 +399,7 @@ class Shedule(object):
                             data['likes_num'] = item['reactions']['likes_count']
                             data['share_count'] = item['reactions']["share_count"]
                             es.facebook_pusher(data)
+                            db.remove({'_id': objectid.ObjectId(item['url']['id']), 'site': 'facebook'})
 
             except Exception as e:
                 raise e;
