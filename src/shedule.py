@@ -370,7 +370,7 @@ class Shedule(object):
                 if not content: continue
                 for item in content:
                     # print(item)
-                    # print(item['reactions'])
+                    print(item['reactions'])
                     # print(item['url'])
                     # print(url)
                     if not item['reactions']:
