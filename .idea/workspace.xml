@@ -77,8 +77,8 @@
       <file leaf-file-name="shedule.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="367" column="33" lean-forward="false" selection-start-line="367" selection-start-column="33" selection-end-line="367" selection-end-column="33" />
+            <state relative-caret-position="363">
+              <caret line="388" column="50" lean-forward="true" selection-start-line="388" selection-start-column="50" selection-end-line="388" selection-end-column="50" />
               <folding>
                 <element signature="e#943#1403#0" expanded="false" />
                 <element signature="e#1481#3471#0" expanded="false" />
@@ -86,7 +86,6 @@
                 <element signature="e#3922#6941#0" expanded="false" />
                 <element signature="e#7027#10076#0" expanded="false" />
                 <element signature="e#10162#12582#0" expanded="false" />
-                <element signature="e#12684#14929#0" expanded="false" />
                 <element signature="e#15020#16873#0" expanded="false" />
               </folding>
             </state>
@@ -923,8 +922,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="367" column="33" lean-forward="false" selection-start-line="367" selection-start-column="33" selection-end-line="367" selection-end-column="33" />
+        <state relative-caret-position="363">
+          <caret line="388" column="50" lean-forward="true" selection-start-line="388" selection-start-column="50" selection-end-line="388" selection-end-column="50" />
           <folding>
             <element signature="e#943#1403#0" expanded="false" />
             <element signature="e#1481#3471#0" expanded="false" />
@@ -932,7 +931,6 @@
             <element signature="e#3922#6941#0" expanded="false" />
             <element signature="e#7027#10076#0" expanded="false" />
             <element signature="e#10162#12582#0" expanded="false" />
-            <element signature="e#12684#14929#0" expanded="false" />
             <element signature="e#15020#16873#0" expanded="false" />
           </folding>
         </state>

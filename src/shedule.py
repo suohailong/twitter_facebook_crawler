@@ -365,7 +365,7 @@ class Shedule(object):
                     print('全部爬取完成')
                     break;
                 urls = map(lambda x:{'url':'https://facebook.com%s' % x['permalink_url'] if not x['permalink_url'].startswith('https') else x['permalink_url'],'id':str(x['_id'])},tweets)
-                print(list(urls))
+                # print(list(urls))
                 content = crawler.crawler_reactions_nums(urls)
                 # print(content)
                 if not content: continue
@@ -389,7 +389,8 @@ class Shedule(object):
                             if update_doc != None:
                                 print('更新了%s个' % update_doc['_id'])
                         else:
-                            data = db.find_one_and_delete({'_id': objectid.ObjectId(item['url']['id'])})
+                            print(db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'}))
+                            data = db.find_one_and_delete({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'})
                             print(item['url']['id'])
                             # print(data)
                             data['comment_num'] = item['reactions']['comment_count']
