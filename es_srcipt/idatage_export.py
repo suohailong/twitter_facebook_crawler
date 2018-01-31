@@ -235,6 +235,7 @@ class Espusher(object):
                 '%Y-%m-%dT%H:%M:%S.000Z')
         item['user']['created_at'] = datetime.strptime(item['user']['created_at'], '%a %b %d %H:%M:%S %z %Y').strftime(
             '%Y-%m-%dT%H:%M:%S.000Z')
+        del item['user']['position']
         hashtags = item['entities']['hashtags'] if 'hashtags' in item['entities'] else []
         item['entities']['hashtags'] = list(map(lambda x: x['text'], hashtags)) if len(hashtags) != 0 else []
         # print(item['entities'])
@@ -313,8 +314,9 @@ class Espusher(object):
         user['_id'] = str(user['_id'])
         user['update_time'] = user['update_time'].strftime(
                 '%Y-%m-%dT%H:%M:%S.000Z')
-        if math.isnan(user['position']):
-            del user['position']
+        # if math.isnan(user['position']):
+        del user['position']
+
         item['user'] = user
         topick = list(map(lambda x: x.replace('#', ''), re.findall(r'#\s\S+|#\S+', item['message'])))
         # print(item['permalink_url'].replace('https://facebook.com',''))
