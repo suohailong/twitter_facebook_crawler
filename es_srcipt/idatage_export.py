@@ -315,6 +315,11 @@ class Espusher(object):
             else:
                 user['likes_count'] = user['likes_num']
             del user['likes_num']
+        if 'fan_count' in user:
+            if type(user['fan_count']) == str:
+                user['fan_count'] = int(user['fan_count'].replace(',', '')) if not user['fan_count'].endswith(
+                    '万') else int(re.sub("\D",'',user['fan_count'].replace('万', '0000')))
+            # del user['fan_count']
         user['_id'] = str(user['_id'])
         user['update_time'] = user['update_time'].strftime(
                 '%Y-%m-%dT%H:%M:%S.000Z')
