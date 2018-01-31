@@ -319,7 +319,7 @@ class Espusher(object):
             'index_name': 'rowlet_facebook_articles',
             'type_name': 'rowlet_facebook_articles',
             'id': self.makeId(item['permalink_url'].replace('https://facebook.com','') if not item['permalink_url'].startswith('https') else item['permalink_url']),
-            'create_at': str(item['create_at']),
+            'create_at': item['create_at'],
             'user': item['user'],
             'text': re.sub(
                 r"[\u4E00-\u9FA5]|[\u3040-\u30FF\u31F0-\u31FF]|[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]|[\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]",
