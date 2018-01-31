@@ -12,7 +12,7 @@ from datetime import datetime
 import asyncio,os,json,re
 from aiohttp import ClientSession
 import aiohttp
-import hashlib
+import hashlib,math
 from bson import json_util
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -313,6 +313,7 @@ class Espusher(object):
         user['_id'] = str(user['_id'])
         user['update_time'] = user['update_time'].strftime(
                 '%Y-%m-%dT%H:%M:%S.000Z')
+        print(math.isnan(user['position']))
         item['user'] = user
         topick = list(map(lambda x: x.replace('#', ''), re.findall(r'#\s\S+|#\S+', item['message'])))
         # print(item['permalink_url'].replace('https://facebook.com',''))
