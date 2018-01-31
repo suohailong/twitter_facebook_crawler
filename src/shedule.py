@@ -389,6 +389,8 @@ class Shedule(object):
                                 print('更新了%s个' % update_doc['_id'])
                         else:
                             data = db.find_one_and_delete({'_id': objectid.ObjectId(item['url']['id'])})
+                            print(item['url']['id'])
+                            print(data)
                             data['comment_num'] = item['reactions']['comment_count']
                             data['likes_num'] = item['reactions']['likes_count']
                             data['share_count'] = item['reactions']["share_count"]
