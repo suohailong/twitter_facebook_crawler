@@ -392,6 +392,7 @@ class Shedule(object):
                         else:
                             # print(db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'}))
                             data = db.find_one_and_delete({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'})
+                            print(item['url']['url'])
                             print(item['url']['id'])
                             # print(data)
                             data['comment_num'] = item['reactions']['comment_count']
