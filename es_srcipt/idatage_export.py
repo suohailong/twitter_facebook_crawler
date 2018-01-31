@@ -38,6 +38,7 @@ class Espusher(object):
                                                data=formdata,
                                                headers={'CONNECTION': 'close','content-type': 'application/json'}) as response:
                             result = await response.text()
+                            print(result)
                             return result
 
                         # print(response)
@@ -336,7 +337,7 @@ class Espusher(object):
         }
         # print(facebook_es_data['create_at'])
         data = json.dumps([facebook_es_data], indent=4)
-        print(data)
+        # print(data)
         print(facebook_es_data['comment_num'], facebook_es_data['likes_num'], facebook_es_data['share_count'])
         result = self.asynchronous_request_facebook_api([{
             'url': 'http://59.110.52.213/stq/api/v1/pa/topicRowletFacebook/add',
