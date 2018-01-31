@@ -38,7 +38,7 @@ class Espusher(object):
                                                data=formdata,
                                                headers={'CONNECTION': 'close','content-type': 'application/json'}) as response:
                             result = await response.text()
-                            print(result)
+                            # print(result)
                             return result
 
                         # print(response)
@@ -236,6 +236,10 @@ class Espusher(object):
         item['user']['created_at'] = datetime.strptime(item['user']['created_at'], '%a %b %d %H:%M:%S %z %Y').strftime(
             '%Y-%m-%dT%H:%M:%S.000Z')
         del item['user']['position']
+        del item['user']['party']
+        del item['user']['gender']
+        del item['user']['birth']
+        del item['user']['age']
         hashtags = item['entities']['hashtags'] if 'hashtags' in item['entities'] else []
         item['entities']['hashtags'] = list(map(lambda x: x['text'], hashtags)) if len(hashtags) != 0 else []
         # print(item['entities'])
@@ -316,7 +320,10 @@ class Espusher(object):
                 '%Y-%m-%dT%H:%M:%S.000Z')
         # if math.isnan(user['position']):
         del user['position']
-
+        del user['party']
+        del user['age']
+        del user['birth']
+        del user['gender']
         item['user'] = user
         topick = list(map(lambda x: x.replace('#', ''), re.findall(r'#\s\S+|#\S+', item['message'])))
         # print(item['permalink_url'].replace('https://facebook.com',''))
@@ -348,6 +355,7 @@ class Espusher(object):
             'data': data
         }])
         print('Info:%s  更新了%s用户' % (datetime.now(),facebook_es_data['id']))
+        print('Info:%s  此文发表时间为%s' % (datetime.now(), facebook_es_data['create_at']))
         print('Info:%s %s' % (datetime.now(),result))
 
 
