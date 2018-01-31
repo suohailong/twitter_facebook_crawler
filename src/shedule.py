@@ -361,7 +361,7 @@ class Shedule(object):
             try:
                 print(db.count({"site": "facebook","update_status":False}))
                 tweets = list(db.find({"site": "facebook","update_status":False}).limit(5))
-                print(tweets['_id'],tweets['permalink_url'],tweets['create_at'])
+                # print(tweets['_id'],tweets['permalink_url'],tweets['create_at'])
                 if (len(tweets) == 0):
                     print('全部爬取完成')
                     break;
@@ -390,16 +390,16 @@ class Shedule(object):
                             if update_doc != None:
                                 print('更新了%s个' % update_doc['_id'])
                         else:
-                            # print(db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'}))
-                            data = db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'})
-                            print(item['url']['url'])
-                            print(item['url']['id'])
-                            # print(data)
-                            data['comment_num'] = item['reactions']['comment_count']
-                            data['likes_num'] = item['reactions']['likes_count']
-                            data['share_count'] = item['reactions']["share_count"]
-                            es.facebook_pusher(data)
-                            db.remove({'_id': objectid.ObjectId(item['url']['id']), 'site': 'facebook'})
+                            print(item['reactions'])
+                            # data = db.find_one({'_id': objectid.ObjectId(item['url']['id']),'site':'facebook'})
+                            # print(item['url']['url'])
+                            # print(item['url']['id'])
+                            # # print(data)
+                            # data['comment_num'] = item['reactions']['comment_count']
+                            # data['likes_num'] = item['reactions']['likes_count']
+                            # data['share_count'] = item['reactions']["share_count"]
+                            # es.facebook_pusher(data)
+                            # db.remove({'_id': objectid.ObjectId(item['url']['id']), 'site': 'facebook'})
 
             except Exception as e:
                 raise e;
