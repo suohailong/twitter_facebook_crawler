@@ -365,7 +365,7 @@ class Shedule(object):
                     print('全部爬取完成')
                     break;
                 urls = map(lambda x:{'url':'https://facebook.com%s' % x['permalink_url'] if not x['permalink_url'].startswith('https') else x['permalink_url'],'id':str(x['_id'])},tweets)
-                print(urls)
+                print(list(urls))
                 content = crawler.crawler_reactions_nums(urls)
                 # print(content)
                 if not content: continue
