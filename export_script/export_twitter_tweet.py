@@ -455,8 +455,58 @@ def export_twitterUser_emotion_analysis(db='UserPost',collection="user_post"):
     df2.to_excel('./export_data/%s/user_summary/%s.xlsx' % ("twitter", "twitter_user_summary"),
                  sheet_name='Sheet1')
 
+def tmp_export():
+    client = MongoClient("mongodb://root:joke123098@101.201.37.28:3717/?authSource=admin")
+    db_user = client['FaceBook']
+    user = db_user['facebook']
 
-export_twitterUser_emotion_analysis()
+    with open('facebook_user_ids1.json','r') as f:
+        user_ids = json.load(f)
+    total_users = len(set(user_ids['ids']))
+
+    third_age = user.count({"age":{'$gte':30,'$lt':40},'monitor':True})
+    four_age = user.count({"age":{'$gte':40,'$lt':50},'monitor':True})
+    five_age = user.count({"age":{'$gte':50,'$lt':60},'monitor':True})
+    six_age = user.count({"age": {'$gte': 60, '$lt': 70},'monitor':True})
+    seven_age = user.count({"age": {'$gte': 70, '$lt': 80},'monitor':True})
+    eight_age = user.count({"age": {'$gte': 80, '$lt': 90},'monitor':True})
+
+    formatDocs = [
+        {
+            'age':'30-39',
+            'percentage':(third_age/total_users) * 100
+        },
+        {
+            'age': '40-49',
+            'percentage': (four_age / total_users) * 100
+        },
+        {
+            'age': '50-59',
+            'percentage': (five_age / total_users) * 100
+        },
+        {
+            'age': '60-69',
+            'percentage': (six_age / total_users) * 100
+        },
+        {
+            'age': '70-79',
+            'percentage': (seven_age / total_users) * 100
+        },
+        {
+            'age': '80-89',
+            'percentage': (eight_age / total_users) * 100
+        },
+    ]
+
+    df2 = pd.DataFrame(formatDocs)
+    df2 = df2.applymap(lambda x: x.encode('unicode_escape').
+                       decode('utf-8') if isinstance(x, str) else x)
+    # print(docs)
+    df2.to_excel('./%s.xlsx' % ("facebook_age_percentage",),
+                 sheet_name='Sheet1')
+
+
+tmp_export()
 # TwitterDistUndevelopedIds()
 # FacebookDistUndevelopedIds()
 # TwitterExportDataFromMongoToXlsx()

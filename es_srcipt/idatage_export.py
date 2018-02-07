@@ -317,10 +317,12 @@ class Espusher(object):
                     '万') else int(re.sub("\D",'',user['fan_count'].replace('万', '0000')))
             # del user['fan_count']
         print('用户数据')
+        # print(item)
         print(user['fan_count'],user['likes_count'])
         user['_id'] = str(user['_id'])
-        user['update_time'] = user['update_time'].strftime(
-                '%Y-%m-%dT%H:%M:%S.000Z')
+        if 'update_time' in user:
+            user['update_time'] = user['update_time'].strftime(
+                    '%Y-%m-%dT%H:%M:%S.000Z')
         # if math.isnan(user['position']):
         del user['position']
         del user['party']
