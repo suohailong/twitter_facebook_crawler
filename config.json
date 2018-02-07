@@ -1,17 +1,19 @@
 {
 	"facebook_acess_token":"EAAFaKQgTdKoBALN5qBjN1bDHyVxu9vugMXnHkLWQrk4iZCzoIommUZBjS5DKSQ08uAwQd7ZBu9iPCZAthOsUZBRxFLuSkZABe0KzWYWV3GVsZAUif9FjocaurWlV9xGzoZBkJzoLVvxC2oWY2epbeKRZBThe62f55GeES1evgX23A2CjJrneKw1wggYAoygmmQCMZD",
 	"redis_config": {
-		"port": 6379,
-      	"host": "127.0.0.1",
+		"port": 6007,
+      	"host": "101.201.227.186",
+      	"family": 4,
 		"db":0,
-      	"family": 4
+      	"password": "Abc123098"
 	},
 	"mongo_config":{
 
-          "MongoHost":"mongodb://127.0.0.1:27017",
-          "db":"UserPost",
-          "collection":"user_post"
+          "MongoHost":"mongodb://root:joke123098@101.201.37.28:3717/?authSource=admin",
+          "db":"TUserPost",
+          "collection":"Tuser_post"
 
 	},
 	"run_platform":"localhost"
+
 }
