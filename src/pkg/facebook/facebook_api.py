@@ -182,9 +182,12 @@ class FaceBook(Base):
                     break;
                 # print(tweets)
                 tweet3 = []
+                printFlag = True;
                 for x in filter(lambda x:x['create_at'],tweets):
                     x['create_at']=re.sub(r'[年月日\(\)金木水火土]', ' ', x['create_at'])
-                    print(x['create_at'])
+                    if printFlag:
+                        print(x['create_at'])
+                        printFlag=False
                     thisTime = x['create_at']
                     thisTime = thisTime.replace(',', '')
                     thisTime = thisTime.replace('at', '')
