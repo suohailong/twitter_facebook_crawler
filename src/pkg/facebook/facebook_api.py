@@ -198,7 +198,7 @@ class FaceBook(Base):
                     if 'Surday' in thisTime:
                         thisTime = thisTime.replace('Surday', 'Saturday')
                     # x['create_at'] = datetime.strptime(thisTime, '%A %B %d %Y  %H:%M %p').strftime('%Y-%m-%d %H:%M')
-                    x['create_at'] = datetime.strptime(thisTime, '%m/%d/%Y  %H:%M %p').strftime('%Y-%m-%d %H:%M')
+                    x['create_at'] = datetime.strptime(thisTime, '%m/%d/%Y  %H:%M %p').strftime('%Y-%m-%d %H:%M') #最新修改
                     # x['create_at'] = datetime.strptime(x['create_at'], '%Y/%m/%d %H:%M').strftime('%Y-%m-%d %H:%M') #在本地跑数据
                     tweet3.append(x)
 
