@@ -409,3 +409,9 @@ class Shedule(object):
                 # raise e;
                 print(e)
                 continue
+
+
+
+if __name__ == '__main__':
+    shedule = Shedule()
+    shedule.crawler_tweets_replay()

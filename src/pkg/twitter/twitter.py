@@ -217,14 +217,14 @@ class TWitter(Base,twython.Twython):
 if __name__ == '__main__':
     twitter = TWitter()
     # twitter
-    # doc = twitter.fetch_user_tweets(user_id='15949499',deadline='2017-12-10')
+    doc = twitter.fetch_user_tweets(user_id='935148134505828353',deadline='2016-12-31')
     # print(twitter.crawler_list_count(user_sreen_name='RepDianaDeGette'))
-    repaly = twitter.crawler_replay_num('https://twitter.com/RepBarragan/status/961656767414439943')
+    # repaly = twitter.crawler_replay_num('https://twitter.com/RepBarragan/status/961656767414439943')
 
     # with open('twitter_user_ids3.json','r') as f:
     #     user_screen_names = json.load(f)
     # for screen_name in user_screen_names['ids']:
     #     print('[<===screen_name=%s===>]' % screen_name)
-    #     twitter.get_user_info(screen_name=screen_name)
+
 
 
