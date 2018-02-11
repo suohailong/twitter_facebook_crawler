@@ -157,12 +157,13 @@ class TWitter(Base,twython.Twython):
                         replay = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--reply.u-hiddenVisually>span').attr('data-tweet-stat-count')
                         retweet = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--retweet.u-hiddenVisually>span').attr('data-tweet-stat-count')
                         like = _('div.js-tweet-details-fixer.tweet-details-fixer+div.stream-item-footer div.ProfileTweet-actionCountList.u-hiddenVisually span.ProfileTweet-action--favorite.u-hiddenVisually>span').attr('data-tweet-stat-count')
-
+                        content = _('p.TweetTextSize.TweetTextSize--jumbo.js-tweet-text.tweet-text').text().replace(r'%s' % _('a.twitter-timeline-link.u-hidden').text(),'')
                         result_list.append({
                             "url":item['url'],
                             "reply_count":replay if replay else 0,
                             "retweet_count":retweet if retweet else 0,
-                            "favorite_count":like if like else 0
+                            "favorite_count":like if like else 0,
+                            'content':content
                         })
 
                     except Exception as e:
@@ -171,7 +172,8 @@ class TWitter(Base,twython.Twython):
                             "url": item['url'],
                             "reply_count": None,
                             "retweet_count":None,
-                            "favorite_count":None
+                            "favorite_count":None,
+                            'content':None
                         })
             return result_list
         except Exception as e:
@@ -206,7 +208,10 @@ class TWitter(Base,twython.Twython):
                 # super().saveAsExcel(users,self.__flag,keyword)
         except Exception as e:
             logging.exception(e)
-
+    def get_user_info(self,screen_name=None):
+        user_info = self.show_user(screen_name=screen_name)
+        id = self.save_user(doc=user_info,dbName='Twitter',collectionName='twitter')
+        print('[===%s存储成功===]' % id)
 
 
 if __name__ == '__main__':
@@ -214,7 +219,12 @@ if __name__ == '__main__':
     # twitter
     # doc = twitter.fetch_user_tweets(user_id='15949499',deadline='2017-12-10')
     # print(twitter.crawler_list_count(user_sreen_name='RepDianaDeGette'))
-    repaly = twitter.crawler_list_count('WalterJones2016')
-    print(repaly)
+    repaly = twitter.crawler_replay_num('https://twitter.com/RepBarragan/status/961656767414439943')
+
+    # with open('twitter_user_ids3.json','r') as f:
+    #     user_screen_names = json.load(f)
+    # for screen_name in user_screen_names['ids']:
+    #     print('[<===screen_name=%s===>]' % screen_name)
+    #     twitter.get_user_info(screen_name=screen_name)
 
 

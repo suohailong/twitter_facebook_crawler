@@ -33,6 +33,7 @@ class Base(object):
                         try:
                             async with session.get(url['url'], #proxy="http://127.0.0.1:51545",
                                                    headers={'CONNECTION': 'close',
+                                                            'ACCEPT-LANGUAGE': 'zh-CN,zh;q=0.9,en;q=0.8',
                                                             'USER-AGENT': "Mozilla/5.0 (Macintosh;Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/63.0.3239.132 Safari/537.36"}) as response:
                                 response = await response.read()
                                 # print(response.headers)
@@ -51,6 +52,7 @@ class Base(object):
                             async with session.get(url, #proxy="http://127.0.0.1:51545",
                                                    headers={
                                                        'CONNECTION': 'close',
+                                                       'ACCEPT-LANGUAGE':'zh-CN,zh;q=0.9,en;q=0.8',
                                                        'USER-AGENT': "Mozilla/5.0 (Macintosh;Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/63.0.3239.132 Safari/537.36"
                                                             }) as response:
                                 response = await response.read()
@@ -97,6 +99,12 @@ class Base(object):
         db = self.__client['%s' % self.__dbName]
         collection = db['%s' % self.__collectionName]
         return collection
+    def save_user(self,doc={},dbName=None,collectionName=None):
+        db = self.__client['%s' % dbName]
+        collection = db['%s' % collectionName]
+        result = collection.insert_one(doc)
+        return result.inserted_id
+
     def run(self,keywords=[]):
         pass
     def saveBefore(self,doc):

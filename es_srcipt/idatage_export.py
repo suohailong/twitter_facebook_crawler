@@ -324,11 +324,12 @@ class Espusher(object):
             user['update_time'] = user['update_time'].strftime(
                     '%Y-%m-%dT%H:%M:%S.000Z')
         # if math.isnan(user['position']):
-        del user['position']
-        del user['party']
-        del user['age']
-        del user['birth']
-        del user['gender']
+        if 'position' in user:
+            del user['position']
+            del user['party']
+            del user['age']
+            del user['birth']
+            del user['gender']
         item['user'] = user
         topick = list(map(lambda x: x.replace('#', ''), re.findall(r'#\s\S+|#\S+', item['message'])))
         # print(item['permalink_url'].replace('https://facebook.com',''))

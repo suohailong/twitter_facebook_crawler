@@ -147,8 +147,10 @@ class Shedule(object):
                             continue
 
                     id = facebook_crawler_queue.get()
+                    print(id)
                     doc = db.find_one({"id":str(id)})
-                    crawler.fetch_user_tweets(id=id,urls=doc['link']+'posts/',deadline=deadtime)
+                    # print(doc)
+                    crawler.fetch_user_tweets(id=id,urls=doc['link']+'/posts/',deadline=deadtime)
             # print('完成全部抓取')
                 weipa_count = 1;
 
@@ -335,7 +337,7 @@ class Shedule(object):
                     if history:
                         update_doc = db.update_many({"id_str": item['url'].split('/')[-1],'site':'twitter'}, {
                             '$set': {'replay_count': item['reply_count'], 'retweet_count': item['retweet_count'],
-                                     'favorite_count': item['favorite_count'], "update_status": True}
+                                     'favorite_count': item['favorite_count'],'text':item['content'],'truncated':item['truncated'], "update_status": True}
                         })
                         print('更新了%s个' % (
                         update_doc.modified_count))
@@ -346,6 +348,8 @@ class Shedule(object):
                         data['replay_count'] = item['reply_count']
                         data['favorite_count'] = item['favorite_count']
                         data['retweet_count'] = item['retweet_count']
+                        data['text'] = item['content']
+                        data['truncated']=False
                         es.twitter_pusher(data)
 
             except Exception as e:
@@ -402,6 +406,6 @@ class Shedule(object):
                             db.remove({'_id': objectid.ObjectId(item['url']['id']), 'site': 'facebook'})
 
             except Exception as e:
-                raise e;
-                # print(e)
-                # continue
+                # raise e;
+                print(e)
+                continue

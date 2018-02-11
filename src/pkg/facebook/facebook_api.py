@@ -125,7 +125,10 @@ class FaceBook(Base):
                     })
                 else:
                     if(len(user_community))>1:
-                        likes_count, fan_count, = tuple(user_community.split(' '))
+                        if re.search(r'\s万',user_community):
+                            likes_count,fan_count, = tuple(user_community.replace(' 万','0000').split(' '))
+                        else:
+                            likes_count, fan_count, = tuple(user_community.split(' '))
                         return_list.append({
                             "url": item['url'],
                             "isLoginStatus": True,
@@ -197,9 +200,9 @@ class FaceBook(Base):
                         thisTime = thisTime.replace('pm', ' PM')
                     if 'Surday' in thisTime:
                         thisTime = thisTime.replace('Surday', 'Saturday')
-                    # x['create_at'] = datetime.strptime(thisTime, '%A %B %d %Y  %H:%M %p').strftime('%Y-%m-%d %H:%M')
+                    # # x['create_at'] = datetime.strptime(thisTime, '%A %B %d %Y  %H:%M %p').strftime('%Y-%m-%d %H:%M')
                     x['create_at'] = datetime.strptime(thisTime, '%m/%d/%Y  %H:%M %p').strftime('%Y-%m-%d %H:%M') #最新修改
-                    # x['create_at'] = datetime.strptime(x['create_at'], '%Y/%m/%d %H:%M').strftime('%Y-%m-%d %H:%M') #在本地跑数据
+                    # x['create_at'] = datetime.strptime(x['create_at'], '%Y-%m-%d %H:%M').strftime('%Y-%m-%d %H:%M') #在本地跑数据
                     tweet3.append(x)
 
                 def dedupe(items, key=None):
@@ -324,9 +327,76 @@ class FaceBook(Base):
 
             #logging.exception(e)
 
+    def get_user_info(self,url):
+        content = self.asynchronous_request(url)
+        origin_html = content[0]['content']
+        # print(content)
+        _ = pq(origin_html)
+        # print(_('#content_container div.clearfix').text())
+
+        id = re.search(r'PagesProfileAboutInfoPagelet_\d+',origin_html.decode())
+        id = id.group()
+        name = re.sub(
+                r"[\u4E00-\u9FA5]|[\u3040-\u30FF\u31F0-\u31FF]|[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]|[-,.?:;\'\"!`]|(-{2})|(\.{3})|(\(\))|(\[\])|({})",
+                '', _('#pageTitle').text())
+        birthday = _('#content_container div.clearfix').text()
+        website = _('#content_container div.clearfix').text()
+        origin_str = _('#content_container div.clearfix').text()
+
+        # print(origin_str)
+
+        if re.search(r'(\d+)年(\d+)月(\d+)日',birthday):
+            birthday = re.search(r'(\d+)年(\d+)月(\d+)日',birthday).group()
+            birthday = re.sub(r'(\d+)年(\d+)月(\d+)日',r'\1-\2-\3',birthday)
+            birthday =  re.sub(
+                    r"[\u4E00-\u9FA5]|[\u3040-\u30FF\u31F0-\u31FF]|[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]|\s|[.?:;\'\"!`]|(-{2})|(\.{3})|(\(\))|(\[\])|({})",
+                    '',birthday)
+        else:
+            birthday=''
+        verified = re.search(
+            r'Facebook \\u5df2\\u786e\\u8ba4\\u8fd9\\u662f\\u516c\\u4f17\\u4eba\\u7269\\u3001\\u5a92\\u4f53\\u516c\\u53f8\\u6216\\u54c1\\u724c\\u7684\\u771f\\u5b9e\\u4e3b\\u9875',
+            origin_html.decode())
+        if verified:
+            verified = True
+        else:
+            verified=False
+
+        item = self.crawler_user_likes(url.replace('/about','')+'/community/')
+        if re.search(r'((http|https)://)[\w1-9]+.[\w1-9]+.*',website):
+            website = re.search(r'((http|https)://)[\w1-9]+.[\w1-9]+.[\w]+',website).group()
+        else:
+            website = ''
+        user_id = self.save_user(doc={
+            "id": re.search(r'\d+',id).group(),
+            "birthday": birthday,
+            "link": url.replace('/about',''),
+            'website': website,
+            # 'about':re.search(r'简介 (\w+\s)+.',origin_str).group().replace('简介','') if re.search(r'简介 (\w+\s)+.',origin_str) else '',
+            'about': _('div.text_exposed_root').text(),
+            'hometown':re.search(r'来自 (\S+\s)+简介',origin_str).group().replace('来自','').replace('简介','') if re.search(r'来自 (\S+\s)+简介',origin_str) else '',
+            'name': name.replace("Facebook","").replace('|','') ,
+            'gender':re.search(r'性别 \S',origin_str).group().replace('性别','') if re.search(r'性别 \S',origin_str) else '',
+            'PoliticalViews':re.search(r'政治观点 \S+\s',origin_str).group().replace('政治观点','') if re.search(r'政治观点 \S+\s',origin_str) else '',
+            'ReligiousBeliefs':re.search(r'宗教信仰 \S+\s',origin_str).group().replace('宗教信仰','') if re.search(r'宗教信仰 \S+\s',origin_str) else '',
+            'category':re.search(r'categories \S+\s',origin_str).group().replace('categories','') if re.search(r'categories \S+\s',origin_str) else '',
+            'fan_count':item[0].get('fan_count',0),
+            'likes_num':item[0].get('like_count',0),
+            'verified':verified
+        },dbName='FaceBook',collectionName='facebook')
+        print("[===存储%s成功===]" % user_id)
+
+
+
 if __name__ == '__main__':
     facebook = FaceBook()
+    with open('facebook_user_ids3.json','r') as f:
+        ids = json.load(f)
+    current=0
+    for url in ids['ids']:
     # facebook.crawler_reactions_nums('https://www.facebook.com/MakeAmericaProud/posts/1884405568288166')
-    result = facebook.crawler_user_likes('https://www.facebook.com/CongressmanBuchanan/')
+        user_info = facebook.get_user_info(url+'about')
+        current += 1;
+        print('完成到第%s个' % current)
+        # print(user_info)
     # print(result)
     # facebook.fetch_user_tweets(id='397176447066236',urls='it_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843')
