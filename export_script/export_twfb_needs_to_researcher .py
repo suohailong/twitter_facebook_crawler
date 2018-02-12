@@ -14,6 +14,7 @@ from datetime import datetime
 import asyncio
 from aiohttp import ClientSession
 import aiohttp
+from bson import objectid
 
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -456,19 +457,18 @@ def export_twitterUser_emotion_analysis(db='UserPost',collection="user_post"):
                  sheet_name='Sheet1')
 
 def tmp_export():
-    client = MongoClient()
-    postdb = client['EsUserPost']
-    post = postdb['es_user_post']
+    client = MongoClient('mongodb://root:joke123098@101.201.37.28:3717/?authSource=admin')
+    userdb = client['FaceBook']
+    user = userdb['facebook']
 
-    formatDocs= list(post.find({'text':{"$regex":"Israel"}},{'_id':0}))
+    for user_data in user.find({}):
+        if not user_data['link'].endswith('/'):
+            user_data['link'] = user_data['link']+'/'
+            print(user_data['_id'])
+            # update_status = user.update({'_id':user_data['_id']},user_data)
+            # print(update_status)
 
 
-    df2 = pd.DataFrame(formatDocs)
-    df2 = df2.applymap(lambda x: x.encode('unicode_escape').
-                       decode('utf-8') if isinstance(x, str) else x)
-    # print(docs)
-    df2.to_excel('./%s.xlsx' % ("israel_raw_text",),
-                 sheet_name='Sheet1')
 
 
 tmp_export()

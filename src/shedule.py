@@ -150,7 +150,7 @@ class Shedule(object):
                     print(id)
                     doc = db.find_one({"id":str(id)})
                     # print(doc)
-                    crawler.fetch_user_tweets(id=id,urls=doc['link']+'/posts/',deadline=deadtime)
+                    crawler.fetch_user_tweets(id=id,urls=doc['link']+'posts/',deadline=deadtime)
             # print('完成全部抓取')
                 weipa_count = 1;
 
