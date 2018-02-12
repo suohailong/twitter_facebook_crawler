@@ -6,7 +6,7 @@
 		"db":0,
       	"family": 4
 	},
-	"redis_config": {
+	"redis_config2": {
 		"port": 6007,
       	"host": "101.201.227.186",
       	"family": 4,

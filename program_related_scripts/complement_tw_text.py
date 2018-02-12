@@ -102,7 +102,7 @@ def completion_twitter_text(conn):
                 res = pool.map(asynchronous_request,(es_body_tw_urls[i:i+200] for i in range(0,len(es_body_tw_urls),200)))
                 # current += 1;
                 print('更新%s用户' % id)
-            elif 0<len(es_body_tw_urls)<50:
+            elif 0<len(es_body_tw_urls)<200:
                 asynchronous_request(ops=es_body_tw_urls)
                 # current += 1;
                 print('更新%s用户' % id)
