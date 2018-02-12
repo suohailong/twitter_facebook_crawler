@@ -126,7 +126,14 @@ def update_ikols_user_info(db=None,collection=None,config='twitter_user_ids.json
                                 'content-type': 'application/json'},
                     'data': {
                         'tw': [
-                            doc
+                            {
+                                "account_id": doc['id_str'],
+                                "followers_count": doc['followers_count'],
+                                "favouritesCount": doc['favourites_count'],
+                                "friendsCount": doc['friends_count'],
+                                "verified": 1 if doc['isVerified'] else 0,
+                                "status":1 if doc['isExist'] else 0
+                            }
                         ],
                         'fb': []
                     }
@@ -157,7 +164,13 @@ def update_ikols_user_info(db=None,collection=None,config='twitter_user_ids.json
                     'data': {
                         'tw': [],
                         'fb': [
-                            doc
+                            {
+                                "account_id": doc['id'],
+                                "fan_count": doc['fan_count'],
+                                "likesCount": doc['likes_count'],
+                                "verificationStatus":  1 if doc['isVerified'] else 0,
+                                "status": 1 if doc['isExist'] else 0
+                            }
                         ]
                     }
                 }])
@@ -168,4 +181,4 @@ def update_ikols_user_info(db=None,collection=None,config='twitter_user_ids.json
             print('出错id为:%s' % id)
 
 if __name__== '__main__':
-    add_new_users_to_ikols(db='Twitter',collection='twitter',config='twitter_tmp.json')
+    update_ikols_user_info(db='FaceBook',collection='facebook',config='facebook_user_ids.json')

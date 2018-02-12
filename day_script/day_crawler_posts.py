@@ -37,10 +37,10 @@ schedule.every(2).hours.do(facebook_every_day_job)
 if __name__ == '__main__':
     # config = read_config()
     print('<-----posts定时任务启动----->')
-    # facebook_every_day_job(dateline='2016-12-31')
+    facebook_every_day_job()
 
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
 
 

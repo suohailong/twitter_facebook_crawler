@@ -41,8 +41,8 @@ def asynchronous_request(ops=[]):
                     content = _('p.TweetTextSize.TweetTextSize--jumbo.js-tweet-text.tweet-text').text().replace(
                         r'%s' % _('a.twitter-timeline-link.u-hidden').text(), '')
                     inops['text'] = content
-                    inops['truncated']=False
-                    print(inops)
+                    inops['truncated']=True
+                    # print(inops)
                     headers = {'content-type': 'application/json'}
 
                     cun_result= requests.post(url='http://59.110.52.213/stq/api/v1/pa/topicRowletFacebook/add',data=json.dumps([inops]),headers=headers)
@@ -62,7 +62,7 @@ def asynchronous_request(ops=[]):
     return [json.loads(task.result()) for task in tasks]
 
 def completion_twitter_text(conn):
-    with open('twitter_user_ids_tmp.json','r') as f:
+    with open('twitter_user_ids.json','r') as f:
         ids = json.load(f)
     current = 0;
     for id in ids['ids']:
@@ -80,22 +80,29 @@ def completion_twitter_text(conn):
                 x['_source']['id']=x['_id']
                 x['_source']['url'] = 'https://twitter.com/%s/status/%s' % (x['_source']['user']['screen_name'], x['_source']['id_str'])
                 return x['_source'];
-            es_body_tw_urls = list(map(handele,filter(lambda x: x['_source']['truncated'],es_body_tw)))
+            es_body_tw_urls = list(map(handele,filter(lambda x:not x['_source']['truncated'],es_body_tw)))
             # print(es_body_tw_urls)
             if len(es_body_tw_urls)>50:
                 pool = mp.Pool()
                 res = pool.map(asynchronous_request,(es_body_tw_urls[i:i+50] for i in range(0,len(es_body_tw_urls),50)))
+                # current += 1;
+                print('更新%用户' % id)
             elif 0<len(es_body_tw_urls)<50:
                 asynchronous_request(ops=es_body_tw_urls)
+                # current += 1;
+                print('更新%用户' % id)
+                # print('第几%s个' % current)
             else:
                 current += 1;
-                print('改用户%s无需更新' % id)
+                print('该用户%s无需更新' % id)
                 print('第几%s个' % current)
                 if current == len(ids['ids']):
                     break;
             conn.send(id)
         except Exception as e:
+            current = 0
             print(e)
+            # raise e
             continue
 
 

@@ -27,14 +27,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="quotes_facebook_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_facebook_spider.py">
+      <file leaf-file-name="complement_tw_text.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/program_related_scripts/complement_tw_text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="31" />
+            <state relative-caret-position="196">
+              <caret line="103" column="19" lean-forward="false" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#492#611#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="205" column="19" lean-forward="true" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
+              <folding>
+                <element signature="e#1884#3936#0" expanded="false" />
+                <element signature="e#4018#6048#0" expanded="false" />
+                <element signature="e#6099#6260#0" expanded="false" />
+                <element signature="e#6321#8636#0" expanded="false" />
+                <element signature="e#13919#15078#0" expanded="false" />
+                <element signature="e#15108#15684#0" expanded="false" />
+                <element signature="e#15717#17055#0" expanded="false" />
+                <element signature="e#17159#17546#0" expanded="false" />
+                <element signature="e#17589#20817#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="51" column="57" lean-forward="false" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitter_user_ids.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twitter_user_ids.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-11125">
+              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook_user_ids.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/facebook_user_ids.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upSend_users_to_ikolsdb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/program_related_scripts/upSend_users_to_ikolsdb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="177" column="28" lean-forward="true" selection-start-line="177" selection-start-column="28" selection-end-line="177" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#495#614#0" expanded="false" />
+                <element signature="e#1858#4544#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quotes_twitter_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_twitter_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="84" column="99" lean-forward="false" selection-start-line="84" selection-start-column="92" selection-end-line="84" selection-end-column="99" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,47 +127,7 @@
         <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
-              <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twitter_tmp.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitter_tmp.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="100" column="75" lean-forward="false" selection-start-line="100" selection-start-column="75" selection-end-line="100" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook_user_ids.json" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/facebook_user_ids.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="851" column="25" lean-forward="false" selection-start-line="851" selection-start-column="25" selection-end-line="851" selection-end-column="25" />
+              <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -102,12 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>431105217</find>
-      <find>325162736</find>
-      <find>1245780978850063</find>
-      <find>1068481578</find>
-      <find>'</find>
-      <find>deadline</find>
       <find>user_id</find>
       <find>crawler_tweets_replay_count</find>
       <find>asynchronous_request_facebook_api</find>
@@ -132,6 +170,12 @@
       <find>175335262547741</find>
       <find>118930694847615</find>
       <find>18020081</find>
+      <find>115979444</find>
+      <find>586751814690068</find>
+      <find>2976606250</find>
+      <find>211420609</find>
+      <find>223166587</find>
+      <find>193794406</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -148,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/redis_helper.py" />
         <option value="$PROJECT_DIR$/facebook_user_ids1.json" />
         <option value="$PROJECT_DIR$/es_srcipt/twitter_pusher.py" />
         <option value="$PROJECT_DIR$/es_srcipt/facebook_pusher.py" />
@@ -179,7 +222,6 @@
         <option value="$PROJECT_DIR$/script/up_user_info.py" />
         <option value="$PROJECT_DIR$/libry_script/userSender.py" />
         <option value="$PROJECT_DIR$/twitter_user_ids_tmp.json" />
-        <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_reactions.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_replay.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_tweets.py" />
@@ -193,12 +235,14 @@
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/twitter_user_ids.json" />
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/settings.py" />
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_facebook_spider.py" />
-        <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/pipelines.py" />
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/twitter_tmp.json" />
-        <option value="$PROJECT_DIR$/program_related_scripts/upSend_users_to_ikolsdb.py" />
         <option value="$PROJECT_DIR$/src/pkg/twitter/twitter.py" />
         <option value="$PROJECT_DIR$/src/shedule.py" />
+        <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/pipelines.py" />
+        <option value="$PROJECT_DIR$/program_related_scripts/upSend_users_to_ikolsdb.py" />
+        <option value="$PROJECT_DIR$/program_related_scripts/complement_tw_text.py" />
+        <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
       </list>
     </option>
   </component>
@@ -255,6 +299,36 @@
             <path>
               <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="day_script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="facebook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
@@ -611,14 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day_script/day_crawler_reactions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -640,32 +706,6 @@
         <state relative-caret-position="528">
           <caret line="39" column="7" lean-forward="false" selection-start-line="37" selection-start-column="3" selection-end-line="39" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="51" column="57" lean-forward="false" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="205" column="19" lean-forward="true" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
-          <folding>
-            <element signature="e#1884#3936#0" expanded="false" />
-            <element signature="e#4018#6048#0" expanded="false" />
-            <element signature="e#6099#6260#0" expanded="false" />
-            <element signature="e#6321#8636#0" expanded="false" />
-            <element signature="e#13919#15078#0" expanded="false" />
-            <element signature="e#15108#15684#0" expanded="false" />
-            <element signature="e#15717#17055#0" expanded="false" />
-            <element signature="e#17159#17546#0" expanded="false" />
-            <element signature="e#17589#20817#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,17 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program_related_scripts/complement_tw_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#20#0" expanded="false" />
-            <element signature="e#492#611#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/export_script/transform_new_users_to_ids.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -830,74 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_user_ids.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/twitter_user_ids.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="892" column="19" lean-forward="false" selection-start-line="892" selection-start-column="19" selection-end-line="892" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook_user_ids.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="851" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/facebook_user_ids.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="851" column="25" lean-forward="false" selection-start-line="851" selection-start-column="25" selection-end-line="851" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="100" column="75" lean-forward="false" selection-start-line="100" selection-start-column="75" selection-end-line="100" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_twitter_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_facebook_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_tmp.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shedule.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -930,31 +891,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/twitter_user_ids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="892" column="18" lean-forward="false" selection-start-line="892" selection-start-column="9" selection-end-line="892" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_facebook_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_tmp.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/facebook_user_ids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="850" column="24" lean-forward="false" selection-start-line="850" selection-start-column="9" selection-end-line="850" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="100" column="75" lean-forward="false" selection-start-line="100" selection-start-column="75" selection-end-line="100" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_twitter_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="84" column="99" lean-forward="false" selection-start-line="84" selection-start-column="92" selection-end-line="84" selection-end-column="99" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/program_related_scripts/upSend_users_to_ikolsdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="48" column="84" lean-forward="false" selection-start-line="48" selection-start-column="84" selection-end-line="48" selection-end-column="84" />
+        <state relative-caret-position="483">
+          <caret line="177" column="28" lean-forward="true" selection-start-line="177" selection-start-column="28" selection-end-line="177" selection-end-column="28" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
             <element signature="e#495#614#0" expanded="false" />
             <element signature="e#1858#4544#0" expanded="false" />
-            <element signature="e#4634#7324#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
+    <entry file="file://$PROJECT_DIR$/facebook_user_ids.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="663">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_user_ids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11125">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_related_scripts/complement_tw_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="103" column="19" lean-forward="false" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+          <folding>
+            <element signature="e#492#611#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="205" column="19" lean-forward="true" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
+          <folding>
+            <element signature="e#1884#3936#0" expanded="false" />
+            <element signature="e#4018#6048#0" expanded="false" />
+            <element signature="e#6099#6260#0" expanded="false" />
+            <element signature="e#6321#8636#0" expanded="false" />
+            <element signature="e#13919#15078#0" expanded="false" />
+            <element signature="e#15108#15684#0" expanded="false" />
+            <element signature="e#15717#17055#0" expanded="false" />
+            <element signature="e#17159#17546#0" expanded="false" />
+            <element signature="e#17589#20817#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="51" column="57" lean-forward="false" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
           <folding />
         </state>
       </provider>
