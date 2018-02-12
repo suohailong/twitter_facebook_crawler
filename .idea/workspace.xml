@@ -27,44 +27,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="complement_tw_text.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="complement_tw_text.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/program_related_scripts/complement_tw_text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="103" column="19" lean-forward="false" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+            <state relative-caret-position="57">
+              <caret line="74" column="61" lean-forward="false" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
               <folding>
-                <element signature="e#492#611#0" expanded="false" />
+                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#553#672#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
+      <file leaf-file-name="shedule.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="43" column="5" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="30">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <element signature="e#943#1403#0" expanded="false" />
+                <element signature="e#1481#3471#0" expanded="false" />
+                <element signature="e#3537#3838#0" expanded="false" />
+                <element signature="e#7091#10140#0" expanded="false" />
+                <element signature="e#10226#12646#0" expanded="false" />
+                <element signature="e#12748#14993#0" expanded="false" />
+                <element signature="e#15084#17093#0" expanded="false" />
+                <element signature="e#17155#20028#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_crawler_with_user_ids.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/history_data_back_scrpt/start_crawler_with_user_ids.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-538">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="248" column="16" lean-forward="false" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
-              <folding>
-                <element signature="e#1884#3936#0" expanded="false" />
-                <element signature="e#4018#6048#0" expanded="false" />
-                <element signature="e#6099#6260#0" expanded="false" />
-                <element signature="e#6321#8636#0" expanded="false" />
-                <element signature="e#13922#15081#0" expanded="false" />
-                <element signature="e#15111#15687#0" expanded="false" />
-                <element signature="e#15720#17058#0" expanded="false" />
-                <element signature="e#17162#17549#0" expanded="false" />
-                <element signature="e#17592#20820#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config3.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config3.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,7 +92,7 @@
       <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
+            <state relative-caret-position="363">
               <caret line="51" column="57" lean-forward="false" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
               <folding />
             </state>
@@ -82,7 +102,7 @@
       <file leaf-file-name="twitter_user_ids.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_user_ids.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11125">
+            <state relative-caret-position="-45">
               <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
@@ -118,16 +138,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
               <caret line="84" column="99" lean-forward="false" selection-start-line="84" selection-start-column="92" selection-end-line="84" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -234,15 +244,15 @@
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/twitter_user_ids.json" />
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/settings.py" />
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/spiders/quotes_facebook_spider.py" />
-        <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/twitter_tmp.json" />
         <option value="$PROJECT_DIR$/src/pkg/twitter/twitter.py" />
         <option value="$PROJECT_DIR$/src/shedule.py" />
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/pipelines.py" />
         <option value="$PROJECT_DIR$/program_related_scripts/upSend_users_to_ikolsdb.py" />
-        <option value="$PROJECT_DIR$/program_related_scripts/complement_tw_text.py" />
         <option value="$PROJECT_DIR$/src/pkg/facebook/facebook_api.py" />
         <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
+        <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/program_related_scripts/complement_tw_text.py" />
       </list>
     </option>
   </component>
@@ -303,32 +313,7 @@
             <path>
               <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="day_script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkg" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitfaceCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkg" type="462c0819:PsiDirectoryNode" />
-              <item name="facebook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twitfaceCrawler" type="b2602c69:ProjectViewProjectNode" />
@@ -564,7 +549,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../tweetf0rm/twitter_user_ids_name.json" />
     <entry file="file://$PROJECT_DIR$/../tweetf0rm/export_script/export_Area_rank.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -665,14 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config3.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="7" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -859,24 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shedule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="416" column="27" lean-forward="true" selection-start-line="416" selection-start-column="27" selection-end-line="416" selection-end-column="27" />
-          <folding>
-            <element signature="e#943#1403#0" expanded="false" />
-            <element signature="e#1481#3471#0" expanded="false" />
-            <element signature="e#3537#3838#0" expanded="false" />
-            <element signature="e#3922#7005#0" expanded="false" />
-            <element signature="e#7091#10140#0" expanded="false" />
-            <element signature="e#10226#12646#0" expanded="false" />
-            <element signature="e#12748#14993#0" expanded="false" />
-            <element signature="e#15084#17093#0" expanded="false" />
-            <element signature="e#17155#20028#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg/twitter/twitter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -888,14 +846,6 @@
             <element signature="e#7353#9437#0" expanded="false" />
             <element signature="e#9498#10519#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +862,7 @@
         <state relative-caret-position="249">
           <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="31" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -977,28 +927,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_user_ids.json">
+    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11125">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program_related_scripts/complement_tw_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="103" column="19" lean-forward="false" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-          <folding>
-            <element signature="e#492#611#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="51" column="57" lean-forward="false" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
+        <state relative-caret-position="548">
+          <caret line="43" column="5" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1021,11 +953,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
+    <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="363">
+          <caret line="51" column="57" lean-forward="false" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_user_ids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/history_data_back_scrpt/start_crawler_with_user_ids.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-538">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#943#1403#0" expanded="false" />
+            <element signature="e#1481#3471#0" expanded="false" />
+            <element signature="e#3537#3838#0" expanded="false" />
+            <element signature="e#7091#10140#0" expanded="false" />
+            <element signature="e#10226#12646#0" expanded="false" />
+            <element signature="e#12748#14993#0" expanded="false" />
+            <element signature="e#15084#17093#0" expanded="false" />
+            <element signature="e#17155#20028#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_related_scripts/complement_tw_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="74" column="61" lean-forward="false" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#553#672#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
