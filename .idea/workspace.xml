@@ -52,8 +52,8 @@
       <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="251" column="24" lean-forward="false" selection-start-line="246" selection-start-column="18" selection-end-line="251" selection-end-column="24" />
+            <state relative-caret-position="470">
+              <caret line="203" column="74" lean-forward="false" selection-start-line="203" selection-start-column="74" selection-end-line="203" selection-end-column="74" />
               <folding>
                 <element signature="e#1884#3936#0" expanded="false" />
                 <element signature="e#4018#6048#0" expanded="false" />
@@ -1013,8 +1013,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="251" column="24" lean-forward="false" selection-start-line="246" selection-start-column="18" selection-end-line="251" selection-end-column="24" />
+        <state relative-caret-position="470">
+          <caret line="203" column="74" lean-forward="false" selection-start-line="203" selection-start-column="74" selection-end-line="203" selection-end-column="74" />
           <folding>
             <element signature="e#1884#3936#0" expanded="false" />
             <element signature="e#4018#6048#0" expanded="false" />
