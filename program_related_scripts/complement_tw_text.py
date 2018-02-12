@@ -37,7 +37,8 @@ def asynchronous_request(ops=[]):
         async with ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
             # session.keep_alive=False
             try:
-                async with session.get(inops['url'],proxy="http://127.0.0.1:51545",headers={'CONNECTION': 'close','CONTENT-TYPE': 'application/json'}) as response:
+                async with session.get(inops['url'],#proxy="http://127.0.0.1:51545",
+                                       headers={'CONNECTION': 'close','CONTENT-TYPE': 'application/json'}) as response:
                     result = await response.text()
                     _ = pq(result)
                     content = _('p.TweetTextSize.TweetTextSize--jumbo.js-tweet-text.tweet-text').text().replace(
@@ -83,8 +84,8 @@ def completion_twitter_text(conn):
             print('[===取出的ID为%s,目前还有%s条需要抓取====]' % (id,twitter_crawler_queue.qsize()))
             es_url = 'http://narnia.idatage.com/stq/api/v1/rowlet/findEsTextByUserIdOrKeywords?startDate=2016-12-30&endDate=2018-02-12&category=tw&ids=%s' % (id,)  # if i in [1,2,3,4,5,6,7,8] else 'http://narnia.idatage.com/stq/api/v1/rowlet/findEsTextByUserIdOrKeywords?startDate=2017-%s-01&endDate=2017-%s-01&category=%s&ids=%s' % (i,i+1,category,id)
             es_body = requests.get(es_url)
-            print('取出的内容为：')
-            print(es_body.text)
+            # print('取出的内容为：')
+            # print(es_body.text)
             es_body_tw = json.loads(es_body.text)['tw']
             print(len(es_body_tw))
             def handele(x):
