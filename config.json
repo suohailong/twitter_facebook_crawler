@@ -24,8 +24,8 @@
 	"mongo_config":{
 
           "MongoHost":"mongodb://root:joke123098@101.201.37.28:3717/?authSource=admin",
-          "db":"TUserPost",
-          "collection":"Tuser_post"
+          "db":"UserPost",
+          "collection":"user_post"
 
 	},
 	"run_platform":"localhost"

@@ -156,6 +156,9 @@ class FaceBook(Base):
             # print(likes_count)
             return return_list;
 
+    def timestamp_to_strtime(self,timestamp):
+        local_str_time = datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%dT%H:%M:%S.000Z')
+        return local_str_time
     def fetch_user_tweets(self,id=None,deadline='2017-01-01',urls=[]):
         flag=True
         back=0
@@ -171,7 +174,7 @@ class FaceBook(Base):
                 def scrape(i, e):
                     return {
                         "name": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5 a').text(),
-                        "create_at": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr('title'),
+                        "create_at": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr('data-utime'),
                         "last_untime": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5+div>span:nth-child(3) a>abbr').attr(
                             'data-utime'),
                         "permalink_url": pq(e)('div.userContentWrapper div._6a._5u5j._6b>h5+div>span:nth-child(3) a').attr('href'),
@@ -187,22 +190,24 @@ class FaceBook(Base):
                 tweet3 = []
                 printFlag = True;
                 for x in filter(lambda x:x['create_at'],tweets):
-                    x['create_at']=re.sub(r'[年月日\(\)金木水火土]', ' ', x['create_at'])
-                    if printFlag:
-                        print(x['create_at'])
-                        printFlag=False
-                    thisTime = x['create_at']
-                    thisTime = thisTime.replace(',', '')
-                    thisTime = thisTime.replace('at', '')
-                    if 'am' in thisTime:
-                        thisTime = thisTime.replace('am', ' AM')
-                    if 'pm' in thisTime:
-                        thisTime = thisTime.replace('pm', ' PM')
-                    if 'Surday' in thisTime:
-                        thisTime = thisTime.replace('Surday', 'Saturday')
-                    # # x['create_at'] = datetime.strptime(thisTime, '%A %B %d %Y  %H:%M %p').strftime('%Y-%m-%d %H:%M')
-                    x['create_at'] = datetime.strptime(thisTime, '%Y-%m-%d  %H:%M').strftime('%Y-%m-%d %H:%M') #最新修改
+                    # x['create_at']=re.sub(r'[年月日\(\)金木水火土]', ' ', x['create_at'])
+                    # if printFlag:
+                    #     print(x['create_at'])
+                    #     printFlag=False
+                    # thisTime = x['create_at']
+                    # thisTime = thisTime.replace(',', '')
+                    # thisTime = thisTime.replace('at', '')
+                    # if 'am' in thisTime:
+                    #     thisTime = thisTime.replace('am', ' AM')
+                    # if 'pm' in thisTime:
+                    #     thisTime = thisTime.replace('pm', ' PM')
+                    # if 'Surday' in thisTime:
+                    #     thisTime = thisTime.replace('Surday', 'Saturday')
+                    # # # x['create_at'] = datetime.strptime(thisTime, '%A %B %d %Y  %H:%M %p').strftime('%Y-%m-%d %H:%M')
+                    # x['create_at'] = datetime.strptime(thisTime, '%Y-%m-%d  %H:%M').strftime('%Y-%m-%d %H:%M') #最新修改
                     # x['create_at'] = datetime.strptime(x['create_at'], '%Y-%m-%d %H:%M').strftime('%Y-%m-%d %H:%M') #在本地跑数据
+                    x['create_at']=self.timestamp_to_strtime(int(x['create_at']))
+                    # print(x['create_at'])
                     tweet3.append(x)
 
                 def dedupe(items, key=None):
@@ -226,14 +231,14 @@ class FaceBook(Base):
                     item['user_id'] = id
                     item['permalink_url'] = 'https://facebook.com%s' % item['permalink_url']
                     if deadline and tweet3.index(item)!= 0:
-                        date = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
+                        date = datetime.strptime(item['create_at'],'%Y-%m-%dT%H:%M:%S.000Z')
                         print(date)
                         deadline_panduan = datetime.strptime('%s' % deadline, '%Y-%m-%d')
                         print((date - deadline_panduan).days)
                         if (date - deadline_panduan).days <= 0:
                             flag=False;
                             break;
-                    item['create_at'] = datetime.strptime(item['create_at'], '%Y-%m-%d %H:%M')
+                    item['create_at'] = datetime.strptime(item['create_at'], '%Y-%m-%dT%H:%M:%S.000Z')
                     object_id = self.save(item)
                     # crawler_reactions_list.append({'url':item['permalink_url'],'id':str(object_id)})
                     print('save %s ==>successfuly' % object_id)
@@ -389,14 +394,14 @@ class FaceBook(Base):
 
 if __name__ == '__main__':
     facebook = FaceBook()
-    with open('facebook_user_ids3.json','r') as f:
-        ids = json.load(f)
-    current=0
-    for url in ids['ids']:
-    # facebook.crawler_reactions_nums('https://www.facebook.com/MakeAmericaProud/posts/1884405568288166')
-        user_info = facebook.get_user_info(url+'about')
-        current += 1;
-        print('完成到第%s个' % current)
-        # print(user_info)
-    # print(result)
-    # facebook.fetch_user_tweets(id='397176447066236',urls='it_count=9&dpr=2&__user=0&__a=1&__req=j&__be=-1&__pc=EXP1:home_page_pkg&__rev=3574843')
+    # with open('facebook_user_ids3.json','r') as f:
+    #     ids = json.load(f)
+    # current=0
+    # for url in ids['ids']:
+    # # facebook.crawler_reactions_nums('https://www.facebook.com/MakeAmericaProud/posts/1884405568288166')
+    #     user_info = facebook.get_user_info(url+'about')
+    #     current += 1;
+    #     print('完成到第%s个' % current)
+    #     # print(user_info)
+    # # print(result)
+    facebook.fetch_user_tweets(id='397176447066236',urls='https://www.facebook.com/pg/RepCarolynMaloney/posts/')

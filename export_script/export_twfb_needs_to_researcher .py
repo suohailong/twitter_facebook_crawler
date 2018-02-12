@@ -458,15 +458,12 @@ def export_twitterUser_emotion_analysis(db='UserPost',collection="user_post"):
 
 def tmp_export():
     client = MongoClient('mongodb://root:joke123098@101.201.37.28:3717/?authSource=admin')
-    userdb = client['FaceBook']
-    user = userdb['facebook']
+    userdb = client['UserPost']
+    user = userdb['user_post']
 
-    for user_data in user.find({}):
-        if not user_data['link'].endswith('/'):
-            user_data['link'] = user_data['link']+'/'
-            print(user_data['_id'])
-            # update_status = user.update({'_id':user_data['_id']},user_data)
-            # print(update_status)
+    doc = user.find_one({'_id':objectid.ObjectId('5a81bfed4c7ffbaa372e3484')})
+    print(datetime.strftime(doc['create_at'],'%Y-%m-%dT%H:%M:%S.000Z'))
+    print(doc)
 
 
 
