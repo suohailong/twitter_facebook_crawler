@@ -121,7 +121,7 @@ def update_ikols_user_info(db=None,collection=None,config='twitter_user_ids.json
                 doc = fb.find_one({"id_str": id}, {"_id": 0, 'update_time': 0, 'gender': 0, 'party': 0})
                 # print(doc)
                 result = asynchronous_request_facebook_api([{
-                    'url': 'http://ikols.idatage.com/v1/config/account/add.json',
+                    'url': 'http://192.168.1.55:5008/v1/config/account/update.json',
                     'headers': {"request-id": "880c46-6d64fb-879b-0de9-b1c1b84180f4", 'CONNECTION': 'close',
                                 'content-type': 'application/json'},
                     'data': {
@@ -159,7 +159,7 @@ def update_ikols_user_info(db=None,collection=None,config='twitter_user_ids.json
 
                 # print(doc)
                 result = asynchronous_request_facebook_api([{
-                    'url': 'http://ikols.idatage.com/v1/config/account/add.json',
+                    'url': 'http://192.168.1.55:5008/v1/config/account/update.json',
                     'headers':{"request-id":"880c46-6d64fb-879b-0de9-b1c1b84180f4",'CONNECTION': 'close','content-type': 'application/json'},
                     'data': {
                         'tw': [],
@@ -168,8 +168,8 @@ def update_ikols_user_info(db=None,collection=None,config='twitter_user_ids.json
                                 "account_id": doc['id'],
                                 "fan_count": doc['fan_count'],
                                 "likesCount": doc['likes_count'],
-                                "verificationStatus":  1 if doc['isVerified'] else 0,
-                                "status": 1 if doc['isExist'] else 0
+                                "verificationStatus":  0 ,#if doc['isVerified'] else 0,
+                                "status": 1 #if doc['isExist'] else 0
                             }
                         ]
                     }
@@ -177,8 +177,10 @@ def update_ikols_user_info(db=None,collection=None,config='twitter_user_ids.json
                 # print(doc['about'])
                 print('推送结果为：%s,user:%s' % (result, id))
         except Exception as e:
-            print(e)
             print('出错id为:%s' % id)
+            # raise e
+            print(e)
+
 
 if __name__== '__main__':
-    update_ikols_user_info(db='FaceBook',collection='facebook',config='facebook_user_ids.json')
+    update_ikols_user_info(db='Twitter',collection='twitter',config='twitter_tmp.json')

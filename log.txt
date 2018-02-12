@@ -1,2 +1,2 @@
-https://www.facebook.com/RepJoseSerrano//posts/ 未爬取
-https://www.facebook.com/RepMichaelCapuano//posts/
+"8056916700", //未认证
+"470498020"//twitter
