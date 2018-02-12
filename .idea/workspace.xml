@@ -39,31 +39,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="day_crawler_posts.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+            <state relative-caret-position="528">
+              <caret line="43" column="5" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="facebook_api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="203" column="81" lean-forward="true" selection-start-line="203" selection-start-column="81" selection-end-line="203" selection-end-column="81" />
+            <state relative-caret-position="427">
+              <caret line="248" column="16" lean-forward="false" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
               <folding>
                 <element signature="e#1884#3936#0" expanded="false" />
                 <element signature="e#4018#6048#0" expanded="false" />
                 <element signature="e#6099#6260#0" expanded="false" />
                 <element signature="e#6321#8636#0" expanded="false" />
-                <element signature="e#13926#15085#0" expanded="false" />
-                <element signature="e#15115#15691#0" expanded="false" />
-                <element signature="e#15724#17062#0" expanded="false" />
-                <element signature="e#17166#17553#0" expanded="false" />
-                <element signature="e#17596#20824#0" expanded="false" />
+                <element signature="e#13922#15081#0" expanded="false" />
+                <element signature="e#15111#15687#0" expanded="false" />
+                <element signature="e#15720#17058#0" expanded="false" />
+                <element signature="e#17162#17549#0" expanded="false" />
+                <element signature="e#17592#20820#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -241,8 +241,8 @@
         <option value="$USER_HOME$/suo_learn/reptile(爬虫)/distributed_crawler/tutorial/tutorial/pipelines.py" />
         <option value="$PROJECT_DIR$/program_related_scripts/upSend_users_to_ikolsdb.py" />
         <option value="$PROJECT_DIR$/program_related_scripts/complement_tw_text.py" />
-        <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
         <option value="$PROJECT_DIR$/src/pkg/facebook/facebook_api.py" />
+        <option value="$PROJECT_DIR$/day_script/day_crawler_posts.py" />
       </list>
     </option>
   </component>
@@ -995,14 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg/base/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -1013,19 +1005,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg/facebook/facebook_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="203" column="81" lean-forward="true" selection-start-line="203" selection-start-column="81" selection-end-line="203" selection-end-column="81" />
+        <state relative-caret-position="427">
+          <caret line="248" column="16" lean-forward="false" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
           <folding>
             <element signature="e#1884#3936#0" expanded="false" />
             <element signature="e#4018#6048#0" expanded="false" />
             <element signature="e#6099#6260#0" expanded="false" />
             <element signature="e#6321#8636#0" expanded="false" />
-            <element signature="e#13926#15085#0" expanded="false" />
-            <element signature="e#15115#15691#0" expanded="false" />
-            <element signature="e#15724#17062#0" expanded="false" />
-            <element signature="e#17166#17553#0" expanded="false" />
-            <element signature="e#17596#20824#0" expanded="false" />
+            <element signature="e#13922#15081#0" expanded="false" />
+            <element signature="e#15111#15687#0" expanded="false" />
+            <element signature="e#15720#17058#0" expanded="false" />
+            <element signature="e#17162#17549#0" expanded="false" />
+            <element signature="e#17592#20820#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_script/day_crawler_posts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="43" column="5" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

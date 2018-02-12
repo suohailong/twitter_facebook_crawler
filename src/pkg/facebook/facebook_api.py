@@ -244,8 +244,8 @@ class FaceBook(Base):
                     back=0
                     break;
             except Exception as e:
-                # print('<%s重新加载到文章队列>' % id)
-                # self.crawler_tweets_err_queue.lput({'id':id,'url':urls})
+                print('<%s重新加载到文章队列>' % id)
+                self.crawler_tweets_err_queue.lput({'id':id,'url':urls})
                 # # posts = self.get_mongod_client()
                 # # deleteObj = posts.delete_many({'user_id':id})
                 # # print('<清除%s用户的所有文章,文章数为:%s>' % (id,deleteObj.deleted_count))
