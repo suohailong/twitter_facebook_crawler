@@ -22,7 +22,7 @@ def twitter_ervery_day_job(dateline=None):
     print("crawler twitter tweets  working...")
     crawler_init(name='twitter')
     if not dateline:
-        dateline = datetime.datetime.strftime(datetime.date.today()-datetime.timedelta(days=3),'%Y-%m-%d')
+        dateline = datetime.datetime.strftime(datetime.date.today()-datetime.timedelta(days=10),'%Y-%m-%d')
         s.crawler_tweets(TWitter(),'twitter',dateline)
     else:
         s.crawler_tweets(TWitter(), 'twitter', dateline)
@@ -34,9 +34,9 @@ schedule.every(2).hours.do(twitter_ervery_day_job)
 if __name__ == '__main__':
     print('<-----tweets定时任务启动----->')
     # config = read_config()
-    # twitter_ervery_day_job(dateline='2016-12-31')
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    twitter_ervery_day_job()
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
 
 

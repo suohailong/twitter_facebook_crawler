@@ -457,13 +457,20 @@ def export_twitterUser_emotion_analysis(db='UserPost',collection="user_post"):
                  sheet_name='Sheet1')
 
 def tmp_export():
-    client = MongoClient('mongodb://root:joke123098@101.201.37.28:3717/?authSource=admin')
-    userdb = client['UserPost']
-    user = userdb['user_post']
+    client = MongoClient()
+    userdb = client['EsUserPost']
+    user = userdb['es_user_post']
 
-    doc = user.find_one({'_id':objectid.ObjectId('5a81bfed4c7ffbaa372e3484')})
-    print(datetime.strftime(doc['create_at'],'%Y-%m-%dT%H:%M:%S.000Z'))
-    print(doc)
+
+    for kw in ["Tax","China"]:
+        doc = list(user.find({"text":{'$regex':kw}},{"_id":0}))
+
+        df2 = pd.DataFrame(doc)
+        df2 = df2.applymap(lambda x: x.encode('unicode_escape').
+                           decode('utf-8') if isinstance(x, str) else x)
+        # print(docs)
+        df2.to_excel('./export_data/%s.xlsx' % (kw,),
+                     sheet_name='Sheet1')
 
 
 

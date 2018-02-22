@@ -39,9 +39,9 @@ schedule.every(3).minutes.do(twitter_every_day_update_count_job)
 
 if __name__ == '__main__':
     print('<-----replay定时任务启动----->')
-    # twitter_every_day_update_count_job()
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    twitter_every_day_update_count_job()
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
 
 

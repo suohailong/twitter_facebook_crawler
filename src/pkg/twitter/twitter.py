@@ -101,13 +101,14 @@ class TWitter(Base,twython.Twython):
                     break;
 
             except Exception as e:
-                print('<%s重新加载到文章队列>' % user_id)
-                self.crawler_tweets_err_queue.lput({"user_id":user_id,"current_max_id":current_max_id})
+                # print('<%s重新加载到文章队列>' % user_id)
+                # self.crawler_tweets_err_queue.lput({"user_id":user_id,"current_max_id":current_max_id})
                 # posts = self.get_mongod_client()
                 # deleteObj = posts.delete_many({'id_str': user_id})
                 # print('<清除%s用户的所有文章,文章数为:%s>' % (user_id, deleteObj.deleted_count))
-                break;
+                # break;
                 # print(e)
+                raise e
 
     def crawler_list_count(self,user_sreen_name=None,user_id=None):
         try:

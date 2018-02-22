@@ -25,7 +25,7 @@ def crawler_init(name='twitter'):
         print('<-----有%s个任务需要完成----->' % twitter_crawler_queue.qsize())
         print('<-----twitter初始化完成----->')
     else:
-        facebook_crawler_queue = RedisQueue(name='fb_test_ids',redis_config=config['redis_config2'])
+        facebook_crawler_queue = RedisQueue(name='facebook',redis_config=config['redis_config'])
         if facebook_crawler_queue.qsize()>0:
             print('<-----有%s个任务还未完成---->' % facebook_crawler_queue.qsize())
         if facebook_crawler_queue.empty():

@@ -343,7 +343,7 @@ class Shedule(object):
                         update_doc.modified_count))
                     else:
                         # print('push item to es')
-                        # print(item)
+                        print(item['url'].split('/')[-1])
                         data = db.find_one_and_delete({"id_str": item['url'].split('/')[-1],'site':'twitter'})
                         data['replay_count'] = item['reply_count']
                         data['favorite_count'] = item['favorite_count']
@@ -353,6 +353,7 @@ class Shedule(object):
                         es.twitter_pusher(data)
 
             except Exception as e:
+                #raise e;
                 print(e)
                 continue
     def crawler_posts_reactions(self,history=False):
