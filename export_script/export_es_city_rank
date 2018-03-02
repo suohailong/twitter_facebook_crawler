@@ -1,0 +1,87 @@
+from datetime import datetime
+from elasticsearch import Elasticsearch
+es = Elasticsearch(['http://59.110.52.213/weibo'], http_auth=('weibo', 'weibo123456'), port=80)
+import openpyxl
+from openpyxl.workbook import Workbook
+from openpyxl.writer.excel import ExcelWriter
+import openpyxl.cell
+from openpyxl.reader.excel import load_workbook
+import pandas as pd
+from operator import itemgetter
+#
+# items = pd.read_excel('./country.xlsx', "country", index_col=None, na_values=['NA'])
+# df = pd.DataFrame(items)
+# keyWordItems = df.values.tolist()[0:]
+#
+# result = []
+# for item in keyWordItems:
+#     print('search ====> %s ' % item[0])
+res = es.search(index="rowlet_twitter_articles", body={
+          "query": {
+            "bool": {
+              "filter": [{
+                "range": {
+                  "created_at": {
+                    "gte": "2017-01-01 00:00:00",
+                    "lte": "2017-02-01 00:00:00",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis",
+                    "time_zone": "Asia/Shanghai"
+                  }
+                }
+              }],
+              "should": [
+                {
+                  "bool": {
+                    "must": [
+                      {
+                        "match_phrase" : {
+                            "text" : 'russia'
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "minimum_should_match": "1"
+            }
+          },
+          "size": 10000,
+          "_source": {
+            "excludes": []
+          },
+          "aggs": {
+            "date": {
+              "date_histogram": {
+                "field": "created_at",
+                "interval": "1d",
+                "time_zone": "Asia/Shanghai",
+                "format": "yyyy-MM-dd",
+                "min_doc_count": 0,
+                "extended_bounds" : {
+                    "min" : "2017-01-01",
+                    "max" : "2017-02-01"
+                }
+              }
+            }
+          }
+})
+print(res[''])
+#     result.append({
+#         'key':item[0],
+#         'numbers':res['hits']['total'],
+#         'aggregations':res['aggregations']
+#     })
+#
+# rank = sorted(result,key=itemgetter('numbers'),reverse=True)[0:16]
+# df2 = pd.DataFrame(list(map(lambda x:{'key':x['key'],'number':x['numbers']},rank)))
+# df2 = df2.applymap(lambda x: x.encode('unicode_escape').
+#                    decode('utf-8') if isinstance(x, str) else x)
+#
+# df2.to_excel('./export_data/%s/contry/%s.xlsx' % ("twitter", 'contry'), sheet_name='Sheet1')
+
+
+
+
+
+    # print("Got %s " % res['aggregations'])
+
