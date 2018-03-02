@@ -903,4 +903,11 @@ html内容:
 8
 39
 处理后的结果:
-{'url': 'https://twitter.com/rep_stevewomack/status/913513663448981504', 'reply_count': '3', 'retweet_count': '8', 'favorite_count': '39'}
+{'url': 'https://twitter.com/rep_stevewomack/status/913513663448981504', 'reply_count': '3', 'retweet_count': '8', 'favorite_count': '39'}supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned

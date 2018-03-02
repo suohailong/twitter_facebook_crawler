@@ -1,0 +1,51 @@
+程序说明：
+    程序主要分为三块  1 抓取用户信息，  2 抓取文章信息  3抓取文章的量值信息
+    其中抓取用户信息的量的爬虫需要完善
+    抓取文章和文章量的爬虫已经稳定。
+
+
+    程序目录及内容
+        day_script:每天增量抓取的定时任务脚本
+               day_crawler_posts.py   facebook文章定时任务
+               day_crawler_reactions.py  facebook点赞量，评论量，粉丝量抓取程序 定时任务
+               day_crawler_tweets.py  twitter文章定时任务
+               day_replay.py twitter量值抓取程序，定时任务
+
+
+        es_srcipt :推es相关的脚本
+                idatage_export.py  单独写了一个es的类，用来封装推es的代码
+
+        export_data:
+                根据研究的临时需求导出的数据存放在这个路劲下
+        export_script:
+                根据研究的需求编写的临时脚本
+        history_data_back_scrpt:
+                历史数据回溯相关的代码，现在一般用不到
+        log：
+            supervisord -c supervisord.conf启动定时任务时，日志存放的路径
+        program_related_scripts:
+            包含一些临时脚本特殊作用，跟twitter和facebook爬虫无关
+        src:
+            是整个爬虫的源码
+            shedule.py是整个爬虫的入口，里面包括爬取文章，爬取用户信息，爬取各种量值的接口
+            redis_helper是自定义的一个操作redis的类
+            pkg分为base facebook  twitter三个类， base是一个基类定义了一些公用的方法和属性例如操作mongodb  facebook类是facebook爬虫相关的类，twitter类是twitter爬虫相关的类
+
+
+        test:
+            写程序时，临时用来测试某个模块的一些测试代码
+
+
+        twitter_user_ids.json  所有在检测的twitter用户id 启动文章和用户爬虫时需要读取
+        facebook_user_ids.json  所有在检测的facebook用户id 启动文章和用户爬虫时需要读取
+
+        supervisord.conf：这个文件是supervisord这个python的进程管理工具要用到的配置文件，里面可以设定进程的启动方式
+
+
+        config.json：这个文件是整个项目的配置文件，配置了mongodb和redis的相关信息
+
+    程序的整个思想架构
+       1.启动文章爬虫读取id文件(facebook_user_ids,twitter_user_ids)初始化id信息到redis队列
+       2.文章爬虫读取队列的用户id开始爬取用户的文章，爬取3天的内容。
+       3.文章爬虫爬取的信息存入mongodb并将update_status标志位置0
+       4.文章点赞量等量值爬虫读取mongodb update_status为0的数据，开始爬取量值信息，然后推入es并删除mongodb内已更新过的数据

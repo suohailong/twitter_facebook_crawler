@@ -2196,3 +2196,11 @@ Traceback (most recent call last):
   File "./src/pkg/base/base.py", line 42, in request
     raise Exception(e)
 Exception: Cannot connect to host 127.0.0.1:51545 ssl:False [Connect call failed ('127.0.0.1', 51545)]
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned

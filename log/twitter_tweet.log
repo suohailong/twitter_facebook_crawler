@@ -2563,4 +2563,11 @@ save 5a50f6284c7ffb69f4e1ad20 ==>successfuly
 save 5a50f6284c7ffb69f4e1ad21 ==>successfuly
 save 5a50f6284c7ffb69f4e1ad22 ==>successfuly
 save 5a50f6284c7ffb69f4e1ad23 ==>successfuly
-save 5a50f6284c7ffb69f4e1ad24 ==>successfuly
+save 5a50f6284c7ffb69f4e1ad24 ==>successfulysupervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /root/twitter_facebook_crawler/: ENOENT
+supervisor: child process was not spawned
